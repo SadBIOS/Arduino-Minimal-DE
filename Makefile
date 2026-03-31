@@ -108,3 +108,4 @@ details:
 # options for S3 N16R8 and WaveShare Matrix CDCOnBoot=cdc,USBMode=hwcdc,UploadMode=cdc fqbn esp32:esp32:esp32s3
 # options for NodeMCU V3 baud=3000000 fqbn esp8266:esp8266:nodemcuv2
 # ESP32S3 BLE CDCOnBoot=default,USBMode=hwcdc,UploadMode=default,CPUFreq=240
+# ESP32P4 espressif:esp32:esp32p4 (options will be added later)
