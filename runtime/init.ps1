@@ -11,8 +11,12 @@ switch ($trigger) {
         }
         Write-Host $promptMessage
         Start-Sleep -Milliseconds 5000
+        
         $commands = @(
-            "config init",
+            "config init --overwrite",
+            "config set directories.data C:\arduino15",
+            "config set directories.downloads C:\arduino15\staging",
+            "config set directories.user C:\arduino15\user",
             "core update-index",
             "lib update-index",
             "core install arduino:avr",
@@ -21,6 +25,7 @@ switch ($trigger) {
             "core install Seeeduino:samd -v --additional-urls=https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json",
             "core install MiniCore:avr -v --additional-urls https://mcudude.github.io/MiniCore/package_MCUdude_MiniCore_index.json"
         )
+        
         foreach ($command in $commands) {
             try {
                 Write-Host "Running: arduino-cli $command"
