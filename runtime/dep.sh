@@ -10,7 +10,6 @@ sudo -v || {
 }
 
 SCRIPT_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-
 DEPS=(
   build-essential
   curl
@@ -64,7 +63,6 @@ function makepkg_cache() {
 
 function offline() {
     archive="${1:-$SCRIPT_ROOT/ard_cli_dependencies.tar.gz}"
-
     if [[ ! -f "$archive" ]]; then
         echo "Archive '$archive' does not exist" >&2
         read -p "Build archive now? (y/n): " optn
@@ -82,14 +80,11 @@ function offline() {
     fi
 
     tar -xzvf "$archive" -C "$SCRIPT_ROOT"
-
     dirpath="$SCRIPT_ROOT/ard_cli_dependencies"
 
     if [[ -f /etc/apt/sources.list || -d /etc/apt/sources.list.d ]]; then
-
         [[ -f /etc/apt/sources.list ]] && sudo mv -v /etc/apt/sources.list /etc/apt/sources.list.bak
         [[ -d /etc/apt/sources.list.d ]] && sudo mv -v /etc/apt/sources.list.d /etc/apt/sources.list.d.bak
-
         trap '
             echo "Restoring APT mirrors..."
             [[ -f /etc/apt/sources.list.bak ]] && sudo mv -v /etc/apt/sources.list.bak /etc/apt/sources.list
@@ -100,7 +95,6 @@ function offline() {
     sudo apt install -y "$dirpath"/*.deb
     rm -vrf "$SCRIPT_ROOT/ard_cli_dependencies"
 }
-
 
 while [[ $# -gt 0 ]]; do
     case "$1" in
