@@ -9,16 +9,14 @@ sudo -v || {
     exit 1
 }
 
-SCRIPT_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-DEPS=(
-  build-essential
-  curl
-  tar
-  unzip
-  ca-certificates
-  python3
-  python3-pip
-  python3-serial
-  libusb-1.0-0
-)
+SCRIPT_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+DEPENDENCY_ENGINE="$SCRIPT_ROOT/dep.sh"
+UDEV_RULES="$SCRIPT_ROOT/rules.txt"
+
+USER_NAM="${SUDO_USER:-$USER}"
+USR_GRP="$(id -gn "$USER_NAM")"
+TOOLCHAIN_ROOT=""
+RAW_CLI=""
+CONFIG_FILE=""
