@@ -39,6 +39,14 @@ function system_checker() {
         python3-serial
         libusb-1.0-0
     )
+    
+    for pkg in "${DEPS[@]}"; do
+        if dpkg-query -W -f='${Status}' "$pkg" 2>/dev/null | grep -q "ok installed"; then
+            print_ok "$pkg"
+        else
+            print_fail "$pkg is missing"
+        fi
+    done
 }
 
 while [[ $# -gt 0 ]]; do
