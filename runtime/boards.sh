@@ -29,7 +29,8 @@ function board_lister() {
 
     "$BINPATH" --config-file "$CONFIG_FILE" board listall 2>/dev/null | \
     awk '
-    NR==1 { next }{}
+    NR==1 { next }{
+        fqbn=$NF
 }
 
 while [[ $# -gt 0 ]]; do
