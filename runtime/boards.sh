@@ -37,6 +37,8 @@ function board_lister() {
 
         name=substr($0,1,length($0)-length($NF))
         sub(/[[:space:]]+$/,"",name)
+
+        split(fqbn,p,":")
 }
 
 while [[ $# -gt 0 ]]; do
