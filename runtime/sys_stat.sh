@@ -130,7 +130,13 @@ function system_checker() {
 
     echo ""
 
-
+    if [[ $ERRORS -eq 0 ]]; then
+        printf "\e[32m\e[1mAll checks passed! The environment is fully configured.\e[0m\n"
+        return 0
+    else
+        printf "\e[31m\e[1mFound %d error(s). The environment might not be fully functional.\e[0m\n" "$ERRORS"
+        return 1
+    fi
 }
 
 while [[ $# -gt 0 ]]; do
