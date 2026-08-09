@@ -16,9 +16,11 @@
 107-Arduino-TMF8801
 107-Arduino-TSL2550
 107-Arduino-UniqueId
+16x2 LCD Library
 1euroFilter
 1NCE Arduino Blueprint
 24s02ya__M24SR02-Y
+2WD_Robot
 3BC Language Virtual Machine
 72x40oled_lib
 74HC138
@@ -27,60 +29,61 @@
 74HC595Plus
 74XX595
 7Segment
-7Semi ADS7830
-7Semi ADXL335 Accelerometer
-7Semi BME280
-7Semi BME690
-7Semi BMI270
-7Semi BMI323
-7Semi BMP384
-7Semi BMP58x
-7Semi BMV080
-7Semi BNO08x
-7Semi DAC7578
-7Semi ENS210
-7Semi HMC6343 Compass
-7Semi ICM20948
-7Semi INA260
-7Semi LIS3DH
-7Semi MAX31855
-7Semi MLX90393
-7Semi SHT4x
-7Semi STS3x
-7Semi STS4x
-7Semi TMP11x
-7Semi TMP23x
-7Semi VEML7700
 7Semi_AD569x
 7Semi_AD849x
 7Semi_ADS126x
 7Semi_ADS1xx5
+7Semi ADS7830
+7Semi ADXL335 Accelerometer
+7Semi BME280
 7Semi_BME68x
+7Semi BME690
+7Semi BMI270
+7Semi BMI323
 7Semi_BMI330
+7Semi BMP384
 7Semi_BMP585
+7Semi BMP58x
+7Semi BMV080
 7Semi_BNO055
+7Semi BNO08x
 7Semi_CO2TH
+7Semi DAC7578
 7Semi_DS18B20
+7Semi ENS210
+7Semi HMC6343 Compass
 7Semi_HX711
+7Semi ICM20948
 7Semi_INA219
+7Semi INA260
 7Semi_ISM330DHCX
 7semi_L89HA
+7Semi LIS3DH
 7Semi_LPS28DFW
 7Semi_MAX17048
+7Semi MAX31855
 7Semi_MAX31856
 7Semi_MAX31865
 7Semi_MCP23017
+7Semi MLX90393
 7Semi_MMC5983MA
 7Semi_NAU7802_24bit_ADC_WeightScale
+7Semi-OPT3004-Digital-Ambient-Light-Sensor-Arduino-Library
 7Semi_OPT4048
+7Semi-RS485-Temperature-Humidity-Probe-Arduino-Library
 7semi_SCD4x_CO2_Sensor
 7Semi_SGP4x
+7Semi SHT4x
 7Semi_SHT4x_analog_Arduino-Library
+7Semi STS3x
+7Semi STS4x
 7Semi_TMAG5273
-7Semi-OPT3004-Digital-Ambient-Light-Sensor-Arduino-Library
-7Semi-RS485-Temperature-Humidity-Probe-Arduino-Library
 7Semi-TMP102
+7Semi TMP11x
+7Semi TMP23x
+7Semi VEML7700
 8x8 Led Matrix Soldered
+A02YYUW
 A1301
 A15RGB
 A4963
@@ -96,17 +99,18 @@ absmouse
 AbsoluteMouse
 AcaiaArduinoBLE
 ACAN
-ACAN_ESP32
-ACAN_STM32
-ACAN_T4
 ACAN2040
 ACAN2515
 ACAN2515Tiny
 ACAN2517
 ACAN2517FD
+ACAN_ESP32
 ACANFD_FeatherM4CAN
 ACANFD_GIGA_R1
+ACANFD_SAME
 ACANFD_STM32
+ACAN_STM32
+ACAN_T4
 Accelerometer ADXL335
 Accelerometer ADXL345
 Accelerometer_H3LIS331DL
@@ -149,7 +153,6 @@ ACS712-driver
 ACS772_CurrentSensor
 ACS-M1128
 ActionButtons
-AD_Sensors
 AD5144A
 AD520X
 AD5231 Arduino Library
@@ -168,6 +171,7 @@ AD5593R
 AD5620
 AD5660
 AD5680
+AD5684
 AD568X
 AD56X8
 AD57X4R
@@ -187,11 +191,13 @@ AD9833
 AD9850SPI
 AD985X
 Adafruit 10DOF
+Adafruit_4_01_ColourEPaper
 Adafruit 9DOF
 Adafruit AD569x Library
 Adafruit ADG72x
 Adafruit ADS122C04
 Adafruit ADS1X15
+Adafruit ADS7128
 Adafruit ADS7830
 Adafruit ADT7410 Library
 Adafruit ADXL343
@@ -201,10 +207,10 @@ Adafruit AGS02MA
 Adafruit AHRS
 Adafruit AHT10
 Adafruit AHTX0
-Adafruit AM radio library
 Adafruit AM2315
 Adafruit AM2320 sensor library
 Adafruit AMG88xx Library
+Adafruit AM radio library
 Adafruit APDS9960 Library
 Adafruit APDS9999
 Adafruit Arcada GifDecoder
@@ -242,7 +248,7 @@ Adafruit Circuit Playground
 Adafruit composite video Library
 Adafruit CPFS
 Adafruit CST8XX Library
-Adafruit DAC7578 Library
+Adafruit DACX578 Library
 Adafruit DAP library
 Adafruit Debounce
 Adafruit DMA neopixel library
@@ -264,6 +270,7 @@ Adafruit Floppy
 Adafruit Flora Pixel Library
 Adafruit FONA Library
 Adafruit FRAM I2C
+adafruit_fram_i2c_mock
 Adafruit FRAM SPI
 Adafruit FreeTouch Library
 Adafruit FT5336
@@ -288,6 +295,7 @@ Adafruit ICM20X
 Adafruit ILI9341
 Adafruit ImageReader Library
 Adafruit INA219
+adafruit_ina219_mock
 Adafruit INA228 Library
 Adafruit INA237 and INA238 Library
 Adafruit INA260 Library
@@ -311,8 +319,8 @@ Adafruit LPS28
 Adafruit LPS2X
 Adafruit LPS35HW
 Adafruit LSM303 Accel
-Adafruit LSM303DLH Mag
 Adafruit LSM303DLHC
+Adafruit LSM303DLH Mag
 Adafruit LSM6DS
 Adafruit LSM9DS0 Library
 Adafruit LSM9DS1 Library
@@ -405,6 +413,7 @@ Adafruit SPA06_003
 Adafruit SPIFlash
 Adafruit SSD1305
 Adafruit SSD1306
+Adafruit_SSD1306_72x40
 Adafruit SSD1306 EMULATOR
 Adafruit SSD1306 Wemos Mini OLED
 Adafruit SSD1325
@@ -446,6 +455,7 @@ Adafruit uBlox
 Adafruit Unified Sensor
 Adafruit UNTZtrument
 Adafruit VC0706 Serial Camera Library
+Adafruit_VCNL4010
 Adafruit VCNL4020 Library
 Adafruit VCNL4030
 Adafruit VCNL4040
@@ -454,9 +464,11 @@ Adafruit VEML6046 Library
 Adafruit VEML6070 Library
 Adafruit VEML6075 Library
 Adafruit VEML7700 Library
+Adafruit_VL53L0X
 Adafruit VL53L1X
 Adafruit VL53L5CX
 Adafruit VL53L7CX
+Adafruit_VL6180X
 Adafruit VS1053 Library
 Adafruit WavePlayer Library
 Adafruit WF100DPZ
@@ -468,26 +480,21 @@ Adafruit Zero FFT Library
 Adafruit Zero I2S Library
 Adafruit Zero PDM Library
 Adafruit ZeroTimer Library
-Adafruit_4_01_ColourEPaper
-adafruit_fram_i2c_mock
-adafruit_ina219_mock
-Adafruit_VCNL4010
-Adafruit_VL53L0X
-Adafruit_VL6180X
 AdagioPro
 Adaino
 AdaptiveMapping
 AdaptiveTXWSN
-ADC_SAmpler
-ADC_SEQR
 ADC081S
 ADC08XS
 ADC128D818
 ADCButtons
 ADCDRP
+ADC_SAmpler
+ADC_SEQR
 ADCTouch
 ADCTouchSensor
 AdditiveHW
+AddressLearnMLX
 ADE7753
 ADE7880Energy
 ADE9000
@@ -505,15 +512,19 @@ ADG731
 ADG732
 Adler
 ADNS3080
+ADPD188BI
+ADRF6655
 ADS1110
 ADS1115
-ADS1115_WE
 ADS1115-Driver
+ADS1115_WE
 ADS1118 library
 ADS1119 library
 ADS111S
+ADS112C04
 ADS1148
 ADS1219
+ADS1219-SOLDERED
 ADS1220
 ADS1220_WE
 ADS122U04 ADC Arduino Library
@@ -524,15 +535,17 @@ ADS1x1x
 ADS1X58
 ADS7128
 ADS7828
+AD_Sensors
 ADSWeather
 ADT7470
-Advance Seven Segment
+AdvancedCLI
 AdvancedLogger
 AdvancedOximeter
 AdvancedPID
 AdvancedRotaryEncoder
-AdvancedSerial
 advancedSerial
+AdvancedSerial
+Advance Seven Segment
 AdvKeyPad
 ADXL345
 ADXL345_WE
@@ -540,16 +553,18 @@ ADXL362
 ADXL372
 aE2
 AEBO
+AERL C Framework
 Aerobotix_Arduino_nav
-AES_CMAC
 AES128ESP32 Library
+AES_CMAC
 AESLib
 AESUtils
 AFArray
-AFE_NXP_Arduino
 AFE44XX library
 AFE4950
+AFE_NXP_Arduino
 AfricasTalking
+AFS01Sensor
 Afstandssensor - HCSR04
 AgileStateMachine
 AGirs
@@ -559,9 +574,9 @@ AGS2616
 AGS3870
 AGS3871
 AHT20
+AIChatBot
 Ai COCOCAM
 Ai Esp32 Rotary Encoder
-AIChatBot
 AIfES for Arduino
 AIOModule
 AioP13
@@ -585,15 +600,22 @@ Akafugu TWIDisplay Library
 Akafugu TWIKeyboard Library
 Akafugu TWILiquidCrystal Library
 Akafugu WireRtc Library
+Akshara
 ALA
 alarm
 Alarm
+Alash DS1302 RTC
 AlashIRControl
+AlashKeypadMatrix
+AlashLEDMatrix8x8
 AlashMotorControlLite
+AlashSerialTerminal
+AlashUartMP3
 AlashUltrasonic
 AlertMe
 AlfredoConnect-Receive
 AlfredoCRSF
+AlfredoDShot
 Alfredo-NoU2
 Alfredo-NoU3
 Algoduino
@@ -615,8 +637,8 @@ Alpenglow FUnicorn
 AlPlc_Opta
 AlPlc_PMC
 AltController
-Alteriom PainlessMesh
 Alteriom_EByte_LoRa_E220
+Alteriom PainlessMesh
 AlternativeLSS
 Altino
 AltSoftSerial
@@ -632,8 +654,8 @@ AM4096
 AM50288H
 AmAlert
 AmazonDRS
-Ambient ESP32 ESP8266 lib
 AmbientCO2
+Ambient ESP32 ESP8266 lib
 Ambimate
 AMBOT
 AMC1302
@@ -643,6 +665,7 @@ AmiraEncoder
 AMIS30543
 AmperkaFET
 AmpifySoilMoisture
+AMRFID
 AMT25
 AMx8x5
 AMY Synthesizer
@@ -684,6 +707,7 @@ Anitracks_PCA95x5
 Anomalia
 ANSI
 ANSI_Output
+ANSITerm
 ANT-Arduino
 Antares ESP8266 HTTP
 Antares ESP8266 MQTT
@@ -696,15 +720,20 @@ anto-esp8266-arduino
 ANTPLUS-Arduino
 Anyleaf
 AnyRtttl
-AP_DCC_Decoder_Core
-AP_DCC_Library
+AODV
 AP3216_WE
 AP33772S
 APA102
+APA-Dose
+APALCDGUI
 APAPHX2_ADS1115
+AP_DCC_Decoder_Core
+AP_DCC_Library
 APDS9151
 APDS9900
 APDS9960
+APDS9960 Arduino Library by Soldered
+APIOTA
 ApJSY163T
 ApJSY194T
 ApJSY333
@@ -717,7 +746,11 @@ APRS-Decoder-Lib
 APRS-IS-Lib
 ApSDM120
 APSNode
+AQ01
 AqualaboSensor
+ARAM_FS_Stepper
+ARAM_Metal_Orchestra
+ARAM_Toggle_Actuator
 Arancino
 Aranet4
 Arara
@@ -741,18 +774,11 @@ arducam_dvp
 Arducam_Mega
 Arducam_mini
 Arducam_Qwiic_CAM
+ArduClaw
 ArduCMSIS-DSP
 ArduEasy
 arduFPGA-app-common-arduino
 ArduHelpers
-Arduino Cloud Provider Examples
-Arduino Learning Board
-Arduino Low Power
-Arduino OPL2
-Arduino POST HTTP Parser
-Arduino SigFox for MKRFox1200
-Arduino Smart Watch
-Arduino Uno WiFi Dev Ed Library
 Arduino_10BASE_T1S
 Arduino_AdvancedAnalog
 Arduino_Alvik
@@ -760,9 +786,15 @@ Arduino_AlvikCarrier
 Arduino_APA102
 Arduino_APDS9960
 Arduino_APDS9999
+ArduinoArcherPanelClient
+arduino-async-duplex
+arduino-async-modem
 Arduino_AVRSTL
+ArduinoBearSSL
 Arduino_BHY2
 Arduino_BHY2Host
+ArduinoBLE
+ArduinoBlue
 Arduino_BMI270_BMM150
 Arduino_BQ24195
 Arduino_Braccio_plusplus
@@ -770,89 +802,35 @@ Arduino_BuiltIn
 Arduino_CapacitiveTouch
 Arduino_Cellular
 Arduino_CloudConnectionFeedback
+Arduino Cloud Provider Examples
+ArduinoCloudStorage
+ArduinoCloudThing
 Arduino_CloudUtils
 Arduino_CMSIS-DSP
+ArduinoComponents
 Arduino_ConnectionHandler
 Arduino_CRC32
 Arduino_DebugUtils
-Arduino_EdgeControl
-Arduino_EMBRYO_2
-Arduino_ESP32_OTA
-Arduino_GigaDisplay
-Arduino_GigaDisplay_GFX
-Arduino_GigaDisplayTouch
-Arduino_GroveI2C_Ultrasonic
-Arduino_HS300x
-Arduino_HTS221
-Arduino_JSON
-Arduino_KNN
-Arduino_KVStore
-Arduino_LowPowerPortentaC33
-Arduino_LowPowerPortentaH7
-Arduino_LPS22HB
-Arduino_LSM6DS3
-Arduino_LSM6DSOX
-Arduino_LSM9DS1
-Arduino_LTR381RGB
-Arduino_MachineControl
-Arduino_MAX17332
-Arduino_MCHPTouch
-Arduino_MKRENV
-Arduino_MKRGPS
-Arduino_MKRIoTCarrier
-Arduino_MKRMEM
-Arduino_MKRRGB
-Arduino_MKRTHERM
-Arduino_Modulino
-Arduino_MultiWiFi
-Arduino_Nesso_N1
-Arduino_NetworkConfigurator
-Arduino_NiclaSenseEnv
-Arduino_NineAxesMotion
-Arduino_OAuth
-Arduino_OPC_UA
-Arduino_OplaUI
-Arduino_Opta_Blueprint
-Arduino_OV767X
-Arduino_PF1550
-Arduino_Portenta_OTA
-Arduino_PortentaBreakout
-Arduino_PortentaMachineControl
-Arduino_POSIXStorage
-Arduino_PowerManagement
-Arduino_Pro_Tutorials
-Arduino_RouterBridge
-Arduino_RPClite
-Arduino_ScienceJournal
-Arduino_ScienceKitCarrier
-Arduino_SecureElement
-Arduino_Sensorkit
-Arduino_SerialUpdater
-Arduino_SpiNINA
-Arduino_Threads
-Arduino_TinyGL
-Arduino_UnifiedStorage
-Arduino_USBHIDHost
-Arduino_USBHostMbed5
-ArduinoArcherPanelClient
-arduino-async-duplex
-arduino-async-modem
-ArduinoBearSSL
-ArduinoBLE
-ArduinoBlue
-ArduinoCloudStorage
-ArduinoCloudThing
-ArduinoComponents
 arduino-display-lcdkeypad
 ArduinoDMX
 ArduinoECCX08
+Arduino_EdgeControl
+Arduino_EMBRYO_2
+Arduino_ESP32_OTA
 ArduinoESPAT
 arduino-ess
 ArduinoFacil
 arduinoFFT
 ArduinoFritzApi
 arduino-fsm
+Arduino_GigaDisplay
+Arduino_GigaDisplay_GFX
+Arduino_GigaDisplayTouch
 ArduinoGraphics
+Arduino_GroveI2C_Ultrasonic
+Arduino_HardwareServo
+Arduino_HS300x
+Arduino_HTS221
 ArduinoHttpClient
 ArduinoHttpServer
 Arduino-I2C-KM1
@@ -861,49 +839,110 @@ ArduinoINA219
 ArduinoIoTCloud
 ArduinoIoTCloudBearSSL
 ArduinoIRC
+Arduino_JSON
 ArduinoJson
+Arduino_KNN
+Arduino_KVStore
 ArduinoLang
+Arduino Learning Board
 ArduinoLearningKitStarter
 ArduinoLog
+Arduino Low Power
+Arduino_LowPowerPortentaC33
+Arduino_LowPowerPortentaH7
+Arduino_LPS22HB
+Arduino_LSM6DS3
+Arduino_LSM6DSOX
+Arduino_LSM9DS1
+Arduino_LTR381RGB
+Arduino_MachineControl
 arduino-managed-serial-device
+Arduino_MAX17332
+Arduino_MCHPTouch
 ArduinoMDNS
 ArduinoMenu library
 arduino-menusystem
+Arduino_MKRENV
+Arduino_MKRGPS
+Arduino_MKRIoTCarrier
+Arduino_MKRMEM
+Arduino_MKRRGB
+Arduino_MKRTHERM
 ArduinoModbus
+Arduino_Modulino
 ArduinoMotorCarrier
 ArduinoMqtt
 ArduinoMqttClient
+Arduino_MultiWiFi
+Arduino_Nesso_N1
+Arduino_NetworkConfigurator
+Arduino_NiclaSenseEnv
+Arduino_NineAxesMotion
 arduino-NVM
+Arduino_OAuth
+Arduino_OPC_UA
+Arduino OPL2
+Arduino_OplaUI
+Arduino_Opta_Blueprint
 ArduinoOSC
 ArduinoOTA
+Arduino_OV767X
+Arduino_PF1550
+Arduino_PortentaBreakout
+Arduino_PortentaMachineControl
+Arduino_Portenta_OTA
+Arduino_POSIXStorage
+Arduino POST HTTP Parser
+Arduino_PowerManagement
+Arduino_Pro_Tutorials
 ArduinoQueue
+Arduino_RouterBridge
+Arduino_RPClite
 ArduinoRS485
+Arduino_ScienceJournal
+Arduino_ScienceKitCarrier
+Arduino_SE05X
+Arduino_SecureElement
+Arduino_Sensorkit
 ArduinoSensors
+Arduino_SerialUpdater
 arduino-sht
+Arduino SigFox for MKRFox1200
 ArduinosInSpace
+Arduino Smart Watch
 ArduinoSound
+Arduino_SpiNINA
 ArduinoSTL
 ArduinoTEA5767
 ArduinoThread
 ArduinoThreadRunOnce
+Arduino_Threads
 arduino-timer
 arduino-timer-api
+Arduino_TinyGL
 ArduinoTrace
+Arduino_UnifiedStorage
 ArduinoUniqueID
 ArduinoUnit
+Arduino Uno WiFi Dev Ed Library
+Arduino_USBHIDHost
+Arduino_USBHostMbed5
 ArduinoUserInterface
+Arduino_Video
 arduinoVNC
 Arduino-Websocket-Fast
 ArduinoWebsockets
 ardukit
 ArduLite
 ArduLiteESP
+ArduLora
 ArduMax AD5241 Driver
 ArduMax MCP41xxx Driver
 ArduMekaWiFi
 ArduPID
 ArduProf
 ArduRoomba
+ArduTest
 ArduTFLite
 ArduZ80
 ArdVoice
@@ -958,11 +997,13 @@ AS5X47
 AS6212 Temperature Sensor
 AS7331
 AsciiMassage
+Ascon128
 asip
 asip-services
 AskGemini
 AskSinPP
 AsproSolarShield
+assetto-corsa-udp
 AssocTree
 AssuraVisionSerial
 AStar32U4
@@ -971,10 +1012,8 @@ AstroCalcs
 AstroMech
 ASTRON_CCS811
 ASXNanoStream
-Async SHT4x
-Async TCP
-Async_Operations
 AsyncAnalog
+AsyncBitMatrix
 AsyncBMP180Wrapper
 AsyncButton
 AsyncDelay
@@ -1008,18 +1047,23 @@ AsyncHTTPSRequest_ESP32_Ethernet
 AsyncHTTPSRequest_Generic
 asyncino
 AsyncLiquidCrystal
+AsyncMqttClient
 AsyncMQTT_ESP32
 AsyncMQTT_Generic
+Async_Operations
 AsyncOTA
 AsyncOTAManager
 AsyncSerial
 AsyncServoLib
+Async SHT4x
 AsyncSMS
 AsyncSonar
+AsyncState
 AsyncStepperLib
 AsyncStream
 AsyncTask
 AsyncTaskLib
+Async TCP
 AsyncTCP
 AsyncTCP_RP2040W
 AsyncTCP_SSL
@@ -1068,26 +1112,28 @@ AT24Cxx
 AT24MAC402
 AT42QT
 aTalkArduino
+at_client
 ATC_MiThermometer
 ATC_MiThermometer-Arduino
 ATD1.47-S3 Lib
 ATD3.5-S3
+ATD3.5-S3_HandySense_Arduino_Library
 ATD-S3-Driver
 ATGenX_Hub
 ATGENXlib
-atlas OEM module
 Atlas_EC
+atlas OEM module
 ATM90E26 Arduino
 ATMAC_EEPROM
-ATmega_Slow_PWM
-ATmega_TimerInterrupt
 Atmega328_IO
 ATmega32U4 Grove Air quality sensor
 Atmega32u4_IO
 Atmega8_IO
 Atmega8_IO_basic
-Atmel TSS463C VAN bus Datalink Controller library
+ATmega_Slow_PWM
+ATmega_TimerInterrupt
 Atmel_M90E32AS_ESP32
+Atmel TSS463C VAN bus Datalink Controller library
 ATMlib
 ATOM_DTU_CAT1
 ATOM_DTU_LoRaWAN
@@ -1096,18 +1142,19 @@ AtomicWeight
 ATOM-PRINTER
 AtrivaTECH PicUNO
 AttachInterruptEx
-ATtiny_PWM
-ATtiny_Slow_PWM
-ATtiny_TimerInterrupt
 Attiny84_IO
 Attiny84_IO_basic
+attiny85FasterPin
 Attiny85_IO
 Attiny85_IO_basic
-attiny85FasterPin
+ATtiny_PWM
 ATtinySerialOut
+ATtiny_Slow_PWM
+ATtiny_TimerInterrupt
 AtTouch
 Audio
 Audio - Adafruit Fork
+AudioCodec
 AudioCompass
 AudioFrequencyMeter
 AudioShieldDTMF
@@ -1115,6 +1162,7 @@ AudioZero
 AUnit
 AutoAnalogAudio
 AutoConnect
+AutoconnectoSDK
 AutomationTimers
 Automaton
 Automaton-Esp8266
@@ -1123,6 +1171,7 @@ AutoPID
 AutoPlex7
 autorequest
 autowp-mcp2515
+AvantLumi
 avdweb_AnalogReadFast
 avdweb_SAMDtimer
 avdweb_VirtualDelay
@@ -1133,10 +1182,6 @@ AViShaMQTT
 AViShaOTA
 AViShaWiFi
 AVision_ESP8266
-AVR Standard C Time Library
-AVR_PWM
-AVR_Slow_PWM
-avr_stl
 AVRactivePower
 avrCalibrate
 AVR-context
@@ -1146,9 +1191,14 @@ avr-fast-multiply
 avr-fast-shift
 AvrFHT
 AvrHeap
+AVR-IoT-Cellular
 AVR-IoT MCP9808
 AVR-IoT VEML3328
-AVR-IoT-Cellular
+AVR_PWM
+AVR_Slow_PWM
+AVR Standard C Time Library
+avr_stl
+AVR Task Scheduler
 avrtos
 AvrTracing
 AVRUtils
@@ -1159,20 +1209,25 @@ AwsIotWiFiClient
 AWS-SDK-ESP8266
 AxisJoystick
 AX-Mini
+AxonSDK
 AXP202X_Library
 AY3891x
+AY8912_ESP32
 AyatecSensoraya2.x
 AyresShell
 AyresWiFiManager
+AzureIoT
+AzureIoTHubMQTTClient
 Azure RTOS ThreadX
 Azure SDK for C
-AzureIoTHubMQTTClient
 Babelduino
 BackgroundAudio
 BackSeatDriver
+BACnet-Arduino
+BACnetMSTP
 Bakmi
-Balboa Spa communications
 Balboa32U4
+Balboa Spa communications
 BaleMessengerBot_Arduino
 Ballvalve
 BalmIot
@@ -1185,7 +1240,6 @@ BarePoller
 BaroLibrary
 Bas.Button
 Bas.CallbackCaller
-Bas.SinglePinDevice
 Base32-Decode
 base64
 Base64
@@ -1203,31 +1257,33 @@ BasicsLibrary
 BasicTag
 BasicTimer
 BasicTinkering
+Bas.SinglePinDevice
 Batflow
-Battery Sense
 Battery_18650_Stats
 BatteryMeter
+Battery Sense
 BaudotCode
 Bayesian Optimization
 bb_captouch
+BBE IoT Class Library
 bb_epaper
 bb_hx1230
 bb_imu
 bb_ltr390
 bb_proximity
+BBQ10Keyboard
 bb_rtc
 bb_scd41
 bb_spi_lcd
 bb_temperature
 bb_truetype
 bb_uc1701
-BBE IoT Class Library
-BBQ10Keyboard
 BC7215AC_Universal_Aircon_Control
-BCC_ESP32S3
 bcl
+BD37033
 BDSP
 Beacon
+BeaconAria
 BeaconNano
 BeeDataLogger
 Beelan LoRaWAN
@@ -1236,6 +1292,7 @@ BeeS3
 Benchmark
 BeShell
 Better Joystick
+BetterMenu
 BetterOTA
 BetterWiFiNINA
 Beverly
@@ -1243,9 +1300,9 @@ BGWiFiConfig
 BH1730
 BH1730FVC
 BH1750
-BH1750_WE
 BH1750FVI
 BH1750FVI_RT
+BH1750_WE
 BIDFestTools
 Bifrost library for HC-SR04
 BigCrystal
@@ -1255,14 +1312,17 @@ BigFont02
 BigFont02_I2C
 BigNums2x2
 Bind
+BindThings
 BioData
 BioLogic
+BioLogic_Mini
 BioLogic_STM32
 BIP66
 BirdhouseSDK
 BistableRelay
 BitArray
 BitBang_I2C
+BitBang_LiquidCrystal_I2C
 BitBool
 Bitcraze PMW3901
 BitFlash_Client
@@ -1279,9 +1339,7 @@ BL0942
 BL0942_SPI
 BlaeckSerial
 BlaeckTCP
-BLE OTA Update
-BLE SDK for Arduino
-BLE Serial - NUS
+BLECommands
 ble_definitions
 Bleeper
 Bleeping Library
@@ -1291,12 +1349,16 @@ BLE-MIDI
 BlenderServoAnimation
 blendixserial
 BLEOTA
+BLE OTA Update
 BLEPeripheral
+BLE SDK for Arduino
 blesdlib
 BLESensorGateway
 BLESerial
 BLESerial_ESP32
+BLE Serial - NUS
 BleValueSync
+Blifi
 BlinkCode Library
 BlinkControl
 Blinkenlight
@@ -1323,11 +1385,11 @@ BlueRobotics Arduino_I2C_ESC Library
 BlueRobotics Keller LD Library
 BlueRobotics MS5837 Library
 BlueRobotics TSYS01 Library
+Blues-Minimal-I2C
 Blues Notecard Environment Variable Manager
 Blues Wireless Notecard
 Blues Wireless Notecard Auxiliary Wi-Fi
 Blues Wireless Notecard Pseudo Sensor
-Blues-Minimal-I2C
 BluetoothSerial
 BluetoothTerminal
 BluetoothTonePlayer
@@ -1339,16 +1401,16 @@ Blynk
 Blynk_Async_ESP32_BT_WF
 Blynk_Async_GSM_Manager
 Blynk_Async_WM
-Blynk_Esp8266AT_WM
-Blynk_Teensy
-Blynk_WiFiManager
-Blynk_WiFiNINA_WM
 BlynkESP32_BT_WF
+Blynk_Esp8266AT_WM
 BlynkEthernet_Manager
 BlynkEthernet_STM32_WM
 BlynkGate
 BlynkGSM_Manager
 BlynkNcpDriver
+Blynk_Teensy
+Blynk_WiFiManager
+Blynk_WiFiNINA_WM
 BM12O2021-A
 BM12O2321-A
 BM2102-9x-1
@@ -1429,16 +1491,17 @@ BMP280_DEV
 BMP280_LTSM
 BMP388_DEV
 BMP390
+BMP390_LTSM
 BMP73T102
 BMP73T104
 BMP75M131
-BMS Client
 BMS26M833
 BMS33M332
 BMS36T001
 BMS56M206A
 BMS56M605
 BMS81M001
+BMS Client
 BMV23M001
 BMV31M304A
 BMV31T001
@@ -1447,6 +1510,7 @@ BMV51T001
 BMV56T123
 BMx280
 BMx280MI
+BMx280PIO_RP2040
 BNO055
 BNO055SimplePacketComs
 BnrOneAPlus
@@ -1483,8 +1547,6 @@ Bolder Flight Systems UBLOX
 Bolder Flight Systems ULEB128
 Bolder Flight Systems Unit Conversions
 Bolder Flight Systems VectorNav
-Bonezegei ILI9341
-Bonezegei LCD1602 I2C
 Bonezegei_74HC595
 Bonezegei_A4988
 Bonezegei_Compute
@@ -1499,8 +1561,10 @@ Bonezegei_GSM
 Bonezegei_HCSR04
 Bonezegei_HD44780
 Bonezegei_I2CScan
+Bonezegei ILI9341
 Bonezegei_ILI9341v2
 Bonezegei_JSON
+Bonezegei LCD1602 I2C
 Bonezegei_LCD2004_I2C
 Bonezegei_List
 Bonezegei_PCA9685
@@ -1550,6 +1614,7 @@ BraccioV2
 BrainflowSpO2Algorithm
 BRAINZY
 Brasilino
+Breath
 BresserWeatherSensorReceiver
 BrgOfTheCyber_RTC
 BrgOfTheCyber_SCD4x
@@ -1566,9 +1631,10 @@ Brino
 Brushless Servo
 Brzo I2C
 BS811X_I2C
-BSEC Software Library
 bsec2
+BSEC Software Library
 BSON
+bthome-cpp
 BTHomeV2-Arduino
 BTLE
 btnapi
@@ -1585,15 +1651,13 @@ buildTime
 BULLM_ExtendModule
 BULLM_ExtendMotor
 BusInOut_Arduino
+BusproCore
 BusRepeater_NXP_Arduino
 ButtinoRAK
 Button
-button_asukiaaa
-button_moarbue
-Button_SL
-Button_TT
 Button2
 Button-Arduino
+button_asukiaaa
 ButtonClickCheck
 ButtonControl
 ButtonDebounce
@@ -1601,11 +1665,16 @@ ButtonFever
 ButtonGestures
 ButtonKing
 ButtonMatrix
+button_moarbue
 ButtonnIRQ
 ButtonPoll
+ButtonPoll_CW
+ButtonSense
+Button_SL
 ButtonSuite
 ButtonToSwitch
 ButtonToSwitch_ESP32
+Button_TT
 Buzz
 Buzzer
 BuzzerManager
@@ -1615,8 +1684,11 @@ BuzzerXCR
 BuzzKill
 BY8X01-16P Audio Module Library
 BytebeamArduino
+ByteBuffer
 ByteConvert
 Byteduino
+ByteFrame
+BytePack
 byte-sized-encoder-decoder
 Cabluino
 CafeIOT
@@ -1639,14 +1711,15 @@ Camino
 CamS3Library
 CAN
 CAN Adafruit Fork
-CAN_BUS_Shield
-CAN_MREx
 CanAirIO Air Quality Sensors Library
 CanBusData_asukiaaa
 CanBusMCP2515_asukiaaa
+CAN_BUS_Shield
 Candleduino
 CANduino
 CANMessage
+CANMessageSignal
+CAN_MREx
 Canon BLE remote
 CanSat Kit Library
 CanSatNeXT
@@ -1654,11 +1727,12 @@ CanSatNeXT_GNSS
 CapacitiveSensor
 Capacitor
 CaptureTimer
-car robot vip
 CarBase
+Carbonara_DRV8874
 Cardinal
 Carduino
 CarreraDigitalControlUnit
+car robot vip
 Cat GFX Thermal Printer Library
 CayenneLPP
 CayenneLPPdec
@@ -1675,6 +1749,7 @@ CBUSMCP_CAN
 CBUSSwitch
 CC1101
 CC3000 MDNS
+CCARemote
 CCIR476
 CC-Lantern
 CCS811-Soldered
@@ -1686,8 +1761,8 @@ CEClient
 cerebro
 CERP - DF-Robot Wireless GamePad V2.0 for Arduino library
 CESmartCamp
-CF Rotary Encoder
 CFPushButton
+CF Rotary Encoder
 CFSM
 cgnuino
 CH32_Deep_Sleep
@@ -1738,7 +1813,7 @@ CIE-PN532
 CinCout
 CipherCode
 Circios Roboter-Steuerung
-circuit_kit_library
+CircuitDigestCloud
 CircuitNotion
 CircuitPlaygroundGestures
 CircuitsFunBasic
@@ -1749,11 +1824,13 @@ CircularBufferLib
 CircularQueue
 CirquePinnacle
 CJKit
+CKC AIOT
 CK_MAX
 CL57RStepper
 CLAIRE
 Clap
 CleanRTOS
+ClearCoreWatchdog
 ClearDS1302
 CLed
 ClickButton
@@ -1767,9 +1844,11 @@ Clip
 CliTerminal
 Clock
 ClockForSeg_Lib
+clogger
 ClosedCube BME680
 ClosedCube HDC1010
 ClosedCube HDC1080
+ClosedCube_I2C_Driver
 ClosedCube LPS25HB
 ClosedCube MAX30205
 ClosedCube OPT3001
@@ -1784,7 +1863,6 @@ ClosedCube TCA9546A
 ClosedCube TCA9548A
 ClosedCube TMP116
 ClosedCube TSYS01
-ClosedCube_I2C_Driver
 cloud4rpi-esp-arduino
 Cloudchip IoT
 Cloudeck
@@ -1796,13 +1874,14 @@ CmdMessenger
 CmdParser
 CmdSerial
 CMMC Easy
+CMMC_Interval
+CMMC_LED
 CMMC MQTT Connector
+CMMC_NB-IoT
 CMMC OTA
 CMMC Packet
 CMMC WiFi Connector
-CMMC_Interval
-CMMC_LED
-CMMC_NB-IoT
+CMozGlow
 CN0391
 CNCShield
 CoAP simple library
@@ -1815,6 +1894,8 @@ CodecWSN
 CodeDebugScope
 CodePrinter
 CodeSizeProfiler
+CodexPad
+CodexPadFrameDecoder
 CodingArray MotorShield V1 Library
 CoDrone
 Cohere_Client
@@ -1847,6 +1928,7 @@ ConfigTool
 ConfigurableFirmata
 Connect Arduino-Supabase
 ConnectionHelper
+ConnectKit
 ConnectThings_ESP8266
 ConsentiumNow
 ConsentiumStarterKit
@@ -1856,19 +1938,21 @@ Constellation
 ConsumerKeyboard
 ContinuousStepper
 ContinuousStepper_Generic
-Control Surface
 ControlAssist
 ControleForno
 Controlino
 controlKeyboard
 ControlledServo
-Controller Utilities
 ControllerAsI2c_asukiaaa
+Controller Utilities
 CONTROLLINO
 ControlLoop
+Control Surface
 ControlSystemsOS
 controlVoltage
 CoogleIOT
+CoolNeon DevShield
+CoolNeon TCL
 Cooperative Multitasking
 CoopTask
 CoopThreads
@@ -1881,42 +1965,47 @@ CosmosNV2
 CountDown
 CountdownLib
 Countimer
-CoVACIEL
+CoVACIEL-ESP32
 CowPi
 CowPi_stdio
 Cozir
-Cpp_Standard_Library
 CppComponentsLibrary
 CppLinq
 CppPotpourri
+Cpp_Standard_Library
 CPPTasks
 CPUTemp
 CPUVolt
+CQ01
 CQRobotTDS
 cQueue
 CR95HF
 CraftConnect_ESP8266
+CrashHive32
 CrazyHC595
 Crazy-IoTik
 CRC
+CRC32
+crc_asukiaaa
 CRC Simula Arduino IDE Library
 CRC VCNL4200 Library
-crc_asukiaaa
-CRC32
 CRCx
 CreativeRobotix
 CreatorKidsIO
 CredentialManager
+CriticalTaskScheduler
 CRMui3
 CRMX_TimoTwo
 CronAlarms
 cronDaemon
 cronos
 CrossMgrLapCounter
+CrossScheduler
 CROZONE-VEML6040
 CRSF
 CRSFforArduino
 CRT
+CryptnoxWallet
 Crypto
 CryptoAES_CBC
 CryptoAuthLib
@@ -1931,12 +2020,12 @@ CSE_ESPMutex
 CSE_GNSS
 CSE_MillisTimer
 CSE_ModbusRTU
-CSE_ZH06
 cSerialWatcher
-CST816_TouchLib
+CSE_ZH06
 cst816d
 CST816S
 cst816t
+CST816_TouchLib
 CSV Parser
 CSWBattery
 CSWButtons
@@ -1953,12 +2042,12 @@ CurrentSwitch
 CurrentTransformer
 CurrentTransformerWithCallbacks
 CursedDoubleLinkedListInterface
-CurveFitting
 curveFitting
+CurveFitting
+CustomJWT
 Custom PID
 custom_PortentaBreakout
 Custom_Robot_Control
-CustomJWT
 CuteBuzzerSounds
 CV7Lib
 CV7OEMFR
@@ -1973,9 +2062,10 @@ Cytron ESPWiFi Shield
 Cytron G15 Shield
 Cytron Maker Sumo Library
 Cytron Motor Drivers Library
-Cytron Servo Shield
 Cytron_PikaBot
 Cytron_PS2_Shield
+Cytron Servo Shield
+D6F-W04A1
 d9dist
 d9servo
 DA16200 Wi-Fi Library for Arduino
@@ -1997,6 +2087,8 @@ DAC8571
 DAC8574
 DacESP32
 DACless
+DadosCorp
+DadosCorpCore
 DaedalusLink-ESP32
 DailyService
 DailyStruggleButton
@@ -2013,6 +2105,7 @@ DashioESP
 DashioMKR1500
 DashioNano33BLE
 DashioSAMD_NINA
+DashlyClient
 DatabaseOnSD
 databot
 databot2
@@ -2028,19 +2121,19 @@ DateTimeFunctions
 dateTimeHelpers
 dbg-trace
 DBS-Lib
-DC_driver
 DCCEXProtocol
 DCCpp
-DCD SDK for Arduino
 DcDccNanoController
+DC_driver
+DCD SDK for Arduino
 DCF77
-dcf77_xtal
 DCF77Decode
 DCF77FreeRTOS
 DCF77RX
+dcf77_xtal
 DCMotor
-DCMotor_L9110
 DCMotorController
+DCMotor_L9110
 DCS-BIOS
 DCT532
 DDBot
@@ -2049,7 +2142,7 @@ DDNS_Generic
 ddns-nightly
 DDS
 DDSM115
-DE_tacho
+DdsOscillator
 DeadReckoning-library
 debounce
 Debounce
@@ -2110,11 +2203,23 @@ Design Informatics Base
 desklab
 detaBaseArduinoESP32
 detaBaseESP8266
-Dev Device Pins
+DE_tacho
+DeterministicESPAsyncWebServer
 Devatext
+Dev Device Pins
 DEVFULL
 DeviceConfigJSON
 DeviceController
+DevLab_BL
+DevLab_BMI323
+DevLab_ICM20948
+DevLab_JoystickController
+DevLab_MAX30102
+DevLab_MPU6050
+DevLab_TCAN1051HVD
+Devlab_TSL2591
+DevLab_VEML3328
+DevLab_VEML7700
 DEVNULL
 DEVRANDOM
 DEVTAGLibIA
@@ -2122,16 +2227,15 @@ Devuino
 Dezibot
 DFL168A_Async
 DFL168A_Sync
-DFPlayer Mini Mp3 by Makuna
+DFMiniMp3E
 DFPlayerMini
 DFPlayerMini_Fast
+DFPlayer Mini Mp3 by Makuna
 DFPongController
 DF-Print
-DFR_Radar
 DFR0534
 DFR0554
 DFR1173
-DFRobot SHT
 DFRobot_AD9837
 DFRobot_ADS1115
 DFRobot_ADS1115_0_10V
@@ -2144,9 +2248,9 @@ DFRobot_AS3935
 DFRobot_AS6221
 DFRobot_AS7341
 DFRobot_ASR
-DFRobot_B_LUX_V30B
 DFRobot_BC20_Gravity
 DFRobot_BloodOxygen_S
+DFRobot_B_LUX_V30B
 DFRobot_BME280
 DFRobot_BME680
 DFRobot_BMI160
@@ -2156,6 +2260,7 @@ DFRobot_BMP3XX
 DFRobot_BMX160
 DFRobot_BT401
 DFRobot_C4001
+DFRobot_C4002
 DFRobot_CCS811
 DFRobot_CH423
 DFRobot_Cosmo
@@ -2163,6 +2268,7 @@ DFRobot_CT1780
 DFRobot_DF1101S
 DFRobot_DF1201S
 DFRobot_DF2301Q
+DFRobotDFPlayerMini
 DFRobot_DHT11
 DFRobot_DHT20
 DFRobot_digitalPot
@@ -2176,8 +2282,8 @@ DFRobot_ESP_EC_BY_GREENPONIK
 DFRobot_ESP_PH_WITH_ADC_BY_GREENPONIK
 DFRobot_FreeTenIMU
 DFRobot_GDL
-DFRobot_Gesture_Touch
 DFRobot_GestureFaceDetection
+DFRobot_Gesture_Touch
 DFRobot_GM60
 DFRobot_GNSS
 DFRobot_GNSSAndRTC
@@ -2195,6 +2301,7 @@ DFRobot_ID809_I2C
 DFRobot_IICSerial
 DFRobot_IIS
 DFRobot_INA219
+DFRobotIRPosition
 DFRobot_ITG3200
 DFRobot_LcdDisplay
 DFRobot_LedDisplayModule
@@ -2238,6 +2345,7 @@ DFRobot_SCD4X
 DFRobot_SerialScreen771
 DFRobot_SFA40
 DFRobot_SGP40
+DFRobot SHT
 DFRobot_SHT20
 DFRobot_SIM
 DFRobot_SIM7000
@@ -2260,19 +2368,14 @@ DFRobot_VisualRotaryEncoder
 DFRobot_VL53L0X
 DFRobot_VL6180X
 DFRobot_VoiceRecorder
-DFRobotDFPlayerMini
-DFRobotIRPosition
+DFR_Radar
 DFW
-DHT kxn
-DHT sensor library
-DHT sensor library for ESPx
-DHT Sensors Non-Blocking
-DHT_N128
 DHT11
-DHT11_Sensor
 DHT118266
+DHT11 and DHT22 Soldered Boards Arduino Library
 dht11esp8266
 dht11esp8266examples
+DHT11_Sensor
 DHT12
 DHT12 sensor library
 DHT20
@@ -2282,14 +2385,20 @@ DHT22PIO_RP2040
 DHT2pin
 dhtESP32-rmt
 DHTINT
+DHT kxn
 DHTlib
+DHT_N128
 DHTNEW
+DHT sensor library
+DHT sensor library for ESPx
+DHT Sensors Non-Blocking
 DHTStable
 Diablo16-Serial-Arduino-Library
 Dictionary
 Didactic Robot
 DietSerial
 Differential Steering
+DiFinders
 DigiCombo
 DIGI-DOT-BOOSTER Library
 digiedge_frame_generator
@@ -2301,11 +2410,12 @@ DigiPotX9C
 DigiPotX9Cxxx
 DigiShow RIOC
 DigiSpark_PWM
-Digital Infrared Temperature Sensor MLX90615
-Digital Rain Animation
 DigitalButton
+Digital Infrared Temperature Sensor MLX90615
 DigitalIO
+DigitalOutput
 digitalPinFast
+Digital Rain Animation
 DigitalSignalsArduino
 digitalWriteFast
 DigitLed72xx
@@ -2314,18 +2424,19 @@ DigitSeparator
 Dimmable Light for Arduino
 Dimmer class for ATmega32U4
 Dimmer class for SAMD21
-Dimmer_ITC
 DimmerControl
+Dimmer_ITC
 DimSwitch
 DimuthuRobotLib
 DINO PLC
-DINO_PLC_V1
 DINO-PLC
+DINO_PLC_V1
 DINO-PLC-V2
 DIO2
 DiodeIoT_SI-1104
 DiodeIoT_SI-1108
 DiodeIoT_SI-1116
+DIPSwitch16
 directADC
 DirectCurrent_Motor_Module
 DirectNECTransmitter
@@ -2336,53 +2447,55 @@ DiscretePID
 display16_LTSM
 DisplayMenu
 DisplayUtils
-DistanceSensor
 Distance-Sensor
+DistanceSensor
 DistanceTable
 diwa
-DIYables Bluetooth
-DIYables ESP32 WebApps
-DIYables ESP32 WebServer
-DIYables LCD I2C
-DIYables TFT Round
-DIYables TFT Shield
-DIYables TFT Shield Mega
-DIYables TFT Touch Shield
-DIYables WebApps
 DIYables_4Digit7Segment_74HC595
 DIYables_4Digit7Segment_TM1637
+DIYables Bluetooth
 DIYables_DC_Motor
+DIYables ESP32 WebApps
+DIYables ESP32 WebServer
 DIYables_IRcontroller
 DIYables_Keypad
+DIYables LCD I2C
 DIYables_LED_Matrix
 DIYables_MiniMp3
 DIYables_MultiFuncShield
 DIYables_OLED_SSD1309
+DIYables TFT Round
+DIYables TFT Shield
+DIYables TFT Shield Mega
+DIYables TFT SPI
+DIYables TFT Touch Shield
+DIYables WebApps
 DIYsplay
 DJIMotorAlgoESP
 DJIMotorCtrlESP
-DL_PAC_NK76
 DLLN3X ZigBee Mesh Module Library
 DlmsCosemLib
 DLPacket
+DL_PAC_NK76
 DLxx416_Arduino
 DM8BA10
-DMD_STM32
 DMD2
 DMD2TUR
 DMD32
 DMD32Plus
+DMD_AllocTrace
+DMD_STM32
 DMFLib
 DMM
 DMOscillator
 DMStepper
 DMTimer
 DmtrPots
-DMX Serial Transceiver
-Dmx_ESP32
 DMXasLED
+Dmx_ESP32
 DMXSerial
 DMXSerial2
+DMX Serial Transceiver
 DmxSimple
 DMXUSB
 DN24F08
@@ -2405,7 +2518,9 @@ DRA818
 Drive
 DriveCell
 DriveMaster
+DroneCAN_ESP32
 DropboxManager
+DropCeiling
 DRV2667
 Drv7Seg2x595
 Drv7SegQ595
@@ -2414,8 +2529,7 @@ DRV8434S
 DRV8825
 DRV8835MotorShield
 DRV8870
-DS MCP4018 Library
-DS PCA9536 Library
+drvkit_library
 Ds1302
 DS1307
 DS1307 Emulator
@@ -2431,9 +2545,9 @@ DS1821
 DS1881
 DS1881_2
 DS18B20
+DS18B20Events
 DS18B20_int
 DS18B20_RT
-DS18B20Events
 DS2
 DS2401
 DS2431
@@ -2441,10 +2555,10 @@ DS2438
 DS2482
 DS28CM00
 DS3231
-DS3231_RTC
 ds3231FS
 DS3231M
 DS3231-RTC
+DS3231_RTC
 DS3232
 DS3232RTC
 DS323x
@@ -2453,6 +2567,8 @@ DS4
 DSC Keybus Interface
 DSFamily
 DShotRMT
+DS MCP4018 Library
+DS PCA9536 Library
 DSPFilters
 DSpotterSDK_Maker_33BLE
 DSpotterSDK_Maker_NiclaVision
@@ -2460,6 +2576,7 @@ DSpotterSDK_Maker_PortentaH7
 DSpotterSDK_Maker_RP2040
 DST RTC
 dswpainelpro
+DTC Lookup
 DTF_ESP32Update
 DTF_ESP8266Update
 DTime
@@ -2470,21 +2587,23 @@ DualEncoderMenuSystem
 DualG2HighPowerMotorShield
 DualMAX14870MotorShield
 DualMC33926MotorShield
+DualMotor
 DualSenseController
 DualTB9051FTGMotorShield
 DualVNH5019MotorShield
 DualVNH5019MotorShieldMod3
 DualWheelControl_JD
+DueAdcFast
 DUE_ADC_Oversampler
 due_can
-DUE_schmitt
-DueAdcFast
 DueFlashStorage
 DUELink
 DUE-ModbusDMA
 DUERS485DMA
+DUE_schmitt
 DueTimer
 DU-INO
+DuinoClaw
 DuinoCollections
 DuinoMemory
 DumbDisplay
@@ -2493,14 +2612,19 @@ DunogeonENG
 DunogeonFR
 Dusk2Dawn
 dustSensor_kocoa
+dv_average_accumulator8
+dv_dual_hold_state
+dv_every_interval
 DvG_StreamCommand
+dv_iir_filter8
+dv_led_blink
 DW1000
 dwarf433
 dwiBus
 dWin
+DWIN_DGUS_HMI
 DWIN T5L API wrapper
 DWIN Unified
-DWIN_DGUS_HMI
 DWIN_UNI_HMI
 Dx_PWM
 Dx_Slow_PWM
@@ -2509,16 +2633,16 @@ dynaconfig
 dynaHTML
 Dynamic Window Filter
 Dynamixel
-Dynamixel_Servo
 Dynamixel2Arduino
+Dynamixel_Servo
 DynamixelShield
 DYP-R01CW
 DYSVAudio5W
 DZ_HTTP
 e12 protocol library
 E131
-E220-900T22S LoRa library
 E220-900T22S-JP
+E220-900T22S LoRa library
 E220Lib
 E24
 E62Module
@@ -2526,14 +2650,10 @@ EAA_MLX90614
 EASE_ArduinoCode
 Easing
 EasIno
-Easy MFRC522
-Easy NeoPixels
-Easy Nextion Library
-Easy SevenSeg
-Easy_Web_Remote_Control
 EasyAndee
 EasyAndee101
 EasyArduino
+EasyAzureIoT
 EasyBNO055 ESP
 EasyButton
 EasyButtonAtInt01
@@ -2548,16 +2668,22 @@ EasyESPConnect
 EasyEspNow
 EasyGNSS
 EasyHTTP
+EasyI2c
 EasyingLib
 EasyInterval
 Easyiot-Esp8266
+EasyIR
 EasyJoystick
 EasyLed
 EasyLED
 easyLiDAR
 EasyLogger
+easyMenu
+Easy MFRC522
 EasyMorse
 EasyMQTT
+Easy NeoPixels
+Easy Nextion Library
 EasyNTPClient
 EasyOledUI
 EasyOpenTherm
@@ -2567,22 +2693,30 @@ easyPID
 EasyPin
 EasyPreferences
 EasyRobot
+EasySensor
+Easy SevenSeg
 EasySSDP
+easy_stack
 EasyStringStream
 EasyTask
 Easyuino
 EasyUltrasonic
 EasyVR
+Easy_Web_Remote_Control
 EasyWebServer
 EasyWiFi
+EasyWiFiMDNS
 eBoard shackle the Arduino
 eBtn
 EButton
-EByte LoRa E22 library
 EByte LoRa E220 library
+EByte LoRa E22 library
 EByte LoRa E32 library
 EByte RF E70 library
+EC11Encoder
 Eccel-C1
+EcoSensePower
+EcoWifi
 Ecowitt-GW1000-TCP-Parser
 EDB
 Edge-fel
@@ -2594,6 +2728,7 @@ EdgieD
 EduBox
 EducationShield
 EduIntro
+EdulcoWaterSmart
 EduShield
 EduShield-2 Library
 EE895 Arduino Library
@@ -2601,26 +2736,28 @@ EEBoom
 EEManager
 EEncoder
 EEPROM_24AA025
+EEPROM24CXX
 EEPROM_24LC64F
 eeprom_25AA02EXX
-EEPROM_CAT25
-EEPROM_Rotate
-EEProm_Safe_Wear_Level
-EEPROM_SPI_WE
-EEPROM_STM_Arduino
-EEPROM_UID
-EEPROM_WL
 EEPROM32_Rotate
 EEPROMAdapter
+EEPROM_CAT25
 EEPROMEx
 EEPROMextent
 EEPROMHandler
+EEPROMPreferences
 EEPROMReader
+EEPROM_Rotate
+EEProm_Safe_Wear_Level
 EepromSecureData
 EEPROMsimple
+EEPROM_SPI_WE
+EEPROM_STM_Arduino
 EEPROM-Storage
 EEPROMTyped
+EEPROM_UID
 EEPROMWearLevel
+EEPROM_WL
 EEPstore
 EERAM_47XXX
 EEvar
@@ -2644,10 +2781,13 @@ EiMOS_U8X8
 EIMU_I2C_Client
 EIS
 EIS_INTERBOT
-EL_dev_arduino
 elapsedMillis
 ElasticNetModel
+ElctinsIoTClient
+EL_dev_arduino
+ElectinsIoT
 electricui-embedded
+Electrochemical Gas Sensor Soldered
 Electronic Cats PN7150
 ElectronicsEducation
 electuno
@@ -2662,10 +2802,10 @@ ellipse
 ELMDuino
 ELMo
 Elog
-Eloquent_EdgeImpulse
-eloquent_remote
 EloquentArduino
+Eloquent_EdgeImpulse
 EloquentEsp32cam
+eloquent_remote
 EloquentRTLS
 EloquentSurveillance
 EloquentTensorFlow32
@@ -2677,12 +2817,14 @@ EM2M-ESP32-Driver
 em4095
 EMailSender
 EmbAJAX
-Embedded Template Library ETL
-Embedded Type-C PID
+Embedded GUI Framework
 EmbeddedMqttBroker
 EmbeddedSparkplugNode
+Embedded Template Library ETL
 EmbeddedTerminal
+Embedded Type-C PID
 EmbeddedUtils
+EmbedDIP
 EmbeddronicsBleOTA
 EmbedFS
 Embedis
@@ -2720,8 +2862,8 @@ EncoderButton
 EncoderStepCounter
 EncoderTool
 Endo-Continuum-Robot
-Energesis LM35
 Energesis_GenericSensor
+Energesis LM35
 Energia-EBP_MKII
 Energia-MultiTas
 Energize Lab Servo
@@ -2743,22 +2885,22 @@ EPD
 EPD Painter
 Ephemeris
 EPMC_I2C_Client
+EpochTime
 Epson_PNL_CE02
 Epson_SU_SPI
 Epson_SU_UART
 EQSP32
-ER_OLEDM1_CH1115
 ERa
 ERCFS
 Eridano-Septentrio
 ERM19264_UC1609
 ERM19264_UC1609_TEXT
 ERO
+ER_OLEDM1_CH1115
 ERPC
 ES32D26PLC
 ES32Lab
 ES920
-ESC Thermal Printer BLE
 ESC3B04
 EscalatorSwitch
 EscapeAutomate
@@ -2768,272 +2910,270 @@ EscornabotEXT
 Escornabot-lib
 Escornabot-Library
 escposprinter
+ESC Thermal Printer BLE
 ESensors
-ESP Async E1.31
-ESP Async TCP
-ESP Async Web Server
-ESP Async WebServer
-ESP Battery
-ESP Discord Client
-ESP Line Notify
-ESP Mail Client
-ESP OTA GitHub
-ESP QRcode
-ESP Rotary
-ESP Telnet
-esp_abus
-ESP_AT_Lib
-ESP_AT_WiFiManager
-ESP_AT_WM_Lite
-esp_cron
-esp_dmx
-ESP_DoubleResetDetector
-ESP_EEPROM
-ESP_FC28
-ESP_LM35
-ESP_MultiResetDetector
-ESP_MultiWiFi
-ESP_NOW_Network
-ESP_NowAdhoc
-esp_sds011
-Esp_Software_Serial
-ESP_SSLClient
-ESP_TF
-ESP_WiFiManager
-ESP_WiFiManager_Lite
 ESP2SOTA
+ESP32_AI_Connect
+ESP32AI Voice Command
+ESP32AnalogRead
 ESP32 AnalogWrite
+esp32ARP
+ESP32-audioI2S-master
+ESP32AutoTask
 ESP32 AWS MQTT Manager
+ESP32_Azure_MQTT_Manager
+esp32-BG95
+esp32-BLE112
 ESP32 BLE ANCS Notifications
 ESP32 BLE Arduino
-ESP32 Control
-ESP32 Control lite
-ESP32 Digital RGB LED Drivers
-ESP32 ESP32S2 AnalogWrite
-ESP32 File Manager for Generation Klick ESPFMfGK
-ESP32 FX1N PLC
-ESP32 HUB75 LED MATRIX PANEL DMA Display
-ESP32 I2C Slave
-ESP32 Lite Pack Library
-ESP32 Mail Client
-ESP32 Microsoft Graph
-ESP32 Rest Client
-ESP32 RMT Peripheral VAN bus reader library
-ESP32 TWAI ISO-TP
-ESP32 ULP Debugger
-ESP32_AI_Connect
-ESP32_Azure_MQTT_Manager
+ESP32BLECombo
+ESP32-BLE-Gamepad
+ESP32 BLE Keyboard
+ESP32-BLE-MIDI
 ESP32_BleSerial
 ESP32_Button
 ESP32_C3_ISR_Servo
 ESP32_C3_TimerInterrupt
+esp32cam
+ESP32_CAN_NG
+ESP32CAR
+ESP32CertBundle
+ESP32-Chimera-Core
 esp32_codec2
+ESP32Console
+ESP32 Control
+ESP32 Control lite
+ESP32ControlStudio
 ESP32_CPWIFI
+ESP32 Digital RGB LED Drivers
+ESP32Dispatcher
 ESP32_Display_Panel
+ESP32DMASPI
+esp32-ds18b20
+esp32easylib
 ESP32_easy_wifi_data
+ESP32-EasyWolfSSL
+ESP32-ENC28J60
 ESP32_ENC_Manager
+ESP32Encoder
 esp32_epd
+ESP32epd
+ESP32epdx
+ESP32 ESP32S2 AnalogWrite
 ESP32_Ethernet_Manager
 ESP32_FastPWM
+ESP32Feature28
+ESP32 File Manager for Generation Klick ESPFMfGK
+esp32-flashz
+esp32FOTA
 esp32_ftpclient
+ESP32FtpServer
+ESP32FwUploader
+ESP32 FX1N PLC
 esp32_gamepad
 ESP32_Host_MIDI
+ESP32-HTTP-Client
 ESP32_HTTPS_Server
 esp32_https_server_compat
+ESP32httpUpdate
+ESP32 HUB75 LED MATRIX PANEL DMA Display
+ESP32 I2C Slave
 ESP32_IDF5_HTTPS_Server
 esp32_idf5_https_server_compat
+ESP32IMDB
+ESP32-imgur-uploader
 ESP32_IO_Expander
+ESP32-IoT Framework
+ESP32IRPulseKit
 ESP32_ISR_Servo
 ESP32_Knob
 ESP32_LINE_Messaging_API
+ESP32 Lite Pack Library
+ESP32Logger
+ESP32Logger2
+ESP32MacroPad
+ESP32 Mail Client
 esp32_matter_extra_endpoints
 ESP32_MCPWM
+ESP32 Microsoft Graph
+ESP32MidiPlayer
 esp32_moga
+ESP32MotorControl
 ESP32_MQTTClient
+ESP32MQTTClient
 ESP32_MQTTv5
 ESP32_Multitasking_Network_Suite
+ESP32MultiWiFiProvision
+ESP32MX1508
 ESP32_MySQL
+ESP32N8NButton
 ESP32_New_ISR_Servo
 ESP32_New_TimerInterrupt
 esp32_opus
+ESP32-OTA
+ESP32-OTA-Client
+ESP32-OTA-Pull
+ESP32P4_ULP
+esp32-pasori-rcs300
 ESP32_Pinoo
 ESP32_ppm
+ESP32ProvisionToolkit
+ESP32-PSRamFS
+ESP32PsramLock
+ESP32-PTQS1005
 ESP32_PWM
+ESP32 Rest Client
+ESP32-RGB-LEDStrip
+esp32-rmt-ir
+ESP32 RMT Peripheral VAN bus reader library
+esp32-rmt-pwm-reader
+ESP32RotaryEncoder
 ESP32_RTC_EEPROM
+ESP32-RTSPServer
 ESP32_S2_ISR_Servo
 ESP32_S2_TimerInterrupt
+ESP32S3CameraStream
+ESP32S3_SUPERMINI_PINOUT
 ESP32_SC_ENC_Manager
 ESP32_SC_Ethernet_Manager
 ESP32_SC_W5500_Manager
 ESP32_SC_W6100_Manager
 ESP32_SemBeacon
-ESP32_SerialRMT
-ESP32_SoftWire
-ESP32_Thermistor
-ESP32_TWAI
-ESP32_USB_STREAM
-ESP32_VS1053_Stream
-ESP32_W5500_Manager
-ESP32_W6100_Manager
-ESP32_WiFi_Connect
-ESP32_WS2812_Lib
-ESP32_WS2812B
-ESP32AI Voice Command
-ESP32AnalogRead
-esp32ARP
-ESP32-audioI2S-master
-ESP32AutoTask
-esp32-BG95
-esp32-BLE112
-ESP32-BLE-Gamepad
-ESP32-BLE-MIDI
-esp32cam
-ESP32CAR
-ESP32CertBundle
-ESP32-Chimera-Core
-ESP32Console
-ESP32ControlStudio
-ESP32Dispatcher
-ESP32DMASPI
-esp32-ds18b20
-esp32easylib
-ESP32-EasyWolfSSL
-ESP32-ENC28J60
-ESP32Encoder
-ESP32epd
-ESP32epdx
-ESP32Feature28
-esp32-flashz
-esp32FOTA
-ESP32FtpServer
-ESP32FwUploader
-ESP32-HTTP-Client
-ESP32httpUpdate
-ESP32IMDB
-ESP32-imgur-uploader
-ESP32Logger
-ESP32Logger2
-ESP32MacroPad
-ESP32MidiPlayer
-ESP32MotorControl
-ESP32MQTTClient
-ESP32MultiWiFiProvision
-ESP32MX1508
-ESP32N8NButton
-ESP32-OTA
-ESP32-OTA-Client
-ESP32-OTA-Pull
-esp32-pasori-rcs300
-ESP32ProvisionToolkit
-ESP32-PSRamFS
-ESP32PsramLock
-ESP32-PTQS1005
-ESP32-RGB-LEDStrip
-esp32-rmt-ir
-esp32-rmt-pwm-reader
-ESP32RotaryEncoder
-ESP32-RTSPServer
-ESP32S3_SUPERMINI_PINOUT
 ESP32SerialCtl
+ESP32_SerialRMT
 ESP32Servo
 ESP32Servo360
 ESP32ServoController
+ESP32_SharpIR
+esp32-shelly-ble-rpc
 Esp32SimplePacketComs
 ESP32softPWM
+ESP32_SoftWire
 ESP32-SpeexDSP
 ESP32SPISlave
 ESP32SyncKit
 ESP32Synth
 ESP32-targz
 ESP32TaskKit
+ESP32_Thermistor
 ESP32Time
 ESP32TimerInterrupt
 ESP32TinyUSB
 esp32-tunnel
+ESP32_TWAI
 ESP32-TWAI-CAN
+ESP32 TWAI ISO-TP
+ESP32 ULP Debugger
 ESP32-USB-Soft-Host
+ESP32_USB_STREAM
+ESP32_VS1053_Stream
+ESP32_W5500_Manager
+ESP32_W6100_Manager
 ESP32WebRemoteControl
+ESP32_WiFi_Connect
 ESP32WiFiEnterprise
 Esp32WifiManager
 ESP32WiFiProvisioner
 ESP32Wiimote
-ESP8266 and ESP32 OLED driver for SSD1306 displays
-ESP8266 Influxdb
-ESP8266 Microgear
-ESP8266 MQTT Mesh
-ESP8266 NAPT Extender
-ESP8266 QRcode
-ESP8266 SMTPClient
-ESP8266 Weather Station
-ESP8266_AT_WebServer
-ESP8266_ENC_Manager
-ESP8266_Ethernet_Manager
-ESP8266_ISR_Servo
-ESP8266_LED_64x16_Matrix
-ESP8266_LINE_Messaging_API
-esp8266_mdns
-ESP8266_multipart
-ESP8266_PWM
-ESP8266_W5100_Manager
-ESP8266_W5500_Manager
+ESP32_WS2812B
+ESP32_WS2812_Lib
 esp826611
 ESP8266AIGemini
+ESP8266 and ESP32 OLED driver for SSD1306 displays
+ESP8266_AT_WebServer
 ESP8266Audio
 ESP8266AutoWifi
 esp8266channel3lib
 esp8266easylib
+ESP8266_ENC_Manager
+ESP8266_Ethernet_Manager
 esp8266-google-home-notifier
 esp8266-google-tts
+ESP8266 Influxdb
 ESP8266IoTHelper
+ESP8266_ISR_Servo
+ESP8266_LED_64x16_Matrix
+ESP8266_LINE_Messaging_API
+esp8266_mdns
+ESP8266 Microgear
 Esp8266-Mqtt-Canary
 ESP8266MQTTClient
+ESP8266 MQTT Mesh
+ESP8266_multipart
+ESP8266 NAPT Extender
 ESP8266-OLED Display Library
 ESP8266-ping
+ESP8266_PWM
+ESP8266 QRcode
 ESP8266RestClient
 ESP8266RTTTLPlus
 ESP8266SAM_ES
 ESP8266Scheduler
 ESP8266SDUpdater
+ESP8266 SMTPClient
 ESP8266TimerInterrupt
+ESP8266_W5100_Manager
+ESP8266_W5500_Manager
+ESP8266 Weather Station
 ESP8266-WiFiSetupManager
+esp_abus
 ESPAI
 Espalexa
 Esparto
-ESPAsync_WiFiManager
-ESPAsync_WiFiManager_Lite
 ESPAsyncButton
+ESP Async E1.31
 ESPAsyncHTTPUpdateServer
+ESP Async TCP
 ESPAsyncTCP
+ESP Async Web Server
+ESP Async WebServer
 ESPAsyncWebServer
 ESPAsyncWebSrv
+ESPAsync_WiFiManager
+ESPAsync_WiFiManager_Lite
+ESP_AT_Lib
 EspATMQTT
+ESP_AT_WiFiManager
+ESP_AT_WM_Lite
 ESPAutoWifi
 ESPAutoWiFiConfig
+ESP Battery
+EspBle
+EspBleWeb
 EspBootstrap
 ESPboy
 EspButtons
 ESPCanary
+ESP_ChaCha
 ESPComm
 ESPConnect
 ESPCPUTemp
+esp_cron
 ESP-DASH
 ESP-DashboardPlus
 ESPDateTime
 EspDDNS
+ESP Discord Client
 ESPDisplay
+esp_dmx
+ESP_DoubleResetDetector
 EspEasyUtils
 esp-echonet-lite
 ESPectro
 ESPectro32
+ESP_EEPROM
 ESPert
 ESPEssentials
 ESPExpress
+ESP_FC28
 espfetch
 EspFileManager
 esp-fipsy
 ESPFlash
 ESP-FlexyStepper
 esp-fs-webserver
+ESPfuscate
+ESPGithubOTA
 ESP-Google-Forms-Client
 ESP-Google-Sheet-Client
 ESPHap
@@ -3045,50 +3185,70 @@ esp-iot-core
 esp-iot-utils
 espkit
 esp-lib-utils
+ESP Line Notify
+ESP_LM35
 ESPLogger
 Esplora
 ESPMail
+ESP Mail Client
 ESPManager
 EspMapping
 esp-mqtt-arduino
 EspMQTTClient
 EspMQTTClientFork
+ESP_MultiResetDetector
+ESP_MultiWiFi
 ESP-Music
 ESPNexUpload
-ESP-NOW MIDI
 EspNow2Mqtt
+ESP_NowAdhoc
 ESPNowAdhoc
 ESPNowAutoPairing
 EspNowBus
 EspNowCam
 EspNowDev
+ESPNowHub
 EspNowJoystick
+EspNowLink
+ESP-NOW MIDI
+ESP_NOW_Network
 EspNowNetworkHost
 EspNowNetworkHostDriver
 EspNowNetworkNode
 EspNowNetworkShared
 ESPNowProtocol
 ESPnow-RC
+ESPNowUtilities
+ESP OTA GitHub
 ESPpassthrough
 ESPPerfectTime
 ESPping
+esp-ps5
 ESPPubSubClientWrapper
+ESP QRcode
 Espressif ESP32 Azure IoT Kit Sensors
+ESP Rotary
 esp-rtosSerial
 EspSaveCrash
+esp_sds011
 ESPSerialFlasher
 ESPShell
 EspSimpleRemoteUpdate
 EspSimpleWifiHandler
 EspSleep
 ESPSmartDash
+Esp_Software_Serial
 EspSoftwareSerial
+ESP_SSLClient
 ESP-StepperMotor-Server
 ESPStringTemplate
 ESPSupabase
+ESP Telnet
+ESP_TF
 ESPToon
 EspTunnel
 ESPUI
+EspUsbDevice
 EspUsbHost
 ESPVGAX
 ESPVGAX2
@@ -3096,7 +3256,9 @@ ESPWebDAV
 EspWebFileManager
 espwifiarduino
 ESP-Wifi-Config
+ESP_WiFiManager
 ESPWiFiManagerByDroidbane
+ESP_WiFiManager_Lite
 ESPWiFiMqttWrapper
 ESP-WiFiSettings
 EspWii
@@ -3108,24 +3270,25 @@ Etherkit JTEncode
 Etherkit Morse
 Etherkit Si5351
 Ethernet
-Ethernet_Generic
-Ethernet_Manager
-Ethernet_Manager_Portenta_H7
-Ethernet_Manager_STM32
-Ethernet_Shield_W5200
 Ethernet2
 Ethernet3
 EthernetBonjour
 EthernetENC
 EthernetESP32
 EthernetEspAT
+Ethernet_Generic
 EthernetIndustruino
+Ethernet_Manager
+Ethernet_Manager_Portenta_H7
+Ethernet_Manager_STM32
+Ethernet_Shield_W5200
 EthernetSP
 EthernetWebServer
 EthernetWebServer_SSL
 EthernetWebServer_SSL_STM32
 EthernetWebServer_STM32
 EtherSia
+ETL_Arduino
 ev3-arduino
 ev3lego
 eva-core-sk
@@ -3138,6 +3301,7 @@ EventEthernet
 Eventfun
 EventJoystick
 EventOS
+EventSource
 EventStateMachine
 EventSystem
 Eventually
@@ -3171,9 +3335,6 @@ ExtendedTime
 ExtendedTouchEvent
 extendFor
 ExtFlashLoader
-ez_SIPO8_lib
-ez_switch_lib
-EZ_USB_MIDI_HOST
 ezAnalogKeypad
 EzArduino
 ezButton
@@ -3186,7 +3347,15 @@ EzLoRaWAN
 EzLoRaWAN_BLE
 ezOutput
 EZPROM
+ez_SIPO8_lib
+ez_switch_lib
 ezTime
+ezTime2
+EZ_USB_MIDI_HOST
+F1_23_UDP
+F1 24 UDP Telemetry Parser
+F1 25 UDP Telemetry Parser
+F1 26 UDP Telemetry Parser
 FabGL
 FaBo 201 3Axis ADXL345
 FaBo 202 9Axis MPU9250
@@ -3216,12 +3385,14 @@ Fabrik2D
 Facebits
 FacebookApi
 FadeLed
+FA-Lectric-IoT
 FanController
 FancyTerminal
+FansElectronics_DMD32
+FansElectronics_DMD8266
 FansElectronics_License
 fANSI
-fast_math
-fast_samd21_tc
+FarmSense
 Fast4ier
 FastAccelStepper
 FastBLE
@@ -3238,19 +3409,21 @@ FastIMU
 FastInterruptEncoder
 fastIO
 FastLED
-FastLED NeoMatrix
 FastLED_ESP32-HUB75-MatrixPanel_FrameBuffer_GFX
+FastLEDHub
+FastLEDManager
 FastLED_min
+FastLED NeoMatrix
 FastLed_Neopixel_Nanit
 FastLED_RPIRGBPanel_GFX
 FastLED_SPITFT_GFX
 FastLED_TFTWrapper_GFX
-FastLEDHub
-FastLEDManager
 FastMap
+fast_math
 FastPID
 FastRGB
 FastRotaryEncoder
+fast_samd21_tc
 FastShiftIn
 FastShiftInOut
 FastShiftOut
@@ -3264,6 +3437,7 @@ FC0005748911
 FCWRobot_Model2
 FDC2214
 FDC2x1x
+FDCxCapSense
 fDigitsSegtPin
 FeatherFault
 Feature-Variables
@@ -3283,8 +3457,8 @@ FileData
 FileFetcher
 FilesystemAccessInterface
 FilesystemUtility
-Filter Easy
 FilterDesigner
+Filter Easy
 Filters
 Finder 6M for Finder Opta
 Finder 7M for Finder Opta
@@ -3294,39 +3468,40 @@ Fingerprint Scanner TTL
 Finite-State
 FiniteStateMachine
 Finite-State-Machine-Arduino
-FIR filter
-FIR_Filters
 Firebase
+FireBase32
 Firebase Arduino based on WiFi101
 Firebase Arduino based on WiFiNINA
 Firebase Arduino Client Library for ESP8266 and ESP32
+FirebaseClient
 Firebase ESP32 Client
 Firebase ESP8266 Client
-FireBase32
-FirebaseClient
 FirebaseJson
 FirebaseRealtime
 FireEsp
 FireplaceMLX
 FireTimer
+FIR filter
 FIR-Filter
+FIR_Filters
 Firmata
 FirmataExpress
 FirmataWithDeviceFeature
 Firmetix
-firmnginKit
+firmngin
 FirstBuild - Relay
 fishyDIYdevices
-fix_fft
 fixed
 Fixed_Point_int
 FixedPoint_LUT
 FixedPoints
 FixedString
+fix_fft
 FixMath
 flagManager
 flagsapi
 Flanco
+FlareDom
 Flash
 FlashLightLED
 FlashStorage
@@ -3358,6 +3533,7 @@ FloatToAscii
 floatToString
 FlowSensor
 FluxGarage RoboEyes
+Fluxgrid
 FlyskyIBUS
 FM25060
 FMDataClient
@@ -3366,7 +3542,6 @@ FmtLib
 fnn
 fog
 FontCollection
-FOR_MACRO
 Force
 FORCE2
 Forced-BME280
@@ -3375,9 +3550,11 @@ Forecaster
 Forgetfulino
 Fork of PS3 Controller Host
 fork-webbino-ahmsec
+FOR_MACRO
 FormatLog
 Formulinha
 FortniteAPI
+FOTA-Client-ESP32
 FourBitLedDigitalTube
 FourRegs
 FourteenSegDisplay
@@ -3386,16 +3563,16 @@ FPGAArcade Replay MKR Vidor 4000
 Fraction
 Fram
 FRAM_Cache
-FRAM_I2C
 Framebuffer GFX
+FRAM_I2C
 Franzininho_LiquidCrystal
 FrecuenciasMIDI
 Free-ESPAtHome
 Freenove IR Lib for ESP32
 Freenove RFID Lib for Pico
 Freenove VK16K33 Lib
-Freenove WS2812 Lib for ESP32
 Freenove WS2812B RGBLED Controller
+Freenove WS2812 Lib for ESP32
 FreeRTOS
 FreeRTOS_SAMD21
 FreeRTOS_SAMD51
@@ -3404,22 +3581,26 @@ FreqMeasure
 FreqPeriodCounter
 FrequencyDetector
 FrequencyTimer2
+FR_Math
 frt
 Frugal-IoT
+FSerial
+FSLP
 FS_MX1508
 FS_Nano33BLE
-FSerial
 FSR16x16_BNL
+FSR40X
 FT6236G
 ft817
 FT81x Arduino Driver
 FTDebouncer
 FthnLabsDisplay
 FTOLED
-FTP_Server_Teensy41
 ftp32
 FTPClient_Generic
 FTPduino
+FTPSclientOPTA
+FTP_Server_Teensy41
 FTRGBLED
 FTServo
 FTTech Aqualabo Sensors
@@ -3442,13 +3623,15 @@ FXLS89xx_Arduino
 FXPS7xxx_Arduino
 G1OJS_Tiny_Si5351_CLK0
 G4Enc
-Gadget_Shield
 GadgetBox
 Gadgetron Libraries
+Gadget_Shield
 GalvoController
 GameBoyShield
 Gamebuino Classic
 Gamebuino META
+GamepadCodec
+GamepadInput
 Gamer
 GamerIR
 GAMMA
@@ -3458,28 +3641,30 @@ Gauss
 Gaussian
 GaussianFilter1D
 GawiButtons
-GBALib Potentiometer
 GBALib_DCMotor
+GBALib Potentiometer
 GBALib_ShiftRegister
 GBALib_UltrasonicSensor
 GBALib_Wave
 gButton
-GC9A01_LTSM
+GC9107_LTSM
 GC9A01A AVR
+GC9A01_LTSM
 GC9D01_LTSM
 GCMEncryption
 GCodeParser
 GDXLib
-Geek Factory GFDisplay7S Library
-Geek Factory GFLED Library
 Geekble_Basics
 Geekble_LieDetector
 Geekble_MotorOrgel
 Geekble_Note2Freq
 Geekble_Orgel
 Geekble_Oscillator
+Geek Factory GFDisplay7S Library
+Geek Factory GFLED Library
 GeekFactory Shell Library
 GEENYmodem
+GeigerMeasurement
 GEM
 Gemelon Pushbutton
 GeneralShield
@@ -3495,21 +3680,22 @@ GeoluxCamera
 GeoMagnetism
 geomath
 Geometry
-Gesture PAJ7620
 GestureAirDraw
 GestureAirDrawPro
 GestureDetector
+Gesture PAJ7620
 GetInTouch
 GFButton
-GFX Library for Arduino
-GFX_Extensions
-GFX_Root
-GFX_Thaana
 GFX4d
 GFX4dESP32
 GFX4dESP32P4
 GFX4DIoD9
 gfxDraw
+GFX_Extensions
+GFX_Graph
+GFX Library for Arduino
+GFX_Root
+GFX_Thaana
 GG
 GGreg20_V3
 ggwave
@@ -3523,11 +3709,14 @@ GigaDAQ
 GigaScope
 Gingoduino
 githubiot
+GitReleaseOTA
 Gizmo
 GKScroll
+GL55xxSensor
 GL868_ESP32
-GLEE Beelan LoRaWAN
 GLEE2023
+GLEE Beelan LoRaWAN
+GlideEdgent
 GlobalCovfefe
 glpi_esp8266
 Glue
@@ -3537,11 +3726,11 @@ gma3
 gmp-ino
 GMSN Pure Digit
 Gnome AVR
-gob_unifiedButton
 GobbitLineCommand
 goBILDA Pinpoint
 goBILDA Prism
 goblin3d
+gob_unifiedButton
 Goertzel
 GoGoBoard Arduino Library
 Goldelox-Serial-Arduino-Library
@@ -3549,8 +3738,8 @@ Goldfish4Tech
 Goldfish4TechAirPump
 Goldilocks Analogue DAC Library
 Goldilocks Analogue SPI RAM Library
-Google Cloud IoT Core JWT
 GoogleCalendarClient
+Google Cloud IoT Core JWT
 GoogleFormPost
 GoogleMapsApi
 GoogleSchedular
@@ -3560,14 +3749,16 @@ GovoroxSSLClient
 GoWired-lib
 GP20U7 GPS Library
 GP2Y0A21YK_lib
+GP8403
 GParser
-GPIO_NXP_Arduino
 gpiobj
+GPIO_NXP_Arduino
 GPIOUtils
 GPIOViewer
 GPRSbee
 GPS
 GPSP
+GPStar Audio Serial
 GPStar Audio Serial Library
 GPS-uBlox
 GPT_Stepper
@@ -3578,60 +3769,63 @@ Grandeur
 Gravitone
 Gravity Soil Moisture Sensor
 GrayCode
+GrayKazu
 GRC_AI
+GreenApi
 Green Beacon
 GRGB
 Grobot_Animations
+GroeiAcademie FrameWork
 GroPointModbus
 Grove - 125KHz RFID Reader
 Grove - 2-Channel Inductive Sensor LDC1612
+Grove 3Axis Compass V2.0 BMM150
+Grove-3-Axis-Digital-Accelerometer-2g-to-16g-LIS3DHTR
+Grove 3-Axis Digital Compass HMC5883L
+Grove 3-Axis Digital Gyro
+Grove 4-Digit Display
 Grove - 6Axis Accelerometer And Compass v2
+Grove 6Axis_Digital_Accelerometer_Gyroscope4_ADIS16470
 Grove - Air quality sensor
+Grove_AS3935Lightning_sensor
+Grove barometer HP20x
+Grove Barometer Sensor
 Grove - Barometer Sensor BME280
 Grove - Barometer Sensor BMP280
 Grove - Capacitive Touch Slide Sensor CY8C40XX
 Grove - Chainable RGB LED
 Grove - Coulomb Counter for 3.3V to 5V LTC2941
 Grove - Digital Light Sensor
+GroveDriverPack
+GroveEncoder
 Grove - Haptic Motor
 Grove - High Precision RTC
 Grove - High Temperature Sensor
 Grove - I2C Color Sensor
 Grove - I2C High Accuracy Temp_Humi Sensor SHT35
+Grove I2C Motor Driver v1.3
 Grove - I2C Thermocouple Amplifier MCP9600
 Grove - I2C UV Sensor VEML6070
+Grove IMU 9DOF
 Grove - Infrared Receiver And Emitter
 Grove - Laser PM2.5 Sensor HM3301
 Grove - LCD RGB Backlight
+Grove LED Bar
 Grove - LED Matrix Driver
 Grove - LoRa Radio 433MHz 868MHz
+Grove Mini Track Ball
 Grove - Motor Driver TB6612FNG
 Grove - Multichannel Gas Sensor
 Grove - OLED Display 0.96
 Grove - Q Touch Sensor
-Grove - RTC DS1307
-Grove - Sunlight Sensor
-Grove - Temperature And Humidity Sensor HDC1000
-Grove 3Axis Compass V2.0 BMM150
-Grove 3-Axis Digital Compass HMC5883L
-Grove 3-Axis Digital Gyro
-Grove 4-Digit Display
-Grove 6Axis_Digital_Accelerometer_Gyroscope4_ADIS16470
-Grove barometer HP20x
-Grove Barometer Sensor
-Grove I2C Motor Driver v1.3
-Grove IMU 9DOF
-Grove LED Bar
-Grove Mini Track Ball
 Grove Ranging sensor - VL53L0X
+Grove - RTC DS1307
 Grove SHT31 Temp Humi Sensor
-Grove Temper Humidity TH02
+Grove - Sunlight Sensor
 Grove Temperature And Humidity Sensor
+Grove - Temperature And Humidity Sensor HDC1000
+Grove Temper Humidity TH02
 Grove Ultrasonic Ranger
-Grove_AS3935Lightning_sensor
-Grove-3-Axis-Digital-Accelerometer-2g-to-16g-LIS3DHTR
-GroveDriverPack
-GroveEncoder
 GSheet32
 GSL1680
 GSM
@@ -3641,17 +3835,18 @@ GSMSim
 GSON
 GST
 GT5X
+GT7 UDP Telemetry Parser
 GT811 Library
 GT911 Lite
 GTimer
 GTL
 GTT
-GU_Elements
 GU140X32F-7703A
 Guarateca_Demo
 GuaraTeca_Hardware
 GuaraTeca_Menu
 GuaraTeca_OBR
+GU_Elements
 GuiN-E Bot
 GUIslice
 GuL_NovaFitness
@@ -3692,6 +3887,7 @@ GyverIO
 GyverJoy
 GyverKey
 GyverLBUF
+GyverMag
 GyverMAX6675
 GyverMAX7219
 GyverMenu
@@ -3707,6 +3903,7 @@ GyverPID
 GyverPing
 GyverPortal
 GyverPower
+GyverPush
 GyverPWM
 GyverRelay
 GyverSegment
@@ -3739,27 +3936,32 @@ HaMqttEntities
 HamShield
 HamShield_KISS
 HandaDigitalSpeaker
+HAN IoT Shield
 Hanuman
 HANUMAN_32
+HANUMAN_32_mini
 HanumanMini
+Hapbeat
+Haplink
 Haptic_DA7280
 Haptic_DRV2605
 HarborScaleSDK
-Hardware Buttons
 HardwareBLESerial
+Hardware Buttons
 HardwareSerial_RS485
 HardWire
 Harvard_TinyMLx
 Hashtable
 haversine
-HC_SR04
 HC0x_AT_Config
 HC4051
 HC4052
 HC4053
 HC4067
-HCSR04
 HC-SR04
+HC_SR04
+HCSR04
+HCSR04_ESP_Hardware
 HCSR04 ultrasonic MKL
 HCSR04 ultrasonic sensor
 HCSRO4_attachInterrupt
@@ -3779,11 +3981,11 @@ Helium
 Hello Drum
 hellothing_BG96_NBIoT
 hellschreiberlib
-Heltec ESP32 Dev-Boards
-Heltec ESP8266 Dev-Boards
-Heltec_ESP32_LoRa_v3
-Heltec_LoRa_OLED_Examples
 heltec-eink-modules
+Heltec ESP32 Dev-Boards
+Heltec_ESP32_LoRa_v3
+Heltec ESP8266 Dev-Boards
+Heltec_LoRa_OLED_Examples
 Hercules Dual 15A 6-20V Motor Controller
 HerkulexServo
 HestiaTempo
@@ -3796,18 +3998,24 @@ high-side-switch-ino
 HIH61xx
 HijelHID_BLEKeyboard
 HijelHID_BLEMouse
+Hijri_date
+HIRO
 Histogram
 HiTechnic-Arduino
+HiTECH R4 Wifi Manager
 HITIComm
 HITICommSupport
 HL1606 LED Strip
 HL1606 LED Strip PWM
+HLK_fingerprint
 HLK-LD2410S
 HLK-LD2450
 HLK-LD245X
 HLK-LD6002
+HLK-LD6004
 HLW8012
 Hlw8032
+HM01B0_CPUfree_Camera
 HM330X by Tomoto
 HMC6352
 Hmi4DinBox
@@ -3823,20 +4031,21 @@ HomeSpan
 HomeSpan-zh
 Homeyduino
 HONEYLemon
+HoneyWellFMA_SPI
 Honeywell TruStability SPI
 Honeywell Zephyr I2C
-HoneyWellFMA_SPI
+Host
 HotButton
 HoverboardAPI
-hp_BH1750
 HP03S
+hp_BH1750
 HPDL1414
 HPDL1414-74HC595
-HS_CAN_485_ESP32
-HS_JOY_ESP32
 HS300x
 HS3UKA_PCF8574
+HS_CAN_485_ESP32
 HSCDTD008A
+HS_JOY_ESP32
 hsmcpp
 HT1621
 HT1632
@@ -3847,6 +4056,7 @@ htcw_button
 htcw_chess
 htcw_data
 htcw_frame
+htcw_frame_arq
 htcw_gfx
 htcw_io
 htcw_json
@@ -3860,6 +4070,7 @@ HTL_onboard
 HTTP
 HttpCall
 HttpClient
+HttpDigestAuth
 HTTPed
 HttpRequests
 HTTPS_Server_Generic
@@ -3875,15 +4086,18 @@ Huma Buttons
 Husarnet ESP32
 HUSB238
 HUSB238Driver
+HUSB238 Soldered
 HV518
 hw262
+HW290
+HW827_PPG
 hx1838decoder
 HX710
 HX710AB
 hx710b_arduino
 HX711
-HX711 Arduino Library
 HX711_ADC
+HX711 Arduino Library
 HX711_asukiaaa
 HX711_light
 HX711_MP
@@ -3891,6 +4105,7 @@ HX712
 HX71708
 HXC_CAN
 hxtp-micro
+HybridFS
 HydroinoJobMgr
 HydroNode-Library
 HyperDeck
@@ -3899,44 +4114,47 @@ Hysteresis
 HzMeter_asukiaaa
 I0Servo
 I2C
-I2C AXP192 Power management
-I2C BM8563 RTC
-I2C MPU6886 IMU
-I2C SLG
-I2C Temperature Sensors derived from the LM75
 I2C_24LC1025
+I2C_ABP2
 i2c_adc_ads7828
 I2C_ASDX
+I2C AXP192 Power management
+I2C BM8563 RTC
 I2C_CAT24M01
-I2C_device_Arduino
-I2C_DMAC
-I2C_EEPROM
-I2C_Functions
-I2C_HC4067
-I2C_Insarianne
-I2C_LCD
-I2C_LCD12864
-I2C_SCANNER
-I2C_Scanner
-I2C_Slave
-I2C_SOFTRESET
 I2cControlPanel_asukiaaa
 i2cdetect
+I2C_device_Arduino
 I2cDiscreteIoExpander
 I2CDisplayController
+I2C_DMAC
+I2C_EEPROM
 I2CExtension
 i2c-for-esp32
+I2C_Functions
+I2C_HC4067
 I2CHelper
+I2C_Insarianne
 I2CIP
 I2C-IRSENSE Library
 I2CKeyPad
 I2CKeyPad8x8
+I2C_LCD
+I2C_LCD12864
+I2C_LiquidCrystal_RUS
 I2cMotors_asukiaaa
+I2C_MPRLS
+I2C MPU6886 IMU
 I2cMultipleMotors_asukiaaa
 I2Commands
+I2C_Scanner
+I2C_SCANNER
 I2CScanner
 I2C-Sensor-Lib iLib
+I2C_Slave
+I2C SLG
+I2C_SOFTRESET
 I2CSoilMoistureSensor
+I2C Temperature Sensors derived from the LM75
 I2Cwrapper
 iAQ-CoreMI
 iBit_Arduino
@@ -3960,6 +4178,10 @@ ICM45685
 ICM45686
 ICM45687
 ICM45689
+ICM53607
+ICM53611
+ICM53621
+ICM53622
 ICM56622
 ICM56686
 ICM7218
@@ -3977,6 +4199,7 @@ ieee-802_15_4-network-host
 ieee-802_15_4-network-node
 ieee-802_15_4-network-shared
 IENAI ADC128S
+IF97duino
 IFTTTMaker
 IFTTTWebhook
 IFX007T-Motor-Control
@@ -3986,28 +4209,29 @@ IgcLogger
 IHCSoapClient
 IISc_EdgeAI
 iKB1_Arduino
+ILI9341-Layout-Manager
 ILI9341_LTSM
 ILI9341_t3
 ILI9341_t3n
 ILI9341_T4
-ILI9341-Layout-Manager
 ILI9342_T4
 ILI9486_SPI
 ILIB
 iMakeBeta
 iMakerPS2
 Improv WiFi Library
-IMU_Fusion_SYC
+ImudClient
 imuFilter
-INA Series Sensor
+IMU_Fusion_SYC
 INA219
+INA219B
 INA219_Plus
 INA219_WE
-INA219B
+INA2227
 INA226
 INA226_asukiaaa
-INA226_WE
 INA226Lib
+INA226_WE
 INA228
 INA229
 INA236
@@ -4018,6 +4242,7 @@ INA2xx
 INA3221
 INA3221_RT
 INA780x
+INA Series Sensor
 incbin
 IncRotaryEncoder
 indhilib
@@ -4038,10 +4263,11 @@ initGT911
 InitJson
 initMemory
 InitMQTT
+InkaLogic IO
 InkaLogicModbus
+InkplateLibrary
 Inkplate LVGL Library
 Inkplate Motion Library
-InkplateLibrary
 InkyBoard
 InputDebounce
 InputEvents
@@ -4076,13 +4302,12 @@ Iono RP D16
 Iono Uno-MKR-RP
 IOSignal
 IOT
-IoT Pipe
-IoT Suite
-IoT_Modules-Buttons
 IOTAppStory-ESP
 IOTClient
 IoTController
+IoTDataHub
 iotec_MAX7319
+IoTera
 IoTesla-client
 IoTeX-blockchain-client
 IoTGuru
@@ -4092,8 +4317,11 @@ Iotkaran
 IotKernel
 IOTKME
 IoTModule
+IoT_Modules-Buttons
 iotNetESP32
+IoT Pipe
 iotsa
+IoT Suite
 IoTtweet
 IoTtweetESP32
 IoTtweetNBIoT
@@ -4104,7 +4332,6 @@ IoTWebConf_for_Visuino_modified_by_IoT_Jedi
 IOXESP32_4-20mA_Receiver
 IOXESP32Audio
 IOXESP32Motor
-IP_tm_stepmotor
 IP236x
 IP5108
 IP5306_I2C
@@ -4112,12 +4339,14 @@ iParol
 IPGeolocation
 ipMIDI
 IPS-7100-I2C-Arduino
+IP_tm_stepmotor
 IQ Module Communication
 IQS5XX-B000 Trackpad
 irBoard Library for ESP32
-Iridium SBD
+Iridium9604LaunchPad
 Iridium9704LaunchPad
 IridiumGPP
+Iridium SBD
 IridiumSBDi2c
 Irisoled
 IRLremote
@@ -4137,6 +4366,7 @@ ISFET board library
 IskakINO_ArduFast
 IskakINO_FastNTP
 IskakINO_LiquidCrystal_I2C
+IskakINO_Storage
 IskakINO_WifiPortal
 ISL1208-RTC-Library
 Isolated EC Probe Interface
@@ -4145,6 +4375,7 @@ ISRHandler
 iSYNC
 iSYNC_BC95_Arduino
 iSYS4001
+IT7259_Touch
 Itty Bitty
 IwitVolumeKnob
 J1850 Arduino Transceiver Library
@@ -4155,10 +4386,10 @@ JavaScript
 Javino
 JBLogger
 JBWopr
+JC3248W535EN-Touch-LCD
 JC_Button
 JC_EEPROM
 JC_Sunrise
-JC3248W535EN-Touch-LCD
 JDI_MIP_Display
 jeager-one
 JeVe_EasyOTA
@@ -4166,28 +4397,30 @@ JJYReceiver
 JKBMSInterface
 JLed
 JLedPCA9685-HAL
+JMAFoundation
+JMA_SPComm
+JMBase
+JMCMotorControl
 jm_CPPM
 jm_crc-ccitt
 jm_LCM2004A_I2C
 jm_LiquidCrystal_I2C
+JMotor
 jm_PCF8574
 jm_Pin
 jm_Scheduler
 jm_Wire
-JMA_SPComm
-JMAFoundation
-JMBase
-JMotor
 JOAAT
 Joba Tsl2561 Library
 Jobber
 JoyIT_LSM6DS3TR-C
 Joystick
 Joystick 5-Pin
-Joystick_ESP32S2
-joystick_module
+JoystickButton
 JoystickController
+Joystick_ESP32S2
 Joystick-KY023
+joystick_module
 JPEGDEC
 JPEGDecoder
 JPEGENC
@@ -4195,24 +4428,27 @@ JRCCARLIB
 JrkG2
 JsmnStream
 jsnsr04t
-JSON Encoder
-Json Streaming Parser
-Json Streaming Parser 2
 json2asw
+JSON Encoder
 jsonlib
 JsonLogger
+JsonLogic
 jsons
+Json Streaming Parser
+Json Streaming Parser 2
 JsonTalkie
 JTAG
 JTAG_Interface
 Justina interpreter
 JustWifi
 JVC-Stereo
+JWA BME280
 JW_DWIN_RS485
 JW_FRAM
 JW_MatrixButtons
-JWA BME280
 JWMatrixButtons
+JW_RTC
+JW_SD
 JWT_RS256
 JWTUtils
 K1200
@@ -4231,13 +4467,14 @@ kc868-arduino-library
 kdram2560
 KellerModbus
 Kelvin2RGB
+KenwoodXS
 KepecsWheel
 KerbalSimpit
 KermiteCore_Arduino
 Keyboard
-keyboard_peripheral_modules
 KeyboardAzertyFr
 keyboardButton
+keyboard_peripheral_modules
 keybrd
 KeyDetector
 Keyhole
@@ -4245,13 +4482,13 @@ KeyMatrix
 Keypad
 KeypadSim
 KeySequence
-kic_notation
 KickFFT
 KickFilters
 KickFiltersRT
 KickMath
 KickSort
 KickstarterStats
+kic_notation
 KiddeeExpress
 kidLibrary
 KidMotorV4-Arduino
@@ -4261,6 +4498,7 @@ KIMlib
 Kinematics
 Kinematrix
 Kionix_KX023
+KISS_FFT
 KiwisIoT
 KK-Buffer
 KK-Poti
@@ -4306,11 +4544,12 @@ L293
 L293D
 L298 Motor Driver
 L298N
-L298N_MotorDriver
 L298NDriver
 L298Nlib
+L298N_MotorDriver
 L298N-XCR
 L3G
+L6474
 L9110
 laboratorioFW-DIY
 Labvee Library
@@ -4319,9 +4558,13 @@ LapI2CTop
 LapINA219
 LapX9C10X
 LaserToMap360
+LaskakitZivyobrazClient
 Layad Circuits Saleng GSM Shield
 lazyjson
 LazySerial
+LC29H_GNSS
+LC709204F
+LC7822
 LC_Adafruit_1431
 LC_Adafruit_1947
 LC_Adafruit_2050
@@ -4331,72 +4574,71 @@ LC_Adafruit_VS1053
 LC_baseTools
 LC_blockfile
 LC_bmpTools
-LC_cardIndex
-LC_DFRobot_0995
-LC_docTools
-LC_EEPROM
-LC_extSerial
-LC_GUITools
-LC_keyboard
-LC_lilOS
-LC_lilParser
-LC_modalAlerts
-LC_MSP3526_T
-LC_navTools
-LC_neoPixel
-LC_numStream
-LC_piezoTunes
-LC_RPNCalculator
-LC_SAE_J1939
-LC_SDTools
-LC_slowServo
-LC_SPI
-LC709204F
-LC7822
 LCBUrl
-LCD_BacklightRGB
-LCD_HD44780
-LCD_I2C
-LCD_SharpBP_SPI
-LCD_ST7032
-LCD_TeleType
+LC_cardIndex
 LCD03
 lcd128_32_io
 LCD595
 LCD595-ISU
+LCD_BacklightRGB
 LcdBarGraph
 LcdBarGraphX
 LCDBigNumbers
 LCDDisplay10
 LCDDrivers_NXP_Arduino
 LcdEffects
+LC_DFRobot_0995
 lcdgfx
 LCDGraph
 LCD-HD44780
+LCD_HD44780
 LCD-I2C
-LCDI2C_Multilingual_MCD
+LCD_I2C
 LCD-I2C-HD44780
+LCDI2C_Multilingual_MCD
 LCDIC2
 LcdMenu
 LCDMenuLib
 LCDMenuLib2
+LC_docTools
 LcdProgressBar
 LcdProgressBarDouble
+LCD_SharpBP_SPI
 LCDShiftView
+LCD_ST7032
+LCD_TeleType
 LcdUi
+LC_EEPROM
+LC_extSerial
+LC_GUITools
+LC_keyboard
+LC_lilOS
+LC_lilParser
 LCLV
+LC_modalAlerts
+LC_MSP3526_T
+LC_navTools
+LC_neoPixel
+LC_numStream
 LCP_breakout
 LCP_grenade
 LCP_iconEdit
+LC_piezoTunes
 LCP_rpnCalc
 LCP_sett
 LCP_shopList
 LCP_sliderPz
 LCP_sTerm
+LC_RPNCalculator
+LC_SAE_J1939
+LC_SDTools
+LC_slowServo
+LC_SPI
 LCT200
 ld2410
 LD2410Async
 LD2412
+LD2420HumanMotion
 LDC1312-1314 I2C Library
 LDS
 LEADS
@@ -4406,20 +4648,22 @@ Leaphy Extra Extension
 Leaphy Original Extension
 LectroboxKeypadShield
 LectroboxPCJoyShield
-LED
 Led
-Led 7 Segment
-LED Dithering
-LED_Controls
+LED
 LED744511
+Led 7 Segment
+LedBasic
 LedBlinky
 LedControl
 LedController
+LED_Controls
 LedDisplay
 LedDisplayFonts
+LED Dithering
 LEDDriver
 LEDDrivers_NXP_Arduino
 ledflasher
+LEDGeometry
 LEDIndication
 LedLib
 LedMatrix8X8
@@ -4435,6 +4679,7 @@ Leeman Geophysical Learning Shield
 Legoino
 LegoSensorAdapter
 LEGOTrainController
+lengthConverter
 leOS
 leOS2
 Lepton FLiR Thermal Camera Module Library
@@ -4445,10 +4690,13 @@ Lewis
 Lexo
 LF_Alpha
 LF_LoRa
-LG_Matrix_Print
-LGFX_PPA
+LGFX_Fonts
 LGFXMeter
+LGFX_PPA
+LGFXScreenBuilder
 LGFX-ScreenShot
+LGFXVirtualCanvas
+LG_Matrix_Print
 LibAPRS_Tracker
 libasm
 libCBOR
@@ -4474,8 +4722,8 @@ LibYxml
 LidarArray
 LIDAR-Lite
 Lifely Agrumino Lemon
-LIG Little I2C Gateway
 light_CD74HC4067
+LightConnect
 LightDimmer
 LightEffect
 LightMDNS
@@ -4485,17 +4733,17 @@ LightTaskScheduler
 LightweightIoT
 LightweightNeuralNetwork
 LightweightSTL
+LIG Little I2C Gateway
 LILCMU GoGoBoard Library
 LILCMU GoGoBright Library
-LilyGO T-Wristband and T-Glass
 LilyGo-AMOLED-Series
+LilyGo-display-library
 LilyGo-EPD47
 LilyGoLib
+LILYGO T-Keyboard-S3-Pro Library
 LilyGo-T-RGB
+LilyGO T-Wristband and T-Glass
 Lime Labs HDC2080
-LIN master emulation with background operation
-LIN master portable
-LIN slave portable
 linaGFX
 LINBus_stack
 Linear Position Control
@@ -4508,24 +4756,36 @@ LineTracker5 Library
 LinkedList
 LinkedListLib
 LinkedPointerList
+Linker
 LinkGenericDash
+LIN master emulation with background operation
+LIN master portable
+LIN slave portable
 LinxESP32
+LionArray
 LionBit-STEM-library
-Liquid Handling Robotics
+LionDallas
+LionFastLcd
+LionLogger
+LionRtosTask
+LionStreams
+LionTask
+LionWifi
 LiquidCrystal
-LiquidCrystal I2C
-LiquidCrystal I2C Multilingual
-LiquidCrystal NKC
 LiquidCrystal_74HC595
 LiquidCrystal_AIP31068
+LiquidCrystal I2C
 LiquidCrystal_I2C
 LiquidCrystal_I2C_Hangul
+LiquidCrystal I2C Multilingual
 LiquidCrystal_I2C_STEM
 LiquidCrystal_I2C_UTF8
-LiquidCrystal_PCF8574
 LiquidCrystalIO
+LiquidCrystal NKC
+LiquidCrystal_PCF8574
 LiquidCrystalSerial
 LiquidCrystalWired
+Liquid Handling Robotics
 LiquidMenu
 LircPlayer101
 LIS331
@@ -4540,6 +4800,7 @@ LiteOSCParser
 Lithium-Powered
 LitSwitch
 LittleFS_esp32
+LittleFSExplorer
 LittleFS_Mbed_RP2040
 LittleFS_Portenta_H7
 LittleVector
@@ -4547,9 +4808,9 @@ LiveObjectsSDK
 Lixie
 Lixie II
 LM35
+LM35IC
 LM35 Sensor
 LM35_XCR
-LM35IC
 LM73
 LM75
 LM75A Arduino library
@@ -4566,33 +4827,37 @@ Logger
 logic
 logicAnalyzer
 LogicAnalyzer
+LogicPins
 Logistic
 LogToQueue
+Lonely Binary Coin Acceptor
 LongFi
+LongLiveThEEPROM
 looper
 Looper
 LOPORO
 LoR
-LoR_v3
 LoRa
-LoRa Node
-LoRa Serialization
-LoRa_AT
-LoRa_Library
 LoRa32T
+LoRa_AT
 LoRaDomo
+LoRa-E22T
 LoRaFi
 LoraID
 LoRaLayer2
+LoRa_Library
 LoRandom
 LoRaNet
+LoRa Node
 LoRaNow
 LoRa-payload-BKU
 LoRaRF
+LoRa Serialization
 LoraSx1262
 LoRaWAN_ESP32
 LoRaWAN-Seeed-Grove-Wio-E5
 loremipsum
+LoR_v3
 losant-mqtt-arduino
 LoveButton
 LovyanGFX
@@ -4609,6 +4874,7 @@ LSA08
 LSA08_Simplified
 LSM303
 LSM6
+LSM6DS3
 LT7683
 LTC1392 library
 LTC230x
@@ -4624,10 +4890,12 @@ LTR390
 LTR390_DFR
 LTR390_RT
 LTS01A_MAX31725
+LU9685
 Lua 5.1 for ESP32
 LualtekCubecell
 LualtekRAKRUI
 LualtekTTN
+Lucarne
 LUHN
 luminous
 LuminOx
@@ -4636,16 +4904,16 @@ Luni
 lv_arduino
 lv_examples
 lvgl
-LVGL_CYD
 lvglCpp
+LVGL_CYD
 LW09-Dali
 lwIOLink
 lwIP
 LX16A-bus
 lx16a-servo
 LXG_DC_Motor_driver
+LynkTuyaLocal
 Lynxmotion Smart Servo -LSS-
-M_RGB
 m0_tweak
 M10ADC
 M10CODEC
@@ -4667,12 +4935,6 @@ M2M Solutions Purplepoint Boards Library
 M2M Solutions Quectel Library
 M2M Solutions TLV Library
 M304 Library
-M5 Stack 4Relay Library
-M5_BMM150
-M5_Encoder
-M5_EzData
-M5_PbHub
-M5_RTC_Module
 M590Driver
 M5-ADS1100
 M5-ADS1115
@@ -4681,6 +4943,7 @@ M5Atom
 M5Atomic-EchoBase
 M5Atomic-Motion
 M5AtomS3
+M5_BMM150
 M5BurnerNVS
 M5Capsule
 M5Cardputer
@@ -4694,16 +4957,21 @@ M5DinMeter
 M5-DLight
 M5EasyUI
 M5Echo-Pyramid
+M5_Encoder
 M5EPD
 M5-Ethernet
 M5ez
+M5_EzData
 M5FacesEncoder
 M5Family
 M5-FPC1020A
 M5GFX
+M5GuruguruAvatar
 M5HAL
+M5Hat_18650C
 M5Hat-8Servos
 M5Hat-JoyC
+M5Hat-Mini-JoyC
 M5IOE1
 M5-LoRa-E220-JP
 M5-LoRaWAN
@@ -4717,19 +4985,23 @@ M5ModulePPS
 M5Module-QRCode
 M5NanoC6
 M5-Outdepends
+M5_PbHub
 M5PM1
 M5PoECAM
 M5ROTATE8
 M5-RoverC
+M5_RTC_Module
 M5Stack
-M5Stack WiFi Uploader
+M5 Stack 4Relay Library
 M5Stack_Avatar
-M5Stack_OnScreenKeyboard
-M5Stack_SimpleBeep
-M5Stack_TreeView
+M5StackChan
 M5StackMenuSystem
+M5Stack_OnScreenKeyboard
 M5Stack-SD-Updater
+M5Stack_SimpleBeep
 M5StackToio
+M5Stack_TreeView
+M5Stack WiFi Uploader
 M5StampC3LED
 M5StamPLC
 M5Station
@@ -4737,11 +5009,12 @@ M5-STHS34PF80
 M5StickC
 M5StickCPlus
 M5StickCPlus2
+M5SWITCH8
 M5SwitchC6-ESP-NOW
 M5-SX127x
 M5Unified
-M5UNIT_8Encoder
 M5Unit-4RELAY
+M5UNIT_8Encoder
 M5Unit-ACSSR
 M5Unit-ANADIG
 M5UnitASR
@@ -4760,6 +5033,7 @@ M5Unit-EXTIO
 M5Unit-EXTIO2
 M5Unit-FINGER
 M5Unit-Fingerprint2
+M5Unit-FLASHLIGHT
 M5Unit-GESTURE
 M5Unit-HEART
 M5Unit-HUB
@@ -4768,14 +5042,19 @@ M5Unit-INFRARED
 M5Unit-KEYBOARD
 M5Unit-KMeter
 M5Unit-KMeterISO
+M5Unit-LIGHT
 M5Unit-METER
 M5Unit-MQTT
 M5Unit-NFC
+M5UnitNFC-M5Stack
 M5Unit-PbHub
 M5Unit-PoESP32
 M5UnitQRCode
 M5Unit-RELAY
 M5Unit-RF433
+M5Unit-RFID
+M5Unit-RGB
+M5Unit-RS485
 M5Unit-RTC
 M5Unit-Sonic
 M5UnitStep16
@@ -4790,6 +5069,7 @@ M5UnitUnified
 M5Unit-WEIGHT
 M5UnitWeightI2C
 M5Utility
+M61538FP
 M62429
 M62429 Volume Control Library
 M8058
@@ -4818,8 +5098,9 @@ MagStripe_ESP32
 MagVector 3D Magnetic Sensor
 Mahony
 Maidenhead
-MakeBlock Drive Updated
+MakeabilityLab
 MakeBlockDrive
+MakeBlock Drive Updated
 makegame
 MakerBoard
 MAKERLABVN
@@ -4843,22 +5124,23 @@ markDownWriter
 Masaylo
 MaterialBoard
 MatesController
+MathParser
+MATRIX7219
+MatrixCharlieplex
 Matrix Color Sensor
 Matrix Controller
+MatrixForge
+MatrixKeypad
 Matrix Laser Sensor
+MatrixMath
 Matrix Mini Library
+MatrixMiniR4
 Matrix Motion Sensor
 Matrix Motor Extension
 Matrix Servo Extension
 Matrix Ultrasonic Sensor
-MATRIX7219
-MatrixCharlieplex
-MatrixKeypad
-MatrixMath
-MatrixMiniR4
 MatrizLed
 MAVLink
-MAX_RS485
 Max11615Lib
 MAX11643
 MAX1464 Arduino library
@@ -4868,8 +5150,8 @@ MAX1704X
 MAX17055
 MAX30001
 MAX30100
-MAX30100_milan
 MAX30100lib
+MAX30100_milan
 MAX3010x Sensor Library
 MAX30205
 MAX3100 Serial
@@ -4878,8 +5160,8 @@ MAX31850
 MAX31850 DallasTemp
 MAX31850 OneWire
 MAX31855
-MAX31855_RT
 MAX31855-Library
+MAX31855_RT
 Max44007
 Max44009
 MAX44009 library
@@ -4890,11 +5172,12 @@ MAX541X
 MAX6626
 MAX6675
 MAX6675 library
-MAX6675 with hardware SPI
 MAX6675_Thermocouple
+MAX6675 with hardware SPI
 MAX6816
 MAX6953
 max7219
+MAX7219
 MAX7219_CH32
 MAX7219Segment
 MAX7300
@@ -4907,13 +5190,14 @@ MaxEssentialToolkit
 MaximWire
 MaxLedControl
 MaxMtrParser
+MAX_RS485
 MB85_FRAM
 Mbed BLE HID
 Mbed BLE Mouse
+MbedNanoTLS
 MBED_RP2040_PWM
 MBED_RP2040_Slow_PWM
 MBED_RPI_PICO_TimerInterrupt
-MbedNanoTLS
 MBEDSpeech
 mbino
 MBModbusRTUSlave
@@ -4927,35 +5211,29 @@ MCAnemometer
 MCCI Arduino Development Kit ADK
 MCCI Arduino LoRaWAN Library
 MCCI Catena Arduino Platform
+MCCI-Catena-PMS7003
 MCCI Catena SCD30
 MCCI Catena SDP
+MCCI-Catena-SHT3x
 MCCI FRAM I2C
 MCCI LoRaWAN LMIC library
 MCCI LTR-329ALS
 MCCI SofwareSerial
-MCCI-Catena-PMS7003
-MCCI-Catena-SHT3x
 MCHyetometer-REED
 MCM_ATM90E32
 MCM_BL0940
 MCM_GitHub_OTA
 MCMVoltSense
-MCP_23017
-MCP_3208
-MCP_ADC
-mcp_can
-mcp_canbus
-MCP_DAC
-MCP_POT
 MCP23008
-MCP23008_I2C
 MCP23008-I2C
+MCP23008_I2C
 MCP23009E
+MCP_23017
 MCP23017
-MCP23017 Port Expander
 MCP23017_Attiny85
 MCP23017_I2C
 MCP23017_MR
+MCP23017 Port Expander
 MCP23017_RT
 MCP23017_WE
 MCP23S08
@@ -4963,6 +5241,7 @@ MCP23S17
 MCP2515-nb
 MCP3201
 MCP3202
+MCP_3208
 Mcp3208
 MCP3208
 MCP3221
@@ -4992,8 +5271,13 @@ MCP9802
 MCP9808
 MCP9808_RT
 MCP9808SensorLib
+MCP_ADC
+mcp_can
+mcp_canbus
+MCP_DAC
 mcpesp
-McpIot
+MCP_POT
+MCP-U
 MCreator Link
 McuBleTerminal
 MCUFRIEND_kbv
@@ -5004,22 +5288,29 @@ MCUVoltage
 MCUW_LoRa_boards
 MD_AButton
 MD_AD9833
+mDash
 MD_CirQueue
 MD_Cubo
 MD_DS1307
 MD_DS3231
+MDevice
 MD_HX711
+mdif
 MD_KeySwitch
+MDLib
 MD_LM335A
 MD_MAX72XX
 MD_MAXPanel
 MD_Menu
 MD_MIDIFile
 MD_MSGEQ7
+MDNS_Generic
+mDNSResolver
 MD_OnePin
 MD_Parola
 MD_PWM
 MD_REncoder
+mDriver
 MD_SmartCar
 MD_SmartCar2
 MD_SN76489
@@ -5029,13 +5320,6 @@ MD_TTT
 MD_UISwitch
 MD_YM2413
 MD_YX5300
-mDash
-MDevice
-mdif
-MDLib
-MDNS_Generic
-mDNSResolver
-mDriver
 ME310G1
 MeanAndVarOnTheFly
 MeanFilterLib
@@ -5107,6 +5391,7 @@ MentorBit-Ultrasonidos
 MentorBitVEML
 MentorBit-VL53
 MentorBit-Zumbador
+MenuCreator
 Menu-UI
 MenuX
 mergCBUS
@@ -5116,6 +5401,7 @@ MeshGnome
 Meshtastic
 MessageBus
 MessagingLib
+Mete Hoca Qwilino
 MeteoFunctions
 MeteoLabBeacon
 Metronome
@@ -5128,14 +5414,13 @@ MFRC522-spi-i2c-uart-async
 MFUthings
 MG811SpaceData
 MHGroveBLE
-MH-Z CO2 Sensors
+MH-T7042A Library
 MH-Z14A Library
-Mhz19
 MH-Z19
+Mhz19
+MHZ19_Universal
 MHZCO2
-micro Maqueen
-micro_ros_arduino
-micro_ros_kaia
+MH-Z CO2 Sensors
 MicroAnimation
 MicroAsync
 MicroBeaut
@@ -5154,9 +5439,9 @@ microDS18B20
 microDS3231
 microdsp
 micro-ecc
-Microfire Mod-NTC
 Microfire_HABridge
 Microfire_Mod-EC
+Microfire Mod-NTC
 Microfire_Mod-ORP
 Microfire_Mod-pH
 Microfire_SHT3x
@@ -5167,6 +5452,7 @@ microLCD
 microLED
 MicroLog
 microlzw
+micro Maqueen
 MicromationDevboardV3
 MicroMidiDevices
 MicroMidiEnc
@@ -5180,12 +5466,16 @@ micro-prompts
 MicroQt
 MicroRemoteWire
 microReticulum
+micro_ros_arduino
+micro_ros_kaia
 MicroSerial
 MicroShell
 MicroSlip
 Microsoft_HidForWindows
 MicrostepToLinear
 MicroSui
+MicroTaskX
+microTelegramAPI
 MicroTFLite
 MicroTone
 MicroTuple
@@ -5195,12 +5485,16 @@ microWire
 MiCS6814-I2C
 Midea AC infrared remote controller with ESP32 RMT Peripheral
 MideaIRWrapper
-MIDI Device Controller
-MIDI Library
+midi2
+midi2cpp
+midi2duino
 MIDIcontroller
+MIDI Device Controller
 MidiDmxBridge
 Midier
+MIDI Library
 MIDI-NRPN
+MIDIplayer
 MiDispositivoMIDI_V3
 MIDIUSB
 MightyOhmGeigerCounter
@@ -5209,6 +5503,7 @@ milesTag
 MillaMilla DS7505 Library
 millis64
 MillisCounter
+millisRTC
 MillisTimer
 MillisTimerLib
 MilliStopper
@@ -5218,20 +5513,21 @@ MINDS-i-Common
 MINDS-i-Drone
 MINDS-i-Farming
 MINDS-i-Foundations
-Mini Grafx
-Mini QOI
 Mini_Button
 miniDAC
 miniGo
+Mini Grafx
 MiniIot
 miniMachineBLE
 MinimalLinkedList
 MinimalUltrasonic
 Minimax
+MiniMessenger
 MiniMP3
 minIniFS
 MiniPLC_FX2N
 mini-ppm-info
+Mini QOI
 Ministache
 MINMAX
 Mintrix
@@ -5243,6 +5539,7 @@ MjGrove
 MjolnFileSystem
 MJScore
 mjson
+MKE I2C MP3
 MKE_ONE
 MKHC595
 MKL_DHT sensor library
@@ -5275,13 +5572,15 @@ MMA8453_n0m1
 MMA8652
 MMA8653
 MMC34160PJ
+MMJ InkaBUS Analog Inputs
+MMJ_InkaBUS_AnalogOut
 MM-S50MV
+mmWaveKit
 MobaLedLib
 MobaTools
 Mock
 MockEEPROM
 Modbus
-Modbus RTU Slave
 ModbusADU
 Modbus-Arduino
 ModbusConfig
@@ -5291,16 +5590,19 @@ Modbus-EtherCard
 Modbus-Ethernet
 ModbusMaster
 ModbusMaster_GigaR1
+ModbusMasterPlus
 Modbus-pico
 ModbusPowerMeter
 Modbus-Radio
-ModbusRTU
+ModbusResponder
 modbusrtu
-ModbusRTU_Slave
-ModbusRTU_Slave_RS485
+ModbusRTU
 ModbusRTUComm
 ModbusRTUMaster
+Modbus RTU Slave
+ModbusRTU_Slave
 ModbusRTUSlave
+ModbusRTU_Slave_RS485
 Modbus-Serial
 ModBusSlave
 ModbusSlaveLogic
@@ -5316,11 +5618,11 @@ MODSPI
 Modular
 MODULE_2RELAY
 MODULE_4IN8OUT
-Module_GRBL_13.2
-Module_Stepmotor
 Module-Audio
+Module_GRBL_13.2
 ModuleInterface
 ModuleMore Sumo V2
+Module_Stepmotor
 Modulo
 moduloMap
 MoIRA
@@ -5335,6 +5637,7 @@ MOREbot Library
 MorePins
 Morse
 MorseCodeMachine
+MorseDecoder
 MorseDuino
 MorseEncoder
 MOS Electronics AY-3-8910 Library
@@ -5342,33 +5645,34 @@ Mosiwi_Basic_Learning_Kit
 Moteus
 motix-btn99x0
 MotoMama Library
-Motor Driver Library
-Motor Shield V2.0
-motor system IC TLE956x
-Motor_PID
-Motor_RS
 MotorCell
 MotorController
 MotorCVD_asukiaaa
 MotorDMKB4_asukiaaa
+Motor Driver Library
 MotorGo_Mini_Driver
 Motoron
+Motor_PID
+Motor_RS
+Motor Shield V2.0
+motor system IC TLE956x
 MotorVID28
 MOTY-Mini Temperature Sensor
 Mouse
 Move Buffer
 MovementDetector
-MOVI Voice Dialog Shield
-MovingAverage
 Moving-Average
+MovingAverage
 MovingAverageAngle
 MovingAverageFloat
 MovingAveragePlus
 MovingAverager
 movingAvg
 MovingPlatform
+MOVI Voice Dialog Shield
 Mozzi
 MP3Player
+MP6602
 mpbToSwitch
 MPC_ruih
 MpesaSTK
@@ -5379,12 +5683,14 @@ mPower
 MPR121
 mpu6050
 MPU6050
+MPU6050Aries
+MPU6050Auto
 mpu6050_FastAngles
 MPU6050_IND
 MPU6050_light
+MPU6050_Nexa
 MPU6050_tockn
 MPU6050_VibrationRMS
-MPU6050Aries
 MPU9250
 MPU9250_asukiaaa
 MPU9250_WE
@@ -5400,20 +5706,22 @@ MQGasKit
 MQSensor
 MQSpaceData
 MQTT
+mqtt5nano
 MQTT and Serial Printer
 MQTT Client
-mqtt_fuota_duino
-MQTT_Looped
-mqtt5nano
 MQTTESP8266
+mqtt_fuota_duino
 MqttLogger
+MQTT_Looped
 MQTTOTA
 MQTTOTAv5
 MQTTPubSubClient
 MQTTPubSubClient_Generic
 MQTTRemote
 MQUnifiedsensor
+MR24HPC1
 mr76_radar
+M_RGB
 mrm-8x8a
 mrm-bldc2x50
 mrm-bldc4x2.5
@@ -5469,6 +5777,7 @@ mString
 MT07_CAN_Library
 MT6701
 MT6701-arduino
+MT6826S SPI
 MT8870
 MT-arduino-momentary-button
 MT-arduino-pin-debouncer
@@ -5484,15 +5793,14 @@ MTP40F
 MTR_ADS7830
 MTR_STUSB4500
 MTS4X
+MTW TinyLoopScheduler
 muCom
 mudlink
 mufonts
-Multi Channel Relay Arduino Library
 Multi_BitBang
-Multi_OLED
-Multi_Timer_V2
 MultiButton
 MultiButtons
+Multi Channel Relay Arduino Library
 MultiFTPServer
 MultiFuncShield
 MultiFunctionShield
@@ -5503,15 +5811,18 @@ multiLogger
 MultiMap
 MultiMAX6675
 multiMotor
+Multi_OLED
 multiplePinOps
 Multiplex
 MultiResetDetector_Generic
 MultiSensorFilter
+MultiServo
 MultiStepperLite
 MultitapKeypad
 Multitasker
 MultiTaskLib
 MultiTimerSAMD
+Multi_Timer_V2
 MultiTrans
 MultivariateNormal
 MultiWire
@@ -5520,18 +5831,18 @@ mupplet-core
 mupplet-display
 mupplet-sensor
 Muse_library
-Music Shield
 MusicBuzzer
 Musician
 MusiciansMate
+Music Shield
 MusicWithoutDelay
 Mutila
 muTimer
 Muwerk scheduler library
 Muwerk ustd library
-MUX_SW_NXP_Arduino
 Mux7SegsDisplay
 MuxControl
+MUX_SW_NXP_Arduino
 MvcWebServerLib
 MVP3000esp
 MvsConnect
@@ -5544,14 +5855,14 @@ MWings
 MWTimeout
 MX1508
 MX8650 Mouse sensor library
-My_Button
-my_STL
 my92xx
 MyAlarm
 MyBlinker
 Mybotic Durian Blynk ESP8266
+My_Button
 MyButton
 MyButtonIO
+MyButtons
 MycilaConfig
 MycilaDimmer
 MycilaDS18
@@ -5574,27 +5885,31 @@ MycilaWebSerial
 MyDelay
 myDHT
 MyDHT22
+MyDisplayLogging
 MyKeywords
 MyLD2410
 MyLedIO
 MyMacros
+MyOTA
 MyoWare Arduino Library
 MyOwnBricks
 MySensors
 MySQL Connector Arduino
-MySQL Query Client
 MySQL_MariaDB_Generic
+MySQL Query Client
+my_STL
 MyTimer
 n2cmu
 N64Controller
+N64Controller-ESP32
 N64Pad
 NaiPot
 Namino_Industrial_Boards
 NanitLib
-Nano_Every_WS2812B
 Nano33BLESensor
 NanoBLEFlashPrefs
 NanoConnectHcSr04
+Nano_Every_WS2812B
 nanoFORTH
 NanoPlayBoard
 NanoProtoShield
@@ -5611,55 +5926,69 @@ NDefs
 NDNOverUDP
 NE555
 NecDecoder
+NECK
 Neo7Segment
 NeoBufferedPrint
 NeoGPS
+NeoGPS-GarminClock
 NeoHome
 NeoHWSerial
 NeoNextion
 NeonPostgresOverHTTP
 NeoPatterns
-NeoPixel Painter
 NeoPixel-Animation-lib
 NeoPixelBus by Makuna
 NeopixelCommander
 NeoPixelConnect
+NeoPixel Painter
 Neosegment
+NeoStreaming
 NeoSWSerial
 Neotimer
 NESControllerInterface
 NesGamepad
 NesRob
+NessoLink
 NetApiHelpers
 NetEEPROM
 NETSGPClient
 NetWizard
+NetworkManager
 NetworkMonitor
+NetworkProfile
+NeuButton
+NeuDB
 NeuEEPROM
 NeuFrame
+NeuKV
 NeumannCorrector
 NeuNVS
 NeuraiDepinMsg
 NeuralNetwork
 NeuroMaster
 Neurona
+NeuStorage
+NeuWiFi
 NEvents
 NewEncoder
 Newhaven_CharacterOLED_SPI
+NewPID
 NewPing
 NewServo
 Newt_Display
 Nexgen_Rover
 NEXNTC
 Nextion
-Nextion Serial String
 NextionControl
+Nextion Serial String
 NextionX2
 NextionX3
 Neza74HC165
 Neza74HC595
 NezaButton
 NezaIR
+NezaRTC
+NezaWiFiPortal
 NFC Tag M24LR6E
 NFuncs
 NGLedFlasher Library
@@ -5677,9 +6006,16 @@ NimBLE-Arduino
 NimBLE-DataPipe
 NINA-Wi-Fi
 Nintendo
-Nintendo Extension Ctrl
 NintendoControllersSTM32
+Nintendo Extension Ctrl
 NintendoSwitchControlLibrary
+NiusAudio
+NiusCam
+NiusCrypto
+NiusIMU
+NiusThread
+NiusWireless
+NiusZigbee
 NL2Client
 nlohmann-json
 NMEA_Parser
@@ -5687,22 +6023,25 @@ NMEAParser
 NMH1000_Arduino
 NmraDcc
 NoBlockEEPROM
+NobroRTOS
 NocKinematics
 NocLLM
 NocML
 NocMotion
+NocShield
 NoDelay
 nodepp
 NodeRedTime
 NodeRemote
+Nodrix
 Nokia 1.8 Inch Display SPFD54124B
 Nokia 5110
-Nokia 5110 LCD library
 Nokia5110
+Nokia 5110 LCD library
 NOKIA5110_TEXT
-Non-Blocking Melody
 NonBlockingDallas
 NonBlockingDelay
+Non-Blocking Melody
 NonBlockingModbusMaster
 NonBlockingRTTTL
 NonBlockingSequence
@@ -5712,14 +6051,15 @@ Norman
 Nostr
 NotasMIDI
 Notched Shaft Encoder
+note-cpp
+note-emu
+NourGrid
 Nouryas Advanced Line Follower
 Nova Fitness Sds dust sensors library
 Nova_SDS011 Sensor Library
 NoveltyDetection
 NPush
-NRF_HAL
-nrf_rng
-nrf_to_nrf
+N-R_ESP32
 NRF51_Radio_library
 NRF52_ISR_Servo
 nRF52_MBED_PWM
@@ -5730,7 +6070,10 @@ nRF52_PWM
 nRF52_Slow_PWM
 NRF52_TimerInterrupt
 nRF905 Radio Library
+NRF_HAL
 NRFLite
+nrf_rng
+nrf_to_nrf
 NRotary
 NST1001
 NST1001Driver
@@ -5757,8 +6100,8 @@ NuSock
 NVSRAM
 nw2s_portenta_SSD1322
 NX2003 library
-NXP PCA9633
 NXPMotionSense
+NXP PCA9633
 NXTBluetooth
 O3SerialWriter
 OakOLED
@@ -5778,21 +6121,24 @@ OctoSonar
 OctoWS2811
 Oddly Specific Objects LCD FeatherWing Library
 ODriveArduino
+OhStemRobotics
 OK Little Layout
 OK Logging
 OK Micro Dock
+OledAnimator
 OLED Display 96x96
+OLED_Display_SSD1306
 OLED Display VGY12864L-03
+oled_graphic_assistance
+OLEDKeyboard
+OLED_SSD1306_Chart
 OLED SSD1306 - SH1106
 Oled UI Components
-OLED_Display_SSD1306
-oled_graphic_assistance
-OLED_SSD1306_Chart
-OLEDKeyboard
 Oleoleg_ULN2003_Stepper
 Olimex16x2
 Olympic Robotic Challenge
 OmEspHelpers
+Omiru IoT Platform
 omnicrystal
 omniMath
 Omron D6F-PH Arduino Library
@@ -5817,7 +6163,6 @@ OOKwiz
 ooreneo
 OPC
 OpcServer
-Open RTS
 openafe
 openafe_comm
 OpenBCI_32bit_Library
@@ -5830,6 +6175,7 @@ OpenBehavior
 OpenBuildsBlox
 OpenDevice
 OpenEdgeStack
+OpenFontRender
 OpenJigWare_A
 OpenLCB_Single_Thread
 OpenLogManager
@@ -5838,6 +6184,8 @@ OpenMioty
 OpenMRNLite
 OpenMV Arduino RPC
 OpenPager
+OpenRCSpotter
+Open RTS
 OpenStreetMap-esp32
 Opentherm
 OpenTherm Library
@@ -5876,15 +6224,14 @@ OSFS
 OSP 2wireSPI aospi
 OSP CommandInterpreter aocmd
 OSP Middleware aomw
+Ospom
 OSP ResultCodes aoresult
 OSP ReusableApps aoapps
 OSP Telegrams aoosp
 OSP ToplevelSketches aotop
 OSP UIDriversOSP32 aoui32
-Ospom
-OSS-EC ABLIC S-58LM20A 00000057
-OSS-EC NXP MPXA4250A 00000057
 OSS-EC_ABLIC_S-5813A_5814A_00000057
+OSS-EC ABLIC S-58LM20A 00000057
 OSS-EC_ABLIC_S-8110C_8120C_00000057
 OSS-EC_ADI_AD22100A_00000057
 OSS-EC_ADI_AD22100K_00000057
@@ -5899,6 +6246,7 @@ OSS-EC_MICROCHIP_MCP9701_MCP9701A_00000057
 OSS-EC_MICROCHIP_TC1046_00000057
 OSS-EC_MICROCHIP_TC1047_TC1047A_00000057
 OSS-EC_NXP_MPX5999D_00000057
+OSS-EC NXP MPXA4250A 00000057
 OSS-EC_NXP_MPXH6115A_00000057
 OSS-EC_NXP_MPXH6400A_00000057
 OSS-EC_NXP_MPXHZ6250A_00000057
@@ -5907,9 +6255,9 @@ OSS-EC_STM_STLM20DD9F_00000057
 OSS-EC_STM_STLM20W87F_00000057
 OSS-EC_TDK_CHS_MSS_00000057
 OSS-EC_TDK_CHS-UPS_UPR_UGS_UGR_00000057
-OSS-EC_TI_LM35_LM35A_00000057
 OSS-EC_TI_LM35C_LM35CA_00000057
 OSS-EC_TI_LM35D_00000057
+OSS-EC_TI_LM35_LM35A_00000057
 OSS-EC_TI_LM45B_LM45C_00000057
 OSS-EC_TI_LM50B_00000057
 OSS-EC_TI_LM50C_00000057
@@ -5917,10 +6265,11 @@ OSS-EC_TI_TMP9A00_00000057
 OSynaptic-FX
 OSynaptic-RX
 OSynaptic-TX
-OTA_Template
 OTAdrive_ESP
 OTAEsp
 OtaHelper
+OtaHub
+OTA_Template
 OTAUpdateManager
 OTAWrapper
 OtD Library
@@ -5928,10 +6277,12 @@ OttoArduinoLib
 OttoDIYLib
 OUTPIN
 OV5640 Auto Focus for ESP32 Camera
+OV7725_Camera_Library
 Oversampling
 OvhAPI
 OVS
 OZGPS_NMEA
+OzkLed
 P1AM
 P1AM_Serial
 P2OS
@@ -5968,12 +6319,13 @@ PathVariableHandlers
 PaunaStepper
 PAX Graphics
 PBEnhancer
+PButton
 PCA6408A
 PCA9505_06 Library
 PCA9536
-PCA9536_RGB
 PCA9536Arduino
 PCA9536D
+PCA9536_RGB
 PCA9547
 PCA9549
 PCA9551
@@ -5998,6 +6350,11 @@ PCA9685_RT
 PCA9698
 PCA9698_RT
 PCA9848
+PCBCUPID-Cypher
+PCBCUPID_MCP79412RTC
+PCBCUPID-NAU8325
+PCBCUPID_PLAYERS
+PCBCUPID QMC6309
 PCD8544
 PCF2129
 PCF8523
@@ -6006,18 +6363,24 @@ PCF8563_RTC
 PCF8573
 pcf8574
 PCF8574
-PCF8574 library
-PCF8574_LH
 PCF8574-I2C
+PCF8574_LH
+PCF8574 library
 PCF8575
-PCF8575 library
 PCF8575-lib
+PCF8575 library
 PCF8583
 PCF8591
 PCF8591 library
 PciManager
 PCM
 PCM51xx DAC
+PCMFlow
+PCMFlowDevice
+PCMFlowG711
+PCMFlowG722
+PCMFlowOpus
+PCMFlowUDP
 PCR
 PCT2075
 PD-10LX-Library
@@ -6039,6 +6402,7 @@ pepstep
 percent_encode
 Perilla
 PERIPUMP
+PersianDate
 PersistentJsonEEPROM
 PersistentLog
 PersistentQueue
@@ -6057,8 +6421,8 @@ PetriNetLib
 PF
 PFNFont
 pfodParser
-pgm_utils
 PGMTools
+pgm_utils
 PGMWrap
 PH4502C-Sensor
 Phant
@@ -6073,12 +6437,9 @@ PI4IOE5V6416
 PI4IOE5V9554
 Piano Board
 Picaso-Serial-Arduino-Library
-Pico PIO USB
-Pico_Bidir_DShot
-Pico_Keyboard
-PICO_OTA
 Pico4Drive
 PicoAnalogCorrection
+Pico_Bidir_DShot
 PicoBricks-for-ESP32
 PicoBricks-for-RPico
 Pico-DMX
@@ -6088,14 +6449,18 @@ PicoEncoder
 PicoFlashStorage
 PicoGFX_SSD1322
 PicoHM01B0
+Pico_Keyboard
 PicoLlama
 PicoMQTT
+PICO_OTA
+Pico PIO USB
 PicoPLC
 PicoSem
 PicoSoftwareSerial
 PicoSound
 PicoStep
 PicoSyslog
+Pico_USB_Disp
 Picovoice_AR
 Picovoice_DE
 Picovoice_EN
@@ -6117,16 +6482,20 @@ PicoWebsocket
 Pictiva OS288048
 PICxel
 PID
+PID_5_Sensors
+pid-autotune
+PIDController
 PID controllers Modular Professional
 PID_DG
+PIDEasy
+PIDEasy-Improved
 PID_RT
 PID_t
 PID_Timed
 PID_v1_bc
 PID_v2
-pid-autotune
-PIDController
-PIDEasy
+PiicoDev_Button
+PiicoDev_Buzzer
 Pikabot
 PimientoClockLib
 pimoroniTrackball
@@ -6143,14 +6512,15 @@ PinOutGroup
 PinScribe
 PIO8255
 PioSPI
+PipeGIF
 PIR
 PIR8575
 PIRSensor
 Pisco-Code
-Pixel_Spork
 PixelGrid
 PixelMaestro
 pixels-dice-interface
+Pixel_Spork
 Pixetto
 PixettoLite
 PixhawkArduinoMAVLink
@@ -6161,7 +6531,8 @@ Pixxi-Serial-Arduino-Library
 PJON
 PKAE_Timer
 PL ADXL355
-PL_microEPD
+PlaneteSciences85
+planterm
 PlantMonitor
 Plaquette
 PlayNote
@@ -6172,7 +6543,9 @@ PLCustomDevices
 PLEN5Stack
 Plex64
 Plexorino
+plexus-c
 Plexus SDK
+PL_microEPD
 PlotPlus
 Plotter
 plotutils
@@ -6182,17 +6555,19 @@ PlugAndPlay
 PlugAndPlayForLoRa
 PlugPiBlack
 PluviometerSensor
+Plynx
 PM1006K
 PM2005Lib
 PM2008 I2C
 pm25senses
 PMIC_BQ25896
 PmodCls
-PMS Library
 PMsensor
 PMSensor-HPMA115
+PMS Library
 PMW3360 Module
 PN5180
+PN532Toolkit
 PneumaticStepper
 PNGdec
 PNGenc
@@ -6201,6 +6576,7 @@ PocketbaseExtended
 pocketBME280
 PodEnoSim
 PointzNet
+Poisson
 Pokerobo_ABC
 Pokerobo_Arm
 Pokerobo_Car
@@ -6258,6 +6634,7 @@ PostNeoSWSerial
 POTA
 Potentiometer_ADI_Arduino
 Potentiostat_Shield
+PotIO
 POV library
 Powerbaas
 PowerFeather-SDK
@@ -6269,6 +6646,7 @@ PPM
 PPMEncoder
 PPM-reader
 PPPOSClient
+PQCMicro
 PqLEDStrip
 PqOSC
 Prandom
@@ -6281,8 +6659,8 @@ PRDC_RS485HD_STM32
 PRDC_ServoHT
 PRDC_TMAESC
 PrecDueTimer
-precise_sntp
 PreciseLM35
+precise_sntp
 Preferences
 PreferencesCLI
 PreMo - Virtual Path Following
@@ -6291,6 +6669,7 @@ PressureNXPMXP
 PressureTransducer
 PrimitiveStepperMotor
 PrintCharArray
+PrintCol_CW
 PrintCppVersion
 PrinterDuino
 PrintEx
@@ -6299,16 +6678,15 @@ Printoo_Library
 PrintSize
 PrintString
 pRNG
-Pro Trinket USB Keyboard Library
-Pro Trinket USB Mouse
 probot
 ProcessScheduler
 Profiler
 Progetto One Pin Keypad
-progmem_far
 PROGMEMAssert
+progmem_far
 ProgMemFS
 programmable_air
+Project Cars 2 UDP
 PrometheusArduino
 PromLokiTransport
 PROMPLUS
@@ -6322,7 +6700,10 @@ ProtoCentral ADS1262 32-bit precision ADC Library
 ProtoCentral ADS1292R ECG and Respiration boards library
 ProtoCentral ADS1293 ECG Library
 ProtoCentral AFE4490 PPG and SpO2 boards library
+ProtoCentral AS6221
 ProtoCentral FDC1004 Capacitive Sensor Library
+ProtoCentral_FDC2214_Capacitance
+ProtoCentral HealthyPi 5
 ProtoCentral HealthyPi v4 Library
 ProtoCentral MAX30001
 ProtoCentral MAX30003 ECG AFE Sensor Library
@@ -6330,8 +6711,12 @@ ProtoCentral MAX30205 Body Temperature Sensor Library
 ProtoCentral MAX86150 PPG and ECG IC library
 ProtoCentral MLX90632 Non-contact temperature Library
 ProtoCentral Pulse Express SpO2 Heartrate and BPT sensor
+ProtoCentral ST1VAFE3BX
 ProtoCentral TLA20xx
+ProtoCentral_TMF8829_dToF_Sensor_Library
 Protothreads
+Pro Trinket USB Keyboard Library
+Pro Trinket USB Mouse
 Proyectil digitalIO
 Proyectil GD3300
 Proyectil MedeaWiz
@@ -6344,26 +6729,32 @@ PS2KeyMap
 PS2KeyRaw
 ps2shebei
 ps2zhuji
-PS3 Controller Host
 PS-33D I2C
+PS3 Controller Host
 ps3mapi
 PS4Arduino
 PS4Controller
 PSACrypto
 pseudospectrum
 Psgino
+PSI
 PsxNewLib
 PsychicHttp
 Psychrometer
 PT2257
 PT2258
+PT2258_RT
 PT2314
+PT2323
 PT6312
+PT6964
 PT7C4339-RTC
 PtpIpCamera
 ptScheduler
 PTSolns_AHTx
 PTSolns_I2CBackpack
+PTSolns_I2Connect_AHT20
+PTSolns_I2Connect_EEPROM
 PTSolns_InterfaceShield
 PTSolns_microWatt
 PTSolns_VEML7700
@@ -6384,13 +6775,15 @@ PU2CLR SI4844
 PU2REO_AD9851
 PU2REO_Si5351Lite
 PU2REO_Si570
+puara-gestures
 puara-module
 Pubnub
 PubSubClient
-PubSubClient_iiot
 PubSubClient3
+PubSubClient_iiot
 PubSubClientTools
 Puertas-Logicas-Plugin
+PulseAnalyzer
 pulseAny
 PulseCom
 PulseDivider
@@ -6402,6 +6795,7 @@ PulsePosition
 Pulser
 PulseRainUARTConsole
 PulseSensor Playground
+PulseWetProbe
 pushButton
 Pushbutton
 PushButton Event Modelling Library
@@ -6428,14 +6822,15 @@ PWMOutESP32
 PWMrelay
 PWMServo
 PwmSin
+PxMatrix-1R
 PxMatrix Christmas Icons
 PxMatrix LED MATRIX library
-PxMatrix-1R
 PxServ
 PY32LowPower
 PyArduinoDebug
 PyDuinoBridge
 pyrpc
+python esp bridge
 PZEM003_Fud
 PZEM004Tv30
 PZEM004Tv40_R4
@@ -6446,6 +6841,7 @@ QC3Control
 QCFA
 QDEC
 QDispatch
+qf_math
 qlibs
 Qlink
 QList
@@ -6459,18 +6855,19 @@ qp-arduino
 QPESP32
 qqqlab-RP2040-Toolbox
 QRCode
-QRcode_eSPI
-QRcode_ST7789
 QRcodeDisplay
 QRcodeEink
+QRcode_eSPI
 QRCodeGenerator
 QRCodeGFX
 QRcodeOled
+QRcode_ST7789
 QTRMuxes
 QTRSensors
 QUAD7SHIFT
 QuadratureEncoder
 QuarkDB
+QuarkifiStreamOTA
 QuarkTS
 QuarkX
 QubitroMqttClient
@@ -6479,10 +6876,11 @@ QuectelEC200U
 Queue
 Queuetue Digital Balance Library
 Queuetue HX711 Library
-Quick_digital_IO_interrupt
 QuickAPConnect
 QuickCharge
+Quick_digital_IO_interrupt
 QuickESPNow
+quickMap
 QuickMedianLib
 QuickPID
 QuickSerial
@@ -6493,13 +6891,13 @@ QwiicUART Library
 QZQSM
 QZSSDCX
 R30X-Fingerprint-Sensor-Library
-R4_LIB_FOR_MCP2517FD
-R4_Touch
 R4A_ESP32
 R4A_I2C
 R4A_Robot
 R4HttpClient
+R4_LIB_FOR_MCP2517FD
 r4SwRTC
+R4_Touch
 r89m Buttons
 r89m CapacitiveButton
 r89m MPR121Button
@@ -6513,6 +6911,7 @@ radiation
 RadiationWatch
 Radio
 RadioactiveSpaceData
+RadioCore_Kit
 RadioengeLoraWAN
 RadioHead
 RadioLib
@@ -6520,9 +6919,8 @@ RadSensBoard
 RAIN
 RaioGroupMatrix
 RaioLink
-RAIOT_MQTT
 RAIOTerm
-RAK_LPP
+RAIOT_MQTT
 RAK12019_LTR390_UV_Light
 RAK12022-MAX31865
 RAK12027-D7S
@@ -6538,29 +6936,31 @@ RAK14014-FT6336U
 RAK15007-CY15B108QN
 RAK1500x-MB85RC
 RAK5814-ATECC608A
+RAK_LPP
 RAK-OneWireSerial
+RAKwireless_ADC_SGM58031_library
 RAKwireless ADS7830 library
+RAKwireless-Audio-library
 RAKwireless CAP1293 Touch Pad library
 RAKwireless I3G4250D Gyroscope library
 RAKwireless LED Matrix
 RAKwireless MQx library
 RAKwireless NCP5623 RGB LED library
+RAKwireless-RAK12021-TCS37725
 RAKwireless RAK12033 Library
 RAKwireless RAK12034
 RAKwireless RAK13600 RFID library
+RAKwireless_SDI-12
 RAKwireless Storage
 RAKwireless TLE7259 LIN Bus library
 RAKwireless VEML Light Sensor
-RAKwireless_ADC_SGM58031_library
-RAKwireless_SDI-12
-RAKwireless-Audio-library
-RAKwireless-RAK12021-TCS37725
 RamjiButton
 Ramp
 Rando HX711 Library
 Random16
 RandomForestModel
 randomHelpers
+Raphael
 RapidBootWiFi
 RapifireMqttClient
 Raspberry Pi Pico CPU Temperature
@@ -6579,25 +6979,26 @@ RBD_Timer
 RBD_WaterSensor
 RBE1001Lib
 RBL_nRF8001
-RC Receiver
+RCArmDrive
+RCduino
 RC.Easy
 RC_ESC
-RCduino
 RCLink
 RCLSwitch
 Rcn600
+RC Receiver
 RCReceiver
 rc-switch
 RcSwitchReceiver
 RCSwitchRmt
 RcSwitchTransmitter
-RCWL_1X05
 RCWL0516
+RCWL_1X05
 RD03Radar
 Rdebug
 RDV GY-512 Library
-React_Generic
 ReactESP
+React_Generic
 ReactiveArduino
 ReactiveESP32
 ReactorProtocol
@@ -6610,10 +7011,10 @@ RedEye
 Redis for Arduino
 Redis for ESP8266
 redkea
-Reefwing_imuTypes
-Reefwing_xIMU3
+RedLab_I2CMatrixKeypad
 ReefwingAHRS
 ReefwingFilter
+Reefwing_imuTypes
 ReefwingLPS22HB
 ReefwingLSM9DS1
 ReefwingMotorShield
@@ -6623,6 +7024,7 @@ ReefwingMSP
 ReefwingPWM
 ReefwingSBUS
 ReefwingTimer
+Reefwing_xIMU3
 Regexp
 ReGIS
 Regression
@@ -6640,12 +7042,14 @@ RemoteMeUtils
 RemoteSensor
 RemoteSerial
 RemoteSignal
+RemoteUpload
 RemoteXY
 RenkeDissolvedOxygenSensor
 RepeatButton
 RequestBuilder
 RescenicIO
 ResenseHEX
+ResistiveTouchScreen
 ResistorReader_asukiaaa
 ResponsiveAnalogRead
 RESTClient
@@ -6663,19 +7067,20 @@ RF433any
 RF433recv
 RF433send
 RFCodes
+RFDO
 RFExplorer 3GP IoT
-RFID_MFRC522v2
 Rfid134 by Makuna
 RfidDb
+RFID_MFRC522v2
 RFM69_LowPowerLab
 RG15-Arduino
 RGB
-RGB LED Lighting Shield XMC1202
-RGB matrix Panel
 RGB_LED
 RGBLED
 RGBLEDBlender
 RGB-LED-Lighting-Shield
+RGB LED Lighting Shield XMC1202
+RGB matrix Panel
 RGBProgress
 RGBRibbon
 RGBWConverter
@@ -6687,8 +7092,8 @@ Rhino_IT
 Rhino_JA
 Rhino_KO
 Rhino_PT
-Rhino_ZH
 RhinoServo
+Rhino_ZH
 rhio-LIS2HH12
 rhio-pinmap
 RiaPushbuttonLite
@@ -6697,19 +7102,23 @@ RingBuf
 RingBufCPP
 RingBuffer
 RingEEPROM
+RingFileLogger
 Ringo by CircuitMess Library
+RisalDash
 Riscduino_MCUFRIEND_kbv
 Rivers Engineering
-RL_ToneSongPlayer
 RLab
 RLCBuffer
 RLEBitmap
 rLink
 RLNode
+RL_ToneSongPlayer
+RM3100-Arduino
 RMCS-220X
 RMDX
 rmt_SENT
 RN487x
+RN8209D
 RobbusKidsy
 RobbyIO
 ROBLEX
@@ -6732,18 +7141,22 @@ Robopoly Bluetooth
 Robopoly Linear Camera
 Robopoly PRismino
 Robopoly RomeEnco
+RoboReach
 RoboServo
 Robot
-Robot Control
-Robot IR Remote
-Robot Motor
 RobotButterfly
+Robot Control
 RobotDuLAB Arduino Library
 Robotec
+Roboticus Debugger
+Robot IR Remote
 RobotL298NPlus
 RobotLib
+Robot Motor
+RobotShield
 RoboWunduino
 Robust-EEPROM
+RobustFrame
 RobustQuadrature
 RocciBoard-Library
 RockBLOCK-9704
@@ -6753,7 +7166,9 @@ RogueMP3
 RogueSD
 RohitCore-Base
 RohitCore-Communication
+RohitCore-Config
 RohitCore-Logger
+RohitCore-Power
 RohitCore-Sensor
 RohitCore-Storage
 RohitCore-Telemetry
@@ -6776,10 +7191,12 @@ roo_io_arduino
 roo_locale
 roo_logging
 roo_material_icons
+RoomWeather
 roo_onewire
 roo_prefs
 roo_quantity
 roo_scheduler
+RootCertificates
 roo_temperature
 roo_threads
 roo_time
@@ -6789,35 +7206,35 @@ roo_wifi
 roo_windows
 roo_windows_onewire
 roo_windows_wifi
-RoomWeather
-RootCertificates
 ros2arduino
 Rosserial Arduino Library
 Rotary
-Rotary_encoder
 rotaryDecoder
 rotaryDecoder8
 rotaryDecoderSwitch
 rotaryDecoderSwitch5
 RotaryDial
+Rotary_encoder
 RotaryEncoder
-RotaryEncoder_Zanduino
 RotaryEncoderPCNT
+RotaryEncoderPoll_CW
+RotaryEncoder_Zanduino
 RotEnc
 RotEncoder
 RoverWing
 rowguelike
 RoxMux
+RP2040-BrtEve
+rp2040-encoder-library
 RP2040_ISR_Servo
+RP2040PIO_CAN
 RP2040_PIO_Charlieplexing
 RP2040_PWM
 RP2040_RTC
 RP2040_SD
 RP2040_Slow_PWM
-RP2040-BrtEve
-rp2040-encoder-library
-RP2040PIO_CAN
 RPAsyncTCP
+RPCToolkit
 RPI_PICO_TimerInterrupt
 RPL
 RPlatform
@@ -6825,35 +7242,35 @@ RPM
 RPulse
 rrdtool
 RRE Font Library
-RS_ThingSpeak
 RS485
 rs485_asukiaaa
 RS485HwSerial
 RSbus
 rssRead
+RS_ThingSpeak
 rtc
 RTC
-Rtc by Makuna
-RTC RV-3028-C7 Arduino Library
-RTC_DS1302
-RTC_DS1307_Library
-RTC_NTP_replacement
-RTC_NXP_Arduino
-Rtc_Pcf8563
-RTC_RX8025NB
-RTC_RX8025T
-rtc_utils
 RTC3231
 RTC4543lib
+Rtc by Makuna
 RTCCounter
+RTC_DS1302
 RTCDS1307
+RTC_DS1307_Library
 RTCDue
 RtcDueRcf
 RTClib
 RTCLib by NeiroN
 RTCMemory
+RTC_NTP_replacement
+RTC_NXP_Arduino
+Rtc_Pcf8563
+RTC RV-3028-C7 Arduino Library
+RTC_RX8025NB
+RTC_RX8025T
 RTCtime
 RTCTimer
+rtc_utils
 RTCVars
 RTCx
 RTCZero
@@ -6861,20 +7278,22 @@ RTD10K-temp-sensor
 RTL8720_RTC
 RTL8720_TimerInterrupt
 RTOScppESP32
-RTT QRCode
-RTT Stream
 RTT-CMSIS-OS
 RTT-Ethernet
 RTT-GUI
 RT-Thread
+RTT QRCode
+RTT Stream
 Rtttl
 RUI3-Arduino-Library
+RumiCar
 RunAvgWeight
 runner
 runningAngle
 RunningAverage
 RunningMedian
 RunningMinMax
+RunningStatistics
 RunningStats
 rupertobot
 RussianText_u8g
@@ -6892,7 +7311,6 @@ RYLR_LoRaAT
 RYUW122
 RYUW122_UWB
 Ryzobee
-S.Port sensor library for FrSky
 S11059
 S4ALib
 S5851A
@@ -6902,18 +7320,20 @@ S9706
 sACN
 sACNSource
 SafeGithubOTA
+SafeLED
+SafeSerial
 SafeString
 SakuraIO
 Salesforce
 SAM32WiFiEsp
+SAMD21 Audio Player
+SAMD21 turbo PWM
+SAMD21_WS2812B
 SAMD_ISR_Servo
 SAMD_PWM
 SAMD_SafeFlashStorage
 SAMD_Slow_PWM
 SAMD_TimerInterrupt
-SAMD21 Audio Player
-SAMD21 turbo PWM
-SAMD21_WS2812B
 SAMDUE_PWM
 SAMDUE_Slow_PWM
 SAMDUE_TimerInterrupt
@@ -6929,7 +7349,9 @@ SavaTrig
 SavitzkyGolayFilter
 SavLayFilter
 SBC
+SBK_AvrBuzzer
 SBK_BarDrive
+SBK_Button
 SBK_HT16K33
 SBK_MAX72xx
 SBUS2
@@ -6937,6 +7359,7 @@ Sbutton
 SC03_C2H5OH
 SC16IS7X0
 SCA100T
+ScalpelSpace Bus
 ScalpelSpace Momentum
 SCButton
 SCConfig
@@ -6953,6 +7376,7 @@ SciFyIoT
 ScioSense_APC1
 ScioSense_AS60XX
 ScioSense_ENS16x
+ScioSense_ENS17x
 ScioSense_ENS190
 ScioSense_ENS21x
 ScioSense_ENS220
@@ -6964,16 +7388,16 @@ SCL3300
 SCL3400
 sclm-p105_shield
 SCPeriod
-SCPI Red Pitaya
 SCPI_Parser
+SCPI Red Pitaya
 ScreenUi
 ScrollingText8x8Display
 SCServo
 SCT013-100
 SCurveMotion
 SD
-SD_card_logger
 SD2405
+SD_card_logger
 SdCardServer
 SDConfig
 SDConfigCommand
@@ -6993,15 +7417,16 @@ SDU_CAR
 SE_BasicUnit
 SE_BME680
 SE_Button
-SE_EEPROM
 secTimer
 SecureMQTT
 Seeed Arduino 24GHz Radar Sensor
 Seeed Arduino 8Channel I2C Hub
+Seeed_Arduino_AHT20
 Seeed Arduino Audio
 Seeed Arduino FS
 Seeed Arduino IR
 Seeed Arduino LSM6DS3
+Seeed_Arduino_mbedtls
 Seeed Arduino Mic
 Seeed Arduino rpcBLE
 Seeed Arduino rpcUnified
@@ -7012,18 +7437,18 @@ Seeed Arduino SGP30
 Seeed Arduino Sketchbook
 Seeed Arduino SPA06
 Seeed Arduino SSCMA
-Seeed Serial MP3 Player
-Seeed Wio GPS Board
-Seeed_Arduino_AHT20
-Seeed_Arduino_mbedtls
 Seeed-GroveOfflineVoiceRecognition
 SeeedNrf52480Battery
 Seeed-PCA9685
+Seeed Serial MP3 Player
 Seeeduino GPRS
+Seeed Wio GPS Board
+SE_EEPROM
 Seesaw
 Seg16
 Seg7
 SegaGamepad
+segDisplay
 SegLCDLib
 Segma
 SegMap595
@@ -7032,13 +7457,14 @@ semilimes
 SemVerChecker
 SEN10724
 SendOnlySerial
+SenseAir_S88_Async
 SenseBoxBLE
 SensEdu
+SensesInnoma
+Sensesiot
 Senses_NBIoT
 Senses_wifi
 Senses_wifi_esp32
-SensesInnoma
-Sensesiot
 Sensirion Core
 Sensirion Gadget BLE Arduino Lib
 Sensirion Gas Index Algorithm
@@ -7052,8 +7478,10 @@ Sensirion I2C SEN63C
 Sensirion I2C SEN65
 Sensirion I2C SEN66
 Sensirion I2C SEN68
+Sensirion I2C SEN69C
 Sensirion I2C SF06-LF
 Sensirion I2C SFA3x
+Sensirion I2C SFA4x
 Sensirion I2C SFM3000
 Sensirion I2C SFM3304
 Sensirion I2C SFM3505
@@ -7066,6 +7494,7 @@ Sensirion I2C SHT3x
 Sensirion I2C SHT4x
 Sensirion I2C SPS30
 Sensirion I2C STC3x
+Sensirion I2C STC42
 Sensirion I2C STCC4
 Sensirion I2C STS3x
 Sensirion I2C STS4x
@@ -7090,19 +7519,18 @@ SensorManager
 SensorModbusMaster
 SensorNormalization
 SensorPlot WebInterface
+SensorRoxoOBR
 SensorToButton
 SensorWLED
 SensythingCore
+Sentil
 SeqButton
 SeqTimer
 SequenceTiming
 Sequent Home Automation HAT
 SercomSPISlave
 Serde
-Serial Controlled Motor Driver
-Serial Data Exporter
 Serial_BLE
-Serial_Monitor
 SerialBuffSender
 SerialBus
 SerialCAN
@@ -7110,10 +7538,13 @@ SerialCmd
 SerialCom
 SerialCommand
 SerialCommand Advanced
+SerialCommandCoordinator
 SerialCommandManager
 SerialCommands
 SerialConfigCommand
 SerialConsole
+Serial Controlled Motor Driver
+Serial Data Exporter
 SerialDebug
 SerialDebugger
 SerialDraw
@@ -7123,6 +7554,7 @@ serialIO
 SerialMenuCmd
 SerialMessageEvents
 SerialMIIO
+Serial_Monitor
 SerialMP3
 SerialMP3Player
 serialMux
@@ -7130,6 +7562,7 @@ SerialNetworkBridge
 serial-readline
 SerialRecord
 SerialRFID
+SerialRGBLed
 SerialSDManager
 SerialServo
 SerialTCPClient
@@ -7150,9 +7583,6 @@ SerialWombat18ABVGADriver
 Serie
 Series
 Servo
-Servo Hardware PWM
-Servo_Motor_Module
-Servo_TCA
 Servo328
 ServoCtrl
 ServoDAC
@@ -7161,12 +7591,16 @@ ServoEasing
 ServoESP32
 ServoESP32Fix
 ServoHack
+Servo Hardware PWM
 ServoInput
 ServoM
-ServoMotor
 Servomotor
+ServoMotor
+Servo_Motor_Module
 ServoOsc
 ServoSmooth
+Servo_TCA
+ServoTimer2Plus
 SessionManager
 SET
 SetPoint
@@ -7174,9 +7608,6 @@ Settings
 Settings Manager
 settingsManager
 SettingsManagerESP32
-Seven Segment Library
-Seven Segment Pixel
-Seven Segments K
 SevenSeg
 SevenSeg4D
 SevenSegDisplays
@@ -7186,8 +7617,11 @@ sevenSegment
 SevenSegment
 sevenSegmentDisplay
 SevenSegmentDisplay
+Seven Segment Library
 SevenSegmentPanel
+Seven Segment Pixel
 SevenSegmentsDisp
+Seven Segments K
 SevenSegmentTM1637
 SevSeg
 SevSegShift
@@ -7200,15 +7634,14 @@ SFR_Reader
 SGP30
 SH1106
 Sharer
-Sharp GP2Y Dust Sensor
 SharpDistSensor
+Sharp GP2Y Dust Sensor
 SharpIR
 sharpIRSensor
 SharpSensor
 SHCSR04
 Shellminator
 SHEX
-Shift Register LED Matrix Lib
 shift7seg
 ShiftDisplay
 ShiftDisplay2
@@ -7221,6 +7654,7 @@ ShiftRegGPIOXpander_ESP32
 ShiftRegister
 ShiftRegister74HC595
 ShiftRegisterController
+Shift Register LED Matrix Lib
 ShiftRegisterPISO
 ShiftRegisterPWM595
 ShiftRegister-PWM-Library
@@ -7248,43 +7682,37 @@ SiderealPlanets
 SigmaDSP
 SignalAcquisition
 SignalControl
+SignalCore
 Signature
 SiguesAhi
-SIKTEC Keys
 SIKTEC_AVR_Controller
 SIKTEC_EPD
+SIKTEC Keys
 SIKTEC_MDSwitch
 SIKTEC_Rotary
 SIKTEC_SdExplore
 SIKTEC_SPI
 SIKTEC_SRAM
 Silvervest OLED-0010 SPI
-Sim Racing Library
-SIM7600 TTS Library
 SIM7600Module
+SIM7600 TTS Library
 SIM800_GSM_GPRS
-SIM800_YL
 SIM800L HTTP connector
 Sim800L Library
 Sim800L Library Revised
 SIM800LPlus HTTP Connector
+SIM800_YL
 SIM808
 SIM900
+SimcomA76xx
 SIMON
-Simple FOC
-simple ht16k33 library
-Simple LED Matrix
-Simple Repository IO
-Simple Web Serial
-Simple_Esp32WiFiManager
-Simple_HCSR04
-Simple_HC-SR04_Control
 Simple5641AS
 SimpleAD9833
 SimpleBME280
 SimpleBox
 SimpleCANio
 SimpleCLI
+SimpleCode
 SimpleCollections
 SimpleComponents
 SimpleConnect
@@ -7294,15 +7722,22 @@ SimpleDCMotor
 SimpleDHT
 simpleDSTadjust
 SimpleEncoder
+Simple_Esp32WiFiManager
 SimpleEspNowConnection
 simpleEvents
 SimpleExpressions
 SimpleFilter
+SimpleFlashAudio
+Simple FOC
 SimpleFOCDrivers
 SimpleFSM
 SimpleFTPServer
+Simple-Function
 SimpleFusion
+Simple_HCSR04
+Simple_HC-SR04_Control
 SimpleHOTP
+simple ht16k33 library
 Simple-Hydroponics-Arduino
 SimpleIMU
 SimpleIOT
@@ -7310,6 +7745,7 @@ SimpleJ1939
 SimpleKalmanFilter
 SimpleKeypad
 SimpleLed
+Simple LED Matrix
 simpleLIB
 SimpleLogger
 SimpleMelt
@@ -7321,12 +7757,14 @@ SimpleMorse
 SimpleMotionV2-Arduino
 SimpleNetManager
 SimpleOLED
+SimpleOTAClient
 SimplePacketComs
 SimplePortal
 SimpleProperties
 SimpleQueue
 SimpleRegression
 SimpleRelay
+Simple Repository IO
 SimpleRGBLed
 SimpleRotary
 simpleRPC
@@ -7352,22 +7790,26 @@ SimpleUDPController
 SimpleUltrasonic
 SimpleVector
 simple-web-dashboard
+Simple Web Serial
 SimpleWiFiClient
+SimpleWifiManager
 SimpleWiFiManager
 SimplifiedTimer
 SimplyAtomic
 SimRacingController
+Sim Racing Library
 Sindormir SevenSegments
-Single LED Library
-Single_WS2812_Bitbang_Write
 SingleEMAFilterLib
+Single LED Library
+SingleSevenSeg
 SingleSevenSegment
 SingleWireDataBus
 SingleWireSerial
+Single_WS2812_Bitbang_Write
 SinricPro
+SinricProBusinessSdk
 SinricPro_Generic
 SinricPro_Renesas
-SinricProBusinessSdk
 SinricTeleport
 siot_core_lib
 sipf-arduino-client
@@ -7378,6 +7820,7 @@ Sitron Labs FUSB302 Arduino Library
 Sitron Labs LIS2DH12 Arduino Library
 Sitron Labs MAX31855 Arduino Library
 Sitron Labs OPT3001 Arduino Library
+Sitron Labs PAT9130EW Arduino Library
 Sitron Labs PI3USB9281C Arduino Library
 Sitron Labs SH1106 Arduino Library
 Sitron Labs SSD1306 Arduino Library
@@ -7388,11 +7831,10 @@ SixAxisRing
 six-digit-seven-segment
 Sixfab_CellularIoT
 Sixfab_NBIoT
+SJSArray
 SketchBinder
 SkyMap
 skytraq
-SL_PumpDriver
-SL_simpletask
 SL001_Deepanshu
 SL002_DHT11
 SlackAPI
@@ -7416,32 +7858,28 @@ SLIPStream
 slowAES
 SlowMotionServo
 SlowPWM
+SL_PumpDriver
+SL_simpletask
 SM_16DIGIN
 SM_16RELAYS
 SM_16UNIVIN
 SM_4REL4IN
 SM_8CRT
 SM_8MOS
-SM_BAS
-SM_ESP32Pi
-SM_LCDAdapter
-SM_RTD
-SM_TC
-SMA SunnyBoy Reader
-Small e-paper Shield V2
 SmallButton
+Small e-paper Shield V2
 SmallProjects
 SmallRTC
 SmallSetup
-Smart Motor Driver - SAMI
-Smart_Duty_Cycling
 SmartButton
 SmartButton Library
-Smartcar shield
 SmartCard
 SmartCardReader
+Smartcar shield
 SmartComm
+Smart Connect
 SmartDial
+Smart_Duty_Cycling
 SmartEverything CC2541
 SmartEverything HTS221
 SmartEverything Lion RN2483
@@ -7452,21 +7890,29 @@ SmartEverything NFC NT3H1101
 SmartEverything SE868-AS
 SmartEverything SIGFOX LE51-868
 SmartEverything VL6180X
+SmartFont
 smart-input-filter
 SmartLadder
 SmartMatrix
 SmartMatrix GFX
+Smart Motor Driver - SAMI
 SmartPin
 SmartProcess
 SmartProv
 SmartRC-CC1101-Driver-Lib
+SmartSensorFilter
 SmartSW
 SmartSystem
 SmartTM1637
+SmartTrafficLight
+SMA SunnyBoy Reader
+SM_BAS
 SMC
 Smelpro Macaron Library
-Smooth
+SM_ESP32Pi
+SM_LCDAdapter
 smooth
+Smooth
 SmoothADC
 SmoothAxis
 Smoothed
@@ -7476,6 +7922,8 @@ SmoothThermistor
 SmoothTouch
 SMoS
 sMQTTBroker
+SM_RTD
+SM_TC
 SMV_CAN_Bus
 SN74HC573
 SN76489
@@ -7486,8 +7934,8 @@ SnappyProto
 SnappyXO-PreciseMovement-library
 SnapshotBus
 SNMP
-SNMP Manager
 SNMP_Agent
+SNMP Manager
 Snowduino
 SNP_Sensor
 SoapESP32
@@ -7519,6 +7967,7 @@ softRTC
 SoftServo
 SoftSPIB
 SoftTimer
+SoftTimerAdvance
 SoftTimers
 SoftwareReset
 SoftwareSerialTX
@@ -7537,43 +7986,75 @@ SolarCharger
 SolarChargerSB041
 solarfunctions
 SolarRadiationSensor
+Soldered 125kHz RFID Library
 Soldered ADS1015 and ADS1115 EasyC Library
+Soldered ADS-B Receiver
 Soldered AS3935 Lightning sensor library
+Soldered Basic Stepper Driver Arduino Library
+Soldered BHI385 IMU
 Soldered BME280 and BME680 EasyC Library
+Soldered BME688 Library
+Soldered BMP180 Arduino Library
 Soldered BMP280 Arduino Library
+Soldered BMP388 Arduino Library
 Soldered BQ27441-G1 Arduino Library
+Soldered Button LED Buzzer Board Arduino Library
 Soldered CAN Bus Breakout Arduino Library
+Soldered Compass AK09918
+Soldered DE2120
 Soldered DS3234 RTC
 Soldered Fingerprint Sensor
 Soldered Hall Effect Arduino Library
 SOLDERED HX711 Arduino Library
+Soldered I2S Digital Audio Amplifier Arduino Library
+Soldered IIS2DULPXTR Accelerometer
 Soldered INA219 Board Arduino Library
+Soldered Inputronic BRIDGE Library
+Soldered Inputronic GRID
+Soldered L86 M33 GNSS Library
 Soldered LCD
+Soldered Library for Relays
+Soldered LSM6DS3 Arduino library
+Soldered LSM6DSO Arduino Library
 Soldered LSM9DS1TR Arduino Library
 Soldered LTR-507 Arduino Library
 Soldered MCP23017 Arduino Library
 Soldered MCP4018 Arduino Library
 Soldered MCP47A1 DAC library
 Soldered Microphone SPK0641HT Library
+Soldered microSD Card Breakout Arduino library
 Soldered MQ-X Gas Sensor Arduino Library
 Soldered nRF24 Arduino Library
 Soldered Obstacle Sensor Arduino Library
 Soldered OLED Display Arduino Library
 Soldered OpenAI Library
+Soldered PCA9685 PWM Servo Driver
+Soldered PCAL6416A IO expander library
 Soldered PCF85063A RTC Arduino Library
+Soldered PIR sensor with easyC
 Soldered PMS7003 Arduino Library
+Soldered-position-sensor-AS5600-breakout-Arduino-library
+Soldered Rotary Encoder with EasyC
+Soldered-SCD43
 Soldered SI114X Light Sensor Arduino Library
 Soldered SIM7020 NB-IoT Library
 Soldered SIM800L Arduino Library
+Soldered-Simple-Sensor-Arduino-Library
+Soldered Slider Potentiometer with easyC
 Soldered TCA9548A Multiplexer Arduino Library
+Soldered Thermocouple Sensor AD8495 Library
+Soldered TMP117
+Soldered u-blox GPS GNSS
 Soldered Ultrasonic Distance Sensor Arduino library
+Soldered VL53L1X Arduino Library
 Soldered WS2812 Arduino Library
+Soldered WS2812B Grid
 Soldering Machine
 SOLOMotorControllers
 SomeSerial
+SomfyReceiver
 Somfy_Remote_Lib
 Somfy_RTS
-SomfyReceiver
 Somo1ELV
 somo-ii-lib
 SOMOIoD
@@ -7584,16 +8065,17 @@ Sony9PinRemote
 SoracomArcESP32
 SorbaMqttWifi
 souliss
-Sound Library for Arduino
+SoundEngine
 Soundex
+Sound Library for Arduino
 SoundPlayer
 SP3S-AQ2SpaceData
 SpacebrewYun
 Spacecat
+SpaceTrek_ClassBot2
 SpaceTrek EasyStarterKit
 SpaceTrek ExoNaut
 SpaceTrek MakerBox
-SpaceTrek_ClassBot2
 spaiot-lib
 sparkey_gyro
 SparkFun 6DoF ISM330DHCX
@@ -7650,6 +8132,7 @@ SparkFun Flexible Grayscale OLED Breakout
 SparkFun Flying Jalapeno 2 Arduino Library
 SparkFun Flying Jalapeno Arduino Library
 SparkFun FPC2534 Arduino Library
+SparkFun_FS3000_Arduino_Library
 SparkFun Garmin LIDAR-Lite v4 Arduino Library
 SparkFun Graphic LCD Serial Backpack
 SparkFun GridEYE AMG88 Library
@@ -7687,11 +8170,12 @@ SparkFun LTE Shield Arduino Library
 SparkFun MAX1704x Fuel Gauge Arduino Library
 SparkFun MAX3010x Pulse and Proximity Sensor Library
 SparkFun MAX31855K Thermocouple Digitizer
+SparkFun MCP4725 Arduino Library
 SparkFun MCP9600 Thermocouple Library
 SparkFun MetaWatch
 SparkFun MG2639 CellShield
-SparkFun Micro OLED Breakout
 SparkFun MicroMod Button
+SparkFun Micro OLED Breakout
 SparkFun MicroPressure Library
 SparkFun MicroView
 SparkFun MiniGen
@@ -7727,12 +8211,14 @@ SparkFun Qwiic Joystick Arduino Library
 SparkFun Qwiic Keypad Arduino Library
 SparkFun Qwiic LED Stick Library
 SparkFun Qwiic MP3 Trigger Arduino Library
+SparkFun QwiicNES Arduino Library
 SparkFun Qwiic OLED Arduino Library
 SparkFun Qwiic OpenLog
 SparkFun Qwiic OTOS Arduino Library
 SparkFun Qwiic PIR Library
 SparkFun Qwiic Power Switch Arduino Library
 SparkFun Qwiic Relay Arduino Library
+SparkFun QwiicRF
 SparkFun Qwiic RFID Arduino Library
 SparkFun Qwiic RTC RV1805 Arduino Library
 SparkFun Qwiic RTC RV8803 Arduino Library
@@ -7743,8 +8229,6 @@ SparkFun Qwiic TMF882X Library
 SparkFun Qwiic Twist Arduino Library
 SparkFun Qwiic Ultrasonic Arduino Library
 SparkFun Qwiic Universal Auto-Detect
-SparkFun QwiicNES Arduino Library
-SparkFun QwiicRF
 SparkFun RedBot Library
 SparkFun RFD77402 Distance Sensor - VCSEL Time of Flight
 SparkFun RGB OLED 64x64 Library
@@ -7755,8 +8239,8 @@ SparkFun SDP3x Arduino Library
 SparkFun Serial Fingerprint Scanners AS-108M and AD-013
 SparkFun SerLCD Arduino Library
 SparkFun SGP30 Arduino Library
-SparkFun SGP4 Arduino Library
 SparkFun SGP40 Arduino Library
+SparkFun SGP4 Arduino Library
 SparkFun SHTC3 Humidity and Temperature Sensor Library
 SparkFun Si7021 Humidity and Temperature Sensor
 SparkFun Simultaneous RFID Tag Reader Library
@@ -7800,13 +8284,12 @@ SparkFun VL53L5CX Arduino Library
 SparkFun VL6180 Sensor
 SparkFun WAV Trigger Pro Qwiic
 SparkFun Weather Meter Kit Arduino Library
+SparkFun_WebServer_ESP32_W5500
 SparkFun WiseChip HUD
 SparkFun WM8960 Arduino Library
 SparkFun WT2003S MP3 Decoder Library
 SparkFun XM125 Arduino Library
 SparkFun ZX Distance and Gesture Sensor
-SparkFun_FS3000_Arduino_Library
-SparkFun_WebServer_ESP32_W5500
 Sparkpad
 SparseArray
 SparseMatrix
@@ -7815,6 +8298,7 @@ Sparthan gForce
 Sparthan Module
 Sparthan Myo
 SPC
+SPD_Arduino
 SpeedControl
 SpeedMeasurer
 Speeduino
@@ -7823,27 +8307,30 @@ SpeedyStepper
 Spell_IoT
 SPFD5408 TFT Library
 SpheroRVR
-SPI VFD
-spi_lcd_read
 SPI-DAC7611
 Spiderbot
 SPIExtension
-SPIFFS ImageReader Library
 SPIFFS_FilePrint
-SPIFFS_Shell
+SPIFFS ImageReader Library
 SPIFFSIniFile
 SPIFFSReadServer
+SPIFFS_Shell
 SPIFlash_LowPowerLab
 SPI-FlashMem
+SPIKeyPad
+spi_lcd_read
+SPI Library for MS5611 Altimeter and Temperature Sensor
 SPIMemory
 spin-timer
 SpinWearables
 SPIShiftRegister
+SPI VFD
 SPL06-001
 SPL06-007
 SPL07-003
 Splash
 SplashScreen
+S.Port sensor library for FrSky
 SpotifyEsp32
 spreGnssRtcLib
 spreLgfxTouch
@@ -7852,21 +8339,20 @@ SpresenseIMU
 SpresenseNeoPixel
 sprinkler-system
 SpritzCipher
-Sqlite Micro Logger
-Sqlite3 for ESP8266
 Sqlite3Esp32
+Sqlite3 for ESP8266
 SQLiteDatabaseConnection
 SQLiteManager
+Sqlite Micro Logger
 SRAM
 SRAM_23LC
 SRAMsimple
 SRF05
 Srp_RGB_1
-ss_oled
 ssd1306
 SSD1306
-SSD1306 OLED Display
 SSD1306Ascii
+SSD1306 OLED Display
 SSD1306TUR
 SSD1306wire
 ssd1306xled
@@ -7875,6 +8361,7 @@ SSD1331_LTSM
 SSD1803A_I2C
 SSLClient
 SSLClientESP32
+ss_oled
 SST25VF
 SSVAnySensor
 SSVLongTime
@@ -7885,16 +8372,16 @@ SSVTimer
 SSVWaitForStringInStream
 SSVXYMatrix
 SSVXYMatrixText
-ST_HW_HC_SR04
 ST7032_asukiaaa
 ST7305_MonoTFT_Library
 ST7306_LCD
-ST7565 LCD
 ST7565DOG
+ST7565 LCD
 st7567sfGK 128x64 i2c LCD driver for Generation Klick
 ST7735_LTSM
 ST7789 AVR
 ST7789_LTSM
+StableLCD
 Stack
 stackchan-arduino
 StackmatTimer
@@ -7903,6 +8390,7 @@ StackString
 Stamp
 STAMP-PICO
 StarterRemote
+Statechart
 StatefulGSMLib
 StateMachine
 StateMachineFramework
@@ -7930,10 +8418,10 @@ Step_CYC10_I2C
 Step_CYC10_Seven_Seg_Display
 StepMotor4windings
 Stepper
-Stepper Async 5
 Stepper_28BYJ_48
 Stepper595
 Stepper8825Lib
+Stepper Async 5
 StepperControl
 StepperDriver
 StepperHAL_STM32F4x1
@@ -7942,15 +8430,14 @@ StepperMulti
 StepperShiftRegister74HC595
 StereoSID
 StevesAwesomeButton
+ST_HW_HC_SR04
+Stimeration
 StivSeg
 STLED316S
-STM32_CAN
-STM32_ISR_Servo
-STM32_PWM
-STM32_Slow_PWM
-STM32_TimerInterrupt
 STM32ad9833
+STM32_CAN
 STM32duino ASM330LHH
+STM32duinoBLE
 STM32duino Examples
 STM32duino FP_Examples
 STM32duino FreeRTOS
@@ -7970,6 +8457,7 @@ STM32duino LIS2DUXS12
 STM32duino LIS2DW12
 STM32duino LIS2MDL
 STM32duino LIS3MDL
+STM32duinoLoRaWAN
 STM32duino Low Power
 STM32duino LPS22DF
 STM32duino LPS22HB
@@ -7996,6 +8484,7 @@ STM32duino NFC-RFAL
 STM32duino Proximity Gesture
 STM32duino RTC
 STM32duino S2-LP
+STM32duino-Semihosting
 STM32duino SHT40-AD1B
 STM32duino SPBTLE-RF
 STM32duino ST25DV
@@ -8066,21 +8555,22 @@ STM32duino X-NUCLEO-NFC12A1
 STM32duino X-NUCLEO-S2868A1
 STM32duino X-NUCLEO-S2868A2
 STM32duino X-NUCLEO-S2915A1
-STM32duinoBLE
-STM32duinoLoRaWAN
-STM32duino-Semihosting
 STM32encoder
 STM32F1_RTC
+STM32_ISR_Servo
 STM32mcp4151
 STM32Modbus
+STM32_PWM
 STM32RomWebFlasher
 STM32RS485DMA
+STM32_Slow_PWM
+STM32_TimerInterrupt
 STMSpeeduino
 Stone_serial
 STools
 StopLoop
-StopWatch_RT
 StopwatchLib
+StopWatch_RT
 StoryBoardLib
 STPM3X
 StratoLit-BQ25611D
@@ -8098,8 +8588,8 @@ StreamLog
 StreamPacket
 StreamUtilities
 StreamUtils
-string_asukiaaa
 StringAction
+string_asukiaaa
 Stringcalculater
 StringEEPROM
 StringLib
@@ -8107,6 +8597,7 @@ StringN
 StringSplitter
 StringUtils
 StripDisplay
+StripePromptPay
 Strober
 STS_Servos
 Student
@@ -8120,10 +8611,11 @@ SunFounderPowerControl
 SunPosition
 SunRise
 sunset
-Super CAN
-super_easing
 SuperButton
+Super CAN
 SuperCANBus
+SuperDMZ
+super_easing
 SuperOTA
 SuperTimers
 SuplaDevice
@@ -8137,8 +8629,9 @@ SwarmTile
 SWI2C
 SwissHandmade MiniPirate
 Switch
-Switch_lib
 Switch2_lib
+SwitchBank
+Switch_lib
 SwitchLib
 swRTC
 SWSerialOut
@@ -8151,34 +8644,39 @@ SX150x
 SX8634
 SXAccessoire
 Synapse
+SynapseDebugger
 Syncano Arduino Library
 SyncGenie
 SyncItIOT
 SyncWaveformsLib
 SynoLinks
+SyntropicOS
 sysfile
+SysUILib
 t6iot
 TA6932
 Table
 Tachometer
 TactileSwitch
 TactNecklace
+TAD2144
 Tago ESP32
 Talk2
 Talkie
 TalkiePCM
-Talking_Display
 TalkingButton
+Talking_Display
 TalkingLED
 TAMC_FT62X6
 TAMC_GT911
+TameModbus
 TankController
 TapatioElectronics
 TapCode
+tarfs
 Tarmos
 Task
 Task by Makuna
-Task Scheduler
 Tasker
 Taskfun
 TaskJockey
@@ -8186,12 +8684,13 @@ TaskManager
 TaskManagerIO
 Taskrunner
 Tasks
+Task Scheduler
 TaskScheduler
-TB_TFT_eSPI
 TB6612FNG_XCR
 TB67H450-arduino-library
 TB9051FTGMotorCarrier
 TBPubSubClient
+TB_TFT_eSPI
 TC78B009FTG_asukiaaa
 TCA6408A_RT
 TCA6416A
@@ -8221,30 +8720,30 @@ TCS34725AutoGain
 tcUnicodeHelper
 TCXWriter
 tdslite
-TE SM9000-series
 TEA5767
+TEA5767Radio
 Tec02XX
 Technoshield-ui-lib
-TEE UC20 Shield
 TeeGrid
 Teensy_3X_Multipurpose_Board
-Teensy_PWM
-Teensy_Slow_PWM
-Teensy_TimerInterrupt
 Teensy41_AsyncTCP
 TeensyAudioFlashLoader
 TeensyAudioLaunchCtrl
 TeensyAudioSampler
 TeensyDMX
 TeensyID
+Teensy_PWM
 TeensySimplePacketComs
+Teensy_Slow_PWM
 TeensyStep
+Teensy_TimerInterrupt
 TeensyTimerTool
 TeensyUserInterface
 TeensyVariablePlayback
 TeensyView
 TeensyXENO
 TeeRec
+TEE UC20 Shield
 Tektite RotEv Controller
 Telaire T6700 CO2 Sensor Module Library
 TelegramBot
@@ -8282,6 +8781,7 @@ Terminal
 TerminalCommander
 TerraSoil
 TeslaCloud
+TE SM9000-series
 TestTool
 Tether
 TetrisAnimation
@@ -8310,19 +8810,19 @@ TFMPI2C
 TFMPlus
 TFS20
 TFT
-TFT Touch Shield V1.0
-TFT Touch Shield v2.0
 TFT_22_ILI9225
+TFT35_V1_F407
 TFT_eSPI
 TFT_eSPI_ES32Lab
 TFT_eSPI_Scroll
 TFT_eSPI_Widgets
 TFT_eWidget
-TFT_RoboEyes
-TFT35_V1_F407
 TFTGraph
 TFTPClient
+TFT_RoboEyes
 TFTTerminal
+TFT Touch Shield V1.0
+TFT Touch Shield v2.0
 TGP Bouton
 TGP Decodeur
 TGP Del
@@ -8342,8 +8842,8 @@ TheThingsNetwork
 TheThingsNode
 TheTroll
 TheVaporTrail SubPixel
-thinger.io
 ThingerCore32
+thinger.io
 ThingESP
 ThingfaceClient
 Thingpings
@@ -8370,8 +8870,6 @@ ThreadSafePing
 ThreeD
 ThresholdLib
 Throttle
-TI TCA9548A
-TI_SN76489
 Tic
 Ticker
 TickerTape7SegmentDisplay
@@ -8382,6 +8880,7 @@ TIL306
 TiltSensor
 Timber
 Time
+Time64
 TimeAlarms
 TimedBlink
 TimedPID
@@ -8408,14 +8907,16 @@ TimerKernel
 TimerMs
 TimerOne
 TimerOne_V2
+TimerPoll_CW
 Timers
-Timers_one_for_all
 timersapi
+Timers_one_for_all
 TimerThree
 TimerUtils
 TimeSeries
 timestamp32bits
 Timezone
+Timezone64
 Timezone_Generic
 TimezoneTranslator
 timing
@@ -8427,7 +8928,6 @@ Tinker C6
 TinkerController
 tinkeriot
 tiny
-Tiny Key Value Store
 Tiny4kOLED
 TinyBME280
 TinyButton
@@ -8459,6 +8959,7 @@ tinyhal
 Tiny-I2C-Drivers
 tinyI2S
 TinyIO
+Tiny Key Value Store
 TinyKT0803
 TinyLiquidCrystal
 TinyLiquidCrystal_I2C
@@ -8473,10 +8974,13 @@ TinyMQTTClient
 TinyNunchuk
 TinyOLED-Fonts
 TinyPICO Helper Library
+TinyPortal
 tinyproto
 TinyRC522
+TinyRingBuffer
 tinyRTCds1307
 TinyRTCLib
+TinyRTOS
 TinyScheduler
 TinyScreen
 TinySerial
@@ -8498,7 +9002,10 @@ TinyUSB_MIDI_Device_Arduino
 TinyUSBSimplePacketComs
 TinyWireM
 TinyXML
+TI_SN76489
+TI TCA9548A
 TJpg_Decoder
+TKJHAT
 TLA2518
 TLC5615
 TLC59116
@@ -8507,8 +9014,10 @@ TLC5917
 TLC591x
 Tlc5940
 TLC5947
+TLC5947_SplitLatch
 TLCBuffer
 TLE72X
+TLE75080
 TLE9012_BMS_IC
 TLE9879 BLDC Motor Control Shield
 TLI4970
@@ -8539,10 +9048,12 @@ TMC7300
 TMCStepper
 TMD3725
 TMP117-Arduino
+TMP119
 TMP126
 TMP36
 TMP6x
 TMRpcm
+TMT_SmartConnect
 TN_SwitchState
 ToFFilter
 Toggl API v8 - Arduino Implementation
@@ -8568,12 +9079,12 @@ Totem Library
 Totem Roboboard
 TOTP library
 TOTP-RC6236-generator
-Touch Screen Driver
 TouchCal
 TouchEvent
 TouchKeypad
 TouchLed
 TouchScreenAdapter
+Touch Screen Driver
 TouchscreenResistive
 TouchSensorLib
 TouchToggle
@@ -8610,7 +9121,6 @@ Troyka-IMU
 TroykaLight
 TroykaThermometer
 TrueProx
-TS_lib
 TS4231 Library
 TS8000 Library
 TSBridge
@@ -8622,33 +9132,36 @@ TsicSensor
 TSL235R
 TSL2591MI
 TSL260R
+TS_lib
 Tsunami
+TSW10
 TsyDMASPI
 ttestTable
 TTN_esp32
+TTP223Row
 TTP229
-TTP229 Keypad Driver
 TTP229_BS81X_Serial
+TTP229 Keypad Driver
 TumbleFeeder
 Tumbly
 TunePlayer
 TurnoutPulser
 Tuya_BLE_MCU_SDK
+Tuyav
 Tuya_WiFi_MCU_SDK
 Tuya_ZIGBEE_MCU_SDK
-Tuyav
 TVout
 Tweakly
 Tween
-TWI_GPS
 TwiBus
+TWI_GPS
 twilio-esp32-client
 TwiLiquidCrystal by Arnakazim
 Twin_AIoT
 TwitchApi
 TwitterApi
-Two Way ESP
 TwoButtonsInterface
+Two Way ESP
 TwoWheelRobot
 TX07K-TXC
 TXOnlySerial
@@ -8660,8 +9173,10 @@ U8g2_for_Adafruit_GFX
 U8glib
 U8glib-HAL
 U8xLaserDistance
+UANIMA
 UARDECS Library
 UARDECS_MEGA Library
+UARDECS_PICO Library
 uArmLibrary
 UART_7Seg_Display
 UART_Keyboard
@@ -8674,6 +9189,7 @@ Ubidots MQTT for ESP8266
 UbidotsXLR8
 uBitcoin
 u-blox GNSS
+UBMA250
 uButton
 UbxGps
 UC121902-TNARX-A
@@ -8688,15 +9204,15 @@ uConfigLib
 uCOS-II
 uCOS-III_Due
 ucPack
-UCR ESP8266
 uCRC16BPBLib
 uCRC16Lib
 uCRC16XModemLib
+UCR ESP8266
 uDebugLib
 UDVI HSTX
-ue_i2c_icp_10111_sen
 uECG
 uEEPROMLib
+ue_i2c_icp_10111_sen
 uEncoder
 uEspConfigLib
 uFire PAR Sensor
@@ -8723,25 +9239,28 @@ UltiBlox-SensorAnalog
 UltiBlox-SerialCommands
 UltiBlox-SerialLogger
 Ultimate_ESP_MQTT_Ubidots
+Ultra1602Ultimate
 UltraDistSensor
 UltraPing
 UltraSense
 ultrasonic
 Ultrasonic
-Ultrasonic_hc_sr04
-UltraSonic_Lib
 UltrasonicA02YYUW
+Ultrasonic_hc_sr04
 UltrasonicHCSR04
+UltraSonic_Lib
 UltrasonicSensor
+Ultrasonic Sensor Library
+UltrasonicX
 UltraSonicXCR
 ULWOS2
-UM RGB Touch Mini
-UM SeriesD Helper
 um3750-library
 uMessagesBrokerLib
 uMFMLib
 UMIRobot
+UM RGB Touch Mini
 UMS3 Helper
+UM SeriesD Helper
 uMT
 uMulti
 uMuxOutputLib
@@ -8753,31 +9272,36 @@ UNI
 Unified Log
 Unishox Progmem Decompressor
 Unistep2
-Unit MQ
+UnitCMSISDAP
 UNIT_GLASS
 UNIT_MINISCALE
+Unit MQ
 Units
 unit-system
+Universal_Button
 Universal Debug Library
 Universal Inputs
-Universal_Button
 UniversalRadioWSN
 UniversalTelegramBot
 UniversalTimer
 UniversalTransmitter
+UniversalZaloBot
 UnixTime
-Uno WiFi Developer Edition Serial1
-Uno_HUB75_Driver
 UnoCar
 unoHID
+Uno_HUB75_Driver
+UNOQ_STM32_HAL
 UNOR4WMatrixGFX
 UnorderedMap
+Uno WiFi Developer Edition Serial1
 unPhoneLibrary
 unzipLIB
 UOS
 UpbeatLabs MCP39F521
 Updatable
+UpdateOTW
 Updater
+uPerlin
 upicodvi
 uPID
 UPnP_Generic
@@ -8786,20 +9310,22 @@ Uptime Library
 URLCode
 UrlEncode
 uRTCLib
+US500
 uS82
-USB Host Shield Library 2.0
-usb_midi_host
 USBBlaster
 USBControllerLib
 USBHID
 USBHost
-USBMIDI
+USB Host Shield Library 2.0
 USB-MIDI
+USBMIDI
+usb_midi_host
 USBPause
 USBPowerDelivery
 usbrubber
 USBSnifferPIO_RP2040
 USBStatus
+UsefullCommands
 UselessLib
 UserManager
 uSevenSegmentLib
@@ -8807,8 +9333,8 @@ USIWire
 uStepper
 uStepper 8b
 uStepper S
-uStepper S-lite
 uStepperS32
+uStepper S-lite
 UTF8 Print AdaGfx
 UTF8ToGB2312
 UTFT_SdRaw
@@ -8825,7 +9351,9 @@ uUnixDate
 UUtzinger_DRV8704
 UUtzinger_logger
 UUtzinger_RingBuffer
+UWB_DW1000_DW3000
 UWB-MaUWB-AT
+uWire
 v202_protocol
 V7RCRobot-ESP32
 V7RCServoDriver
@@ -8836,6 +9364,7 @@ VariableTimedAction
 Variant
 variants_collector
 vbus-arduino
+VCAN2515
 Vcc
 VCNL3040 Proximity Sensor Library
 VCNL36687
@@ -8851,6 +9380,7 @@ VEGA_ArduinoBLE
 VEGA_BMI088
 VEGA_ChainableLED
 VEGA_FirebaseArduino
+VEGAIoT_BusIO
 VEGA_IRremote
 VEGA_MAX30100
 VEGA_MAX30102
@@ -8859,9 +9389,8 @@ VEGA_RV3028
 VEGA_SH1106
 VEGA_SoftwareSerial
 VEGA_ST7735_and_ST7789
-VEGA_WiFiNINA
-VEGAIoT_BusIO
 VEGA-UIP
+VEGA_WiFiNINA
 VEML6040
 VEML6070
 VEML6075
@@ -8872,6 +9401,7 @@ VescMotorController
 VFDDisplay
 VGAX
 VGAXUA
+VIA_Arduino
 Vibration
 VibrationMotor
 vid6608
@@ -8879,17 +9409,20 @@ VIDI-X_BQ24295
 VidorGraphics
 VidorPeripherals
 ViewMarq
+ViewPoint
 ViraLink-MQTT-Client
+Vira_Matrix
+ViraMediaWeb
+Vira_WiFi_Connector
 virtmem
-Virtual Joystick for LVGL
 VirtualButton
+Virtual Joystick for LVGL
 VirtualScreen
 VirtualTherm
-Virtuino
-Virtuino library for all ESP8266 and ESP32 boards
-Virtuino library for STM32 boards
+VirtuinoCloud
 VirtuinoCM
 Vishay_VCNL4200
+ViSPE ADIN1110
 VitconCommon
 VitconIOT
 VitconLink
@@ -8901,20 +9434,24 @@ VL53L0X_mod
 vl53l0xTOFA
 VL53L1X
 VL53L1X_ULD
+VL53L4CD
+VL53L5CX
 VL6180X
 VL6180X_WE
 VLCB
 VMA11
-vn_lunar
 VNCL4020C-Arduino
 VNH3SP30
+VN_LCD
+vn_lunar
+VN_VOICE
 VolAnalyzer
 Voltage Reference
 VoltLora
 Voltmeter
 Volume
-Volume 3
 Volume2
+Volume 3
 VolumeConverter
 vovagorodok_ArduinoBleBattery
 vovagorodok_ArduinoBleChess
@@ -8927,6 +9464,7 @@ vovagorodok_ArrayUtils
 vovagorodok_PicChess
 vovagorodok_Servo
 Voyager-OTA-Client
+VQF_Arduino
 Vrekrer SCPI parser
 VRPC
 VS1053 for use with SdFat
@@ -8943,8 +9481,8 @@ WAMR-ESP32
 WarmCat6x14backpack
 Wasm3
 Watch
-WatchDog
 Watchdog
+WatchDog
 Watchy
 WaterFlow
 Watermeter
@@ -8954,10 +9492,12 @@ WaveHC
 WaveMix
 waver
 Waveshare 4 Inch Tft Touchscreen
-Waveshare ILI9486
 Waveshare_EPD
+Waveshare ILI9486
 Waveshare_ST7262_LVGL
 WBIOExtMini
+WCB_Client
+WcbCmd
 wCK_Series
 WD Easy
 wdt_samd21
@@ -8966,7 +9506,6 @@ weathercall
 WeatherFlowAPI
 WeatherMeters
 WeatherStationDataRx
-Web Server for Arduino Uno R4 WiFi
 Web3JBC
 Webbino
 WebConfig
@@ -8982,11 +9521,12 @@ WebServer_ESP32_SC_W5500
 WebServer_ESP32_SC_W6100
 WebServer_ESP32_W5500
 WebServer_ESP32_W6100
-WebServer_WT32_ETH01
 WebServerFileUpload
+Web Server for Arduino Uno R4 WiFi
+WebServer_WT32_ETH01
 WebSockets
-WebSockets_Generic
 WebSockets2_Generic
+WebSockets_Generic
 WebSocketStreamClient
 WebTerminal
 webthing-arduino
@@ -9000,8 +9540,6 @@ Whadda LED bar graph
 WhareHauoraWiFiManager
 Wiegand
 WiFi
-WiFi Link
-WiFi Picker
 WiFi101
 WiFi101_Generic
 WiFi101OTA
@@ -9013,22 +9551,24 @@ WiFiController
 WiFiCreds
 WiFiEsp
 WiFiEspAT
+WiFi Link
 WifiLocation
 WiFiMan
 WiFiManager
+WiFiManagerDesign
 WiFiManager_Generic_Lite
 WiFiManager_NINA_Lite
 WiFiManager_Portenta_H7_Lite
 WiFiManager_RP2040W
 WiFiManager_RP2040W_Lite
 WiFiManager_RTL8720
-WiFiManagerDesign
 WiFiManagerTz
 WiFiMQTTManager Library
 WiFiMulti_Generic
 WiFiNINA
 WiFiNINA_-_Adafruit_Fork
 WiFiNINA_Generic
+WiFi Picker
 WiFiPortalESP8266
 WiFiProvision
 WiFiProvisioner
@@ -9052,9 +9592,9 @@ WinkelICT Tiny AT Command Parser
 WinsonLib
 Wio 3G for Arduino
 Wio cell lib for Arduino
+WioCellular
 Wio LTE Arduino Library
 Wio LTE for Arduino
-WioCellular
 WIOTerminal_WiFiManager
 wire_asukiaaa
 WireData
@@ -9063,6 +9603,7 @@ WireGuard-ESP32
 wireguard-pico-w
 WirelessRC
 Wireling
+WirePIO
 WireSusi
 WireUpdate
 WireUtility Library
@@ -9071,6 +9612,7 @@ wiring_analog_SAMD_TT
 wiring-timer
 WisBlock-API
 WisBlock-API-V2
+WiStalker
 WitAITTS
 WiThrottle
 WiThrottleProtocol
@@ -9092,12 +9634,13 @@ wpi-32u4-library
 WPI430-VMA430 GPS
 WrapperFreeRTOS
 WroobImp
-WS_ESP32_Touch28
-WS2812 Lib for Air001
-WS2812_SYC_Air001
+WS25QxxFlash
 WS2812Capture
 WS2812FX
+WS2812 Lib for Air001
+WS2812_SYC_Air001
 WS281xProcessor
+WS_ESP32_Touch28
 WSN_RFM69
 WsprEncoded
 WTV020SD16P
@@ -9105,15 +9648,20 @@ WuaLeds_AW20216S
 WZ Library
 X9C103S
 X9C10X
-xbee_serial_array
 XBee-Arduino library
 XBeeATCmds
+XBeeFrame
+xbee_serial_array
 Xbox 360 Controller LEDs
 XBoxControllerHandler
 XboxControllerNotificationParser
 XboxSeriesXControllerESP32_asukiaaa
 XboxSeriesXHIDReportBuilder_asukiaaa
+XC_GUI
 XCR-LDR
+XC_SR04
+XDigit7Segment_74HC595
+xelp
 Xeno Language
 XENSIV 3D Magnetic Sensor TLx493D
 XENSIV Angle Sensor TLx5012B
@@ -9121,9 +9669,11 @@ XENSIV BGT60TR13C Radar Sensor
 XENSIV Digital Pressure Sensor
 XENSIV PAS CO2
 XGZP6897D
+XiaoMiaoLED
 Xiao NRF52840 Battery
 xiaozhi-mcp
 XInput
+XLOT-QuadSwitch
 XLR8ADC
 XLR8AddrPack
 XLR8BuildTemplate
@@ -9148,16 +9698,18 @@ XMC_Servo
 XMLWriter
 XModem
 XP_Button
+XPoint
 XPowersLib
-XPT2046 Driver
 XPT2046_Bitbang
 XPT2046_Bitbang_Slim
 XPT2046_Calibrated
+XPT2046 Driver
 XPT2046_Touchscreen
 XPT2046_Touchscreen_TT
 XRA1405
 XRA1405_Button
 xrp-style-wpilib-comms
+XSegment_lib
 xsens_mti
 Xsens_MTi_I2C
 Xsens_MTi_SPI
@@ -9168,6 +9720,7 @@ XxHash_arduino
 XY2-100
 xy6020l
 xyc_als21c
+XYdraw
 XYZgeomag
 XYZrobotServo
 YAAWS
@@ -9183,15 +9736,17 @@ Yet Another Arduino Debounce Library
 Yet Another Arduino PcInt Library
 Yet Another Arduino Wiegand Library
 YetAnotherButtonLibrary
+YetAnotherRotaryEncoder
 YFKeypadLib
 YFPS2UARTLib
+Yfrobot-FPSensor-Library
 Yfrobot I2C Line Follow Sensor Library
 Yfrobot Motor Driver IIC1508 Library
 Yfrobot Motor Driver Library
+Yfrobot MP3 V3
+yfrobot_tts
 Yfrobot VALON-I3 Library
 YFrobot VC Library
-yfrobot_tts
-Yfrobot-FPSensor-Library
 YF-S201 Water Flow
 YK04_Module
 YL-800N
@@ -9202,12 +9757,12 @@ YosemitechModbus
 youkey_stepper
 Youless Arduino Library
 YouMadeIt
-YoupiLab_IoT_ESP
 YoupiLabESP32_IOT
 YoupiLabEsp8266
-YouTube Sight
+YoupiLab_IoT_ESP
 YoutubeApi
 YouTubeLiveStreamArduino
+YouTube Sight
 YouveBeenNotified
 YuaMQTT
 YX5300 for ESP32
@@ -9219,10 +9774,12 @@ ZACwire for TSic
 Zanduino SmoothLED Library 10-bit
 Zanduino SmoothLED Library 8-bit
 ZcmdMotor Library
+ZE40B-TVOC
 ZEeprom
 ZEEPROM
 ZEncoder
 ZenLib
+ZenoPCB
 ZenRTC
 Zentser ESP SDK
 ZeroRegs
@@ -9238,6 +9795,7 @@ ZMotor3Library
 ZMPT101B
 ZMPT101B-Sensor
 ZOHO-IOT-SDK
+ZorozOLED
 ZPA4756-0311A-R
 ZPCA9685 Library
 ZSharpIR Library
