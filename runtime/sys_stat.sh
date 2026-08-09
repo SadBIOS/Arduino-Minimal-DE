@@ -78,6 +78,16 @@ function system_checker() {
             print_fail "Toolchain ownership is $ROOT_OWNER, expected $USR_NAM"
         fi
     fi
+
+    print_header "Installed Arduino-CLI Cores"
+    declare -A CORE_PATHS=(
+        ["arduino:avr"]="$TOOLCHAIN_ROOT/packages/arduino/hardware/avr"
+        ["esp8266:esp8266"]="$TOOLCHAIN_ROOT/packages/esp8266/hardware/esp8266"
+        ["esp32:esp32"]="$TOOLCHAIN_ROOT/packages/esp32/hardware/esp32"
+        ["Seeeduino:samd"]="$TOOLCHAIN_ROOT/packages/Seeeduino/hardware/samd"
+        ["MiniCore:avr"]="$TOOLCHAIN_ROOT/packages/MiniCore/hardware/avr"
+    )
+
 }
 
 while [[ $# -gt 0 ]]; do
