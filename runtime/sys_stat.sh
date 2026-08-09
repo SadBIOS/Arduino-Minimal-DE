@@ -112,6 +112,13 @@ function system_checker() {
     else
         print_fail "Udev rules missing ($UDEV_TARGET)"
     fi
+    
+    if id -nG "$USR_NAM" 2>/dev/null | grep -qw dialout; then
+        DIALOUT_MEMBER=true
+        print_ok "User '$USR_NAM' is in the 'dialout' group"
+    else
+        print_fail "User '$USR_NAM' is NOT in the 'dialout' group"
+    fi
 }
 
 while [[ $# -gt 0 ]]; do
