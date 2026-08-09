@@ -39,6 +39,9 @@ function board_lister() {
         sub(/[[:space:]]+$/,"",name)
 
         split(fqbn,p,":")
+
+        package=p[1]
+        arch=p[2]
 }
 
 while [[ $# -gt 0 ]]; do
