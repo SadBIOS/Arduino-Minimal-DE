@@ -20,6 +20,7 @@ RAW_CLI=""
 CONFIG_FILE=""
 UDEV_SRC=""
 UDEV_SYS_TGT=""
+LIB_MASTER_CAT=""
 
 function run_cli() {
     sudo -u "$USER_NAM" -H "$RAW_CLI" --config-file "$CONFIG_FILE" "$@"
@@ -131,11 +132,16 @@ function grp_set() {
     fi
 }
 
+function build_lib_cat() {
+    run_cli lib search --names | sed -n 's/^Name: "\(.*\)"$/\1/p' | sort -f > "$LIB_MASTER_CAT"
+}
+
 function init_build() {
     dep_check
     system_builder
     driver_resolver
     grp_set
+    build_lib_cat
 }
 
 while [[ $# -gt 0 ]]; do
@@ -163,9 +169,14 @@ while [[ $# -gt 0 ]]; do
         --udev-tgt)
             UDEV_SYS_TGT="$2"
             shift 2
+        ;;
+        
+        --lib-catalog)
+            LIB_MASTER_CAT="$2"
+            shift 2
             init_build
             exit 0
         ;;
-        
+
     esac
 done
