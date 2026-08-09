@@ -15,18 +15,14 @@ function board_lister() {
     GREEN="\033[32m"
     YELLOW="\033[33m"
     RESET="\033[0m"
-
     clear
-
     echo
     echo -e "${BOLD}${CYAN}╔════════════════════════════════════════════════════╗${RESET}"
     echo -e "${BOLD}${CYAN}║              Installed Arduino Boards              ║${RESET}"
     echo -e "${BOLD}${CYAN}╚════════════════════════════════════════════════════╝${RESET}"
     echo
-
     TMPFILE=$(mktemp)
     trap 'rm -f "$TMPFILE"' EXIT
-
     "$BINPATH" --config-file "$CONFIG_FILE" board listall 2>/dev/null | \
     awk '
     NR==1 { next }{
@@ -99,28 +95,24 @@ function board_lister() {
     CURRENT_FAMILY=""
 
     while IFS=$'\t' read -r KEY COUNT BOARDS; do
-
         FAMILY="${KEY%%|*}"
         SERIES="${KEY##*|}"
-
         if [[ "$CURRENT_FAMILY" != "$FAMILY" ]]; then
             echo
             echo -e "${BOLD}${GREEN}▸ $FAMILY${RESET}"
             CURRENT_FAMILY="$FAMILY"
         fi
-
         echo
         echo -e "  ${CYAN}▸ $SERIES${RESET} ${DIM}($COUNT boards)${RESET}"
         echo
-
         echo "$BOARDS" |
         tr '#' '\n' |
         while IFS= read -r BOARD; do
             [[ -z "$BOARD" ]] && continue
             printf "      ${YELLOW}•${RESET} %s\n" "$BOARD"
         done
-
     done < "$TMPFILE"
+
     echo
     echo -e "${DIM}Arduino CLI Binary:${RESET} $BINPATH"
     echo -e "${DIM}    Toolchain Root:${RESET} $TOOLCHAIN_ROOT"
