@@ -97,7 +97,29 @@ function board_lister() {
     ' > "$TMPFILE"
 
     CURRENT_FAMILY=""
+    
+    while IFS=$'\t' read -r KEY COUNT BOARDS; do
 
+        FAMILY="${KEY%%|*}"
+        SERIES="${KEY##*|}"
+
+        if [[ "$CURRENT_FAMILY" != "$FAMILY" ]]; then
+            echo
+            echo -e "${BOLD}${GREEN}▸ $FAMILY${RESET}"
+            CURRENT_FAMILY="$FAMILY"
+        fi
+        
+        echo
+        echo -e "  ${CYAN}▸ $SERIES${RESET} ${DIM}($COUNT boards)${RESET}"
+        echo
+        
+        echo "$BOARDS" |
+        tr '#' '\n' |
+        while IFS= read -r BOARD; do
+            [[ -z "$BOARD" ]] && continue
+            printf "      ${YELLOW}•${RESET} %s\n" "$BOARD"
+        done
+    done < "$TMPFILE"
 }
 
 while [[ $# -gt 0 ]]; do
