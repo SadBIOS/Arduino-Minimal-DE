@@ -8,7 +8,14 @@ TOOLCHAIN_ROOT=""
 CONFIG_FILE=""
 BINPATH=""
 
-function board_lister() {}
+function board_lister() {
+    BOLD="\033[1m"
+    DIM="\033[2m"
+    CYAN="\033[36m"
+    GREEN="\033[32m"
+    YELLOW="\033[33m"
+    RESET="\033[0m"
+}
 
 while [[ $# -gt 0 ]]; do
     case "$1" in
