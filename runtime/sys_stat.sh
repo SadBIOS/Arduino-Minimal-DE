@@ -69,6 +69,15 @@ function system_checker() {
     else
         print_fail "Portable configuration missing ($CONFIG_FILE)"
     fi
+    
+    if [[ -d "$TOOLCHAIN_ROOT" ]]; then
+        ROOT_OWNER=$(stat -c '%U' "$TOOLCHAIN_ROOT" 2>/dev/null)
+        if [[ "$ROOT_OWNER" == "$USR_NAM" ]]; then
+            print_ok "Toolchain directory ownership is correct ($USR_NAM)"
+        else
+            print_fail "Toolchain ownership is $ROOT_OWNER, expected $USR_NAM"
+        fi
+    fi
 }
 
 while [[ $# -gt 0 ]]; do
