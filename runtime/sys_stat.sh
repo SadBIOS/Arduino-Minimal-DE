@@ -27,7 +27,7 @@ function system_checker() {
     echo -e "${BOLD}${CYAN}║              Arduino Environment Status Report              ║${RESET}"
     echo -e "${BOLD}${CYAN}╚═════════════════════════════════════════════════════════════╝${RESET}"
     print_header "System Dependencies"
-    
+
     DEPS=(
         build-essential
         curl
@@ -39,7 +39,7 @@ function system_checker() {
         python3-serial
         libusb-1.0-0
     )
-    
+
     for pkg in "${DEPS[@]}"; do
         if dpkg-query -W -f='${Status}' "$pkg" 2>/dev/null | grep -q "ok installed"; then
             print_ok "$pkg"
@@ -47,7 +47,7 @@ function system_checker() {
             print_fail "$pkg is missing"
         fi
     done
-    
+
     print_header "Arduino CLI"
     if [[ -n "$BINPATH" && -x "$BINPATH" ]]; then
         print_ok "Arduino CLI binary exists and is executable ($BINPATH)"
@@ -56,7 +56,7 @@ function system_checker() {
     else
         print_fail "Arduino CLI binary missing ($BINPATH)"
     fi
-    
+
     print_header "Toolchain & Configuration"
     if [[ -n "$TOOLCHAIN_ROOT" && -d "$TOOLCHAIN_ROOT" ]]; then
         print_ok "Toolchain root directory exists ($TOOLCHAIN_ROOT)"
@@ -69,7 +69,7 @@ function system_checker() {
     else
         print_fail "Portable configuration missing ($CONFIG_FILE)"
     fi
-    
+
     if [[ -d "$TOOLCHAIN_ROOT" ]]; then
         ROOT_OWNER=$(stat -c '%U' "$TOOLCHAIN_ROOT" 2>/dev/null)
         if [[ "$ROOT_OWNER" == "$USR_NAM" ]]; then
@@ -112,7 +112,7 @@ function system_checker() {
     else
         print_fail "Udev rules missing ($UDEV_TARGET)"
     fi
-    
+
     if id -nG "$USR_NAM" 2>/dev/null | grep -qw dialout; then
         DIALOUT_MEMBER=true
         print_ok "User '$USR_NAM' is in the 'dialout' group"
@@ -162,5 +162,6 @@ while [[ $# -gt 0 ]]; do
             system_checker
             exit 0
         ;;
+        
     esac
 done
