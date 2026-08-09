@@ -26,6 +26,9 @@ function board_lister() {
 
     TMPFILE=$(mktemp)
     trap 'rm -f "$TMPFILE"' EXIT
+
+    "$BINPATH" --config-file "$CONFIG_FILE" board listall 2>/dev/null | \
+    awk ''
 }
 
 while [[ $# -gt 0 ]]; do
