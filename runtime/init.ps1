@@ -67,8 +67,8 @@ switch ($trigger) {
     }
     "lib_build"{
         Write-Host "`nBuilding Local Library Cache"
-        arduino-cli lib search * | grep 'Name: \"' | awk -F'\"' '{print $2}' | sort | uniq > lib.txt
-        $libcount = Get-Content .\lib.txt | wc -l
+        arduino-cli lib search * | grep 'Name: \"' | awk -F'\"' '{print $2}' | sort | uniq > master_library_catalog.txt
+        $libcount = Get-Content .\master_library_catalog.txt | wc -l
         Write-Host "`nDone Caching $libcount Library Names!`n"
     }
     Default {
