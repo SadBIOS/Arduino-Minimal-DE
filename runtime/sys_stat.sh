@@ -4,7 +4,6 @@ if [[ $# -eq 0 ]]; then
     exit 0
 fi
 
-
 function print_ok() {
     printf "  [\e[32m OK \e[0m] %s\n" "$1"
 }
