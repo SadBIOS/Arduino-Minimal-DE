@@ -23,6 +23,9 @@ function board_lister() {
     echo -e "${BOLD}${CYAN}║              Installed Arduino Boards              ║${RESET}"
     echo -e "${BOLD}${CYAN}╚════════════════════════════════════════════════════╝${RESET}"
     echo
+
+    TMPFILE=$(mktemp)
+    trap 'rm -f "$TMPFILE"' EXIT
 }
 
 while [[ $# -gt 0 ]]; do
