@@ -97,7 +97,7 @@ function board_lister() {
     ' > "$TMPFILE"
 
     CURRENT_FAMILY=""
-    
+
     while IFS=$'\t' read -r KEY COUNT BOARDS; do
 
         FAMILY="${KEY%%|*}"
@@ -108,17 +108,18 @@ function board_lister() {
             echo -e "${BOLD}${GREEN}▸ $FAMILY${RESET}"
             CURRENT_FAMILY="$FAMILY"
         fi
-        
+
         echo
         echo -e "  ${CYAN}▸ $SERIES${RESET} ${DIM}($COUNT boards)${RESET}"
         echo
-        
+
         echo "$BOARDS" |
         tr '#' '\n' |
         while IFS= read -r BOARD; do
             [[ -z "$BOARD" ]] && continue
             printf "      ${YELLOW}•${RESET} %s\n" "$BOARD"
         done
+
     done < "$TMPFILE"
     echo
     echo -e "${DIM}Arduino CLI Binary:${RESET} $BINPATH"
