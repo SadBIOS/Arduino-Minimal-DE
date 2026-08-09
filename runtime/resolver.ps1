@@ -59,10 +59,10 @@ for ($i = 0; $i -lt $arrlen; $i++) {
         Write-Host " --- This library already exists skipping re-install" -ForegroundColor Red
     }
     else {
-        $tmprx = Get-Content .\lib.txt | grep -w $libs[$i]
+        $tmprx = Get-Content .\master_library_catalog.txt | grep -w $libs[$i]
         if ($null -eq $tmprx) {
             $TIM = [System.Diagnostics.Stopwatch]::StartNew()
-            $list = Get-Content .\lib.txt
+            $list = Get-Content .\master_library_catalog.txt
             $x = $libs[$i]
             $results = @()
             $catch = $null
@@ -102,7 +102,7 @@ for ($i = 0; $i -lt $arrlen; $i++) {
         }
         if ($null -ne $tmprx) {
             $TIM = [System.Diagnostics.Stopwatch]::StartNew()
-            $list = Get-Content .\lib.txt
+            $list = Get-Content .\master_library_catalog.txt
             $x = $libs[$i]
             $results = @()
             $catch = $null
@@ -144,7 +144,7 @@ for ($i = 0; $i -lt $arrlen; $i++) {
     $tmp = $null
 }
 Write-Host "`nMissing Library Count - $bps`n" -ForegroundColor Cyan
-$tmprx = Get-Content .\lib.txt
+$tmprx = Get-Content .\master_library_catalog.txt
 for ($i = 0; $i -lt $libcount; $i++) {
     $index = Read-Host "Enter the index of the Closest Library (0 to $($tmprx.Length - 1))"
     if ($index -match '^\d+$') {
