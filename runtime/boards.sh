@@ -15,6 +15,14 @@ function board_lister() {
     GREEN="\033[32m"
     YELLOW="\033[33m"
     RESET="\033[0m"
+
+    clear
+
+    echo
+    echo -e "${BOLD}${CYAN}╔════════════════════════════════════════════════════╗${RESET}"
+    echo -e "${BOLD}${CYAN}║              Installed Arduino Boards              ║${RESET}"
+    echo -e "${BOLD}${CYAN}╚════════════════════════════════════════════════════╝${RESET}"
+    echo
 }
 
 while [[ $# -gt 0 ]]; do
