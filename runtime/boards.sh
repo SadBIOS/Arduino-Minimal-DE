@@ -28,7 +28,8 @@ function board_lister() {
     trap 'rm -f "$TMPFILE"' EXIT
 
     "$BINPATH" --config-file "$CONFIG_FILE" board listall 2>/dev/null | \
-    awk ''
+    awk '
+    NR==1 { next }{}
 }
 
 while [[ $# -gt 0 ]]; do
