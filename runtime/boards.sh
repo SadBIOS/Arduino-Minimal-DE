@@ -120,6 +120,11 @@ function board_lister() {
             printf "      ${YELLOW}•${RESET} %s\n" "$BOARD"
         done
     done < "$TMPFILE"
+    echo
+    echo -e "${DIM}Arduino CLI Binary:${RESET} $BINPATH"
+    echo -e "${DIM}    Toolchain Root:${RESET} $TOOLCHAIN_ROOT"
+    echo -e "${DIM}       Config File:${RESET} $CONFIG_FILE"
+    echo
 }
 
 while [[ $# -gt 0 ]]; do
