@@ -119,6 +119,18 @@ function system_checker() {
     else
         print_fail "User '$USR_NAM' is NOT in the 'dialout' group"
     fi
+
+    if [[ "$UDEV_TARGET_EXISTS" == true ]]; then
+        print_ok "Serial device access is configured through udev"
+    elif [[ "$DIALOUT_MEMBER" == true ]]; then
+        print_ok "Serial device access is available through the dialout group"
+    else
+        print_fail "No udev rule and user has no dialout access"
+    fi
+
+    echo ""
+
+
 }
 
 while [[ $# -gt 0 ]]; do
