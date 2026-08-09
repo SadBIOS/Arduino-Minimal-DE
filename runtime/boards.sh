@@ -69,6 +69,9 @@ function board_lister() {
         else {
             series="Basic"
         }
+
+        key=family "|" series
+        count[key]++
 }
 
 while [[ $# -gt 0 ]]; do
