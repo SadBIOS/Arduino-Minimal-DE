@@ -106,7 +106,12 @@ function system_checker() {
     UDEV_TARGET_EXISTS=false
     DIALOUT_MEMBER=false
 
-
+    if [[ -n "$UDEV_TARGET" && -f "$UDEV_TARGET" ]]; then
+        UDEV_TARGET_EXISTS=true
+        print_ok "Udev rules deployed ($UDEV_TARGET)"
+    else
+        print_fail "Udev rules missing ($UDEV_TARGET)"
+    fi
 }
 
 while [[ $# -gt 0 ]]; do
