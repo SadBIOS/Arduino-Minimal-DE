@@ -17,7 +17,17 @@ function print_header() {
     printf "\n\e[34m===== %s =====\e[0m\n" "$1"
 }
 
-function system_checker() {}
+function system_checker() {
+    USR_NAM="${SUP_USER:-$USER}"
+    ERRORS=0
+    
+    clear
+    
+    echo -e "${BOLD}${CYAN}╔═════════════════════════════════════════════════════════════╗${RESET}"
+    echo -e "${BOLD}${CYAN}║              Arduino Environment Status Report              ║${RESET}"
+    echo -e "${BOLD}${CYAN}╚═════════════════════════════════════════════════════════════╝${RESET}"
+    print_header "System Dependencies"
+}
 
 while [[ $# -gt 0 ]]; do
     case "$1" in
