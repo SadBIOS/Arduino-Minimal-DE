@@ -102,6 +102,10 @@ function system_checker() {
         fi
     done
 
+    print_header "Drivers & Permissions"
+    UDEV_TARGET_EXISTS=false
+    DIALOUT_MEMBER=false
+
 
 }
 
