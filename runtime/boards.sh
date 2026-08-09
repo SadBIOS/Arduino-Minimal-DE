@@ -78,6 +78,23 @@ function board_lister() {
 
         boards[key]=boards[key]name" | "fqbn
     }
+
+    END {
+        order[1]="ESP32 Family|Basic"
+        order[2]="ESP32 Family|S Series"
+        order[3]="ESP32 Family|C Series"
+        order[4]="ESP32 Family|H Series"
+        order[5]="ESP32 Family|P Series"
+        order[6]="ESP8266 Family|Basic"
+        order[7]="Arduino AVR Family|Basic"
+
+        for(i=1;i<=7;i++) {
+            key=order[i]
+            if(count[key])
+                print key "\t" count[key] "\t" boards[key]
+        }
+    }
+    ' > "$TMPFILE"
 }
 
 while [[ $# -gt 0 ]]; do
