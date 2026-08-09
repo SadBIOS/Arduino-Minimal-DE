@@ -16,3 +16,5 @@ function print_fail() {
 function print_header() {
     printf "\n\e[34m=== %s ===\e[0m\n" "$1"
 }
+
+function system_checker() {}
