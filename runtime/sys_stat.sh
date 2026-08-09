@@ -47,6 +47,16 @@ function system_checker() {
             print_fail "$pkg is missing"
         fi
     done
+    
+    print_header "Arduino CLI"
+
+    if [[ -n "$BINPATH" && -x "$BINPATH" ]]; then
+        print_ok "Arduino CLI binary exists and is executable ($BINPATH)"
+    elif [[ -n "$BINPATH" && -f "$BINPATH" ]]; then
+        print_fail "Arduino CLI binary exists but is not executable ($BINPATH)"
+    else
+        print_fail "Arduino CLI binary missing ($BINPATH)"
+    fi
 }
 
 while [[ $# -gt 0 ]]; do
