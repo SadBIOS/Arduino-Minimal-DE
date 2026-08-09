@@ -34,6 +34,9 @@ function board_lister() {
 
         if (fqbn !~ /:/)
             next
+
+        name=substr($0,1,length($0)-length($NF))
+        sub(/[[:space:]]+$/,"",name)
 }
 
 while [[ $# -gt 0 ]]; do
