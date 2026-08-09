@@ -9,3 +9,25 @@ CONFIG_FILE=""
 BINPATH=""
 
 function board_lister() {}
+
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        --binpath)
+            BINPATH="$2"
+            shift 2
+        ;;
+
+        --toolchain-root)
+            TOOLCHAIN_ROOT="$2"
+            shift 2
+        ;;
+
+        --config-file)
+            CONFIG_FILE="$2"
+            shift 2
+            board_lister
+            exit 0
+        ;;
+
+    esac
+done
