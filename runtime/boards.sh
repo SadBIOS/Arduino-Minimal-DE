@@ -72,6 +72,12 @@ function board_lister() {
 
         key=family "|" series
         count[key]++
+
+        if(count[key] > 1)
+            boards[key]=boards[key]"###"
+
+        boards[key]=boards[key]name" | "fqbn
+    }
 }
 
 while [[ $# -gt 0 ]]; do
