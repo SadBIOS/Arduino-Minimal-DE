@@ -31,6 +31,9 @@ function board_lister() {
     awk '
     NR==1 { next }{
         fqbn=$NF
+
+        if (fqbn !~ /:/)
+            next
 }
 
 while [[ $# -gt 0 ]]; do
