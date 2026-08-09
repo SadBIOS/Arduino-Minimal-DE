@@ -42,6 +42,15 @@ function board_lister() {
 
         package=p[1]
         arch=p[2]
+
+        if(package=="esp32")
+            family="ESP32 Family"
+        else if(package=="esp8266")
+            family="ESP8266 Family"
+        else if(package=="arduino" && arch=="avr")
+            family="Arduino AVR Family"
+        else
+            next
 }
 
 while [[ $# -gt 0 ]]; do
