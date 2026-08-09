@@ -27,6 +27,18 @@ function system_checker() {
     echo -e "${BOLD}${CYAN}║              Arduino Environment Status Report              ║${RESET}"
     echo -e "${BOLD}${CYAN}╚═════════════════════════════════════════════════════════════╝${RESET}"
     print_header "System Dependencies"
+    
+    DEPS=(
+        build-essential
+        curl
+        tar
+        unzip
+        ca-certificates
+        python3
+        python3-pip
+        python3-serial
+        libusb-1.0-0
+    )
 }
 
 while [[ $# -gt 0 ]]; do
