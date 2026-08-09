@@ -51,6 +51,24 @@ function board_lister() {
             family="Arduino AVR Family"
         else
             next
+
+        if(family=="ESP32 Family") {
+            str = tolower(name " " fqbn)
+            gsub(/plus2/, "plus 2", str)
+            if(str ~ /esp32-?p4/ || str ~ /p4[^a-z0-9]/ || str ~ /p4$/)
+                series="P Series"
+            else if(str ~ /esp32-?c[2356]/ || str ~ /c[2356][^a-z0-9]/ || str ~ /c[2356]$/)
+                series="C Series"
+            else if(str ~ /esp32-?s[23]/ || str ~ /s[23][^a-z0-9]/ || str ~ /s[23]$/)
+                series="S Series"
+            else if(str ~ /esp32-?h2/ || str ~ /h2[^a-z0-9]/ || str ~ /h2$/)
+                series="H Series"
+            else
+                series="Basic"
+        }
+        else {
+            series="Basic"
+        }
 }
 
 while [[ $# -gt 0 ]]; do
