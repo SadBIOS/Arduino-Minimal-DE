@@ -63,6 +63,12 @@ function system_checker() {
     else
         print_fail "Toolchain root missing ($TOOLCHAIN_ROOT)"
     fi
+
+    if [[ -n "$CONFIG_FILE" && -f "$CONFIG_FILE" ]]; then
+        print_ok "Portable configuration exists ($CONFIG_FILE)"
+    else
+        print_fail "Portable configuration missing ($CONFIG_FILE)"
+    fi
 }
 
 while [[ $# -gt 0 ]]; do
