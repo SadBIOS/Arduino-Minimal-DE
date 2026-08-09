@@ -95,6 +95,9 @@ function board_lister() {
         }
     }
     ' > "$TMPFILE"
+
+    CURRENT_FAMILY=""
+
 }
 
 while [[ $# -gt 0 ]]; do
