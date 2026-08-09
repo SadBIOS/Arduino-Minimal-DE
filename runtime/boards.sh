@@ -7,3 +7,5 @@ fi
 TOOLCHAIN_ROOT=""
 CONFIG_FILE=""
 BINPATH=""
+
+function board_lister() {}
