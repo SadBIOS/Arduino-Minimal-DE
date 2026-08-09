@@ -88,6 +88,21 @@ function system_checker() {
         ["MiniCore:avr"]="$TOOLCHAIN_ROOT/packages/MiniCore/hardware/avr"
     )
 
+    for core in "${!CORE_PATHS[@]}"; do
+        path="${CORE_PATHS[$core]}"
+        if [[ -d "$path" ]]; then
+            version=$(ls -1 "$path" 2>/dev/null | head -n 1)
+            if [[ -n "$version" ]]; then
+                print_ok "$core (v$version)"
+            else
+                print_fail "$core (Directory exists, but no version found)"
+            fi
+        else
+            print_fail "$core is missing"
+        fi
+    done
+
+
 }
 
 while [[ $# -gt 0 ]]; do
