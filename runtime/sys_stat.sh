@@ -49,13 +49,19 @@ function system_checker() {
     done
     
     print_header "Arduino CLI"
-
     if [[ -n "$BINPATH" && -x "$BINPATH" ]]; then
         print_ok "Arduino CLI binary exists and is executable ($BINPATH)"
     elif [[ -n "$BINPATH" && -f "$BINPATH" ]]; then
         print_fail "Arduino CLI binary exists but is not executable ($BINPATH)"
     else
         print_fail "Arduino CLI binary missing ($BINPATH)"
+    fi
+    
+    print_header "Toolchain & Configuration"
+    if [[ -n "$TOOLCHAIN_ROOT" && -d "$TOOLCHAIN_ROOT" ]]; then
+        print_ok "Toolchain root directory exists ($TOOLCHAIN_ROOT)"
+    else
+        print_fail "Toolchain root missing ($TOOLCHAIN_ROOT)"
     fi
 }
 
