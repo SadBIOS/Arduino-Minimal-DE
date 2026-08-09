@@ -65,10 +65,12 @@ switch ($trigger) {
         Write-Host "`nShowing List of Libraries Installed`n"
         arduino-cli lib list | awk -F'user' '{print $1}' | awk -F'Location' '{print $1}'
     }
-    "lib_build"{
+    "lib_build" {
         Write-Host "`nBuilding Local Library Cache"
-        arduino-cli lib search * | grep 'Name: \"' | awk -F'\"' '{print $2}' | sort | uniq > master_library_catalog.txt
-        $libcount = Get-Content .\master_library_catalog.txt | wc -l
+        $catalog = arduino-cli lib search * | grep 'Name: "' | awk -F'"' '{print $2}' | sort | uniq
+        if ($PSVersionTable.PSVersion.Major -ge 6) { $catalog | Set-Content -Path ".\master_library_catalog.txt" -Encoding utf8NoBOM }
+        else { [System.IO.File]::WriteAllLines(".\master_library_catalog.txt",[string[]]$catalog,(New-Object System.Text.UTF8Encoding($false))) }
+        $libcount = (Get-Content ".\master_library_catalog.txt" | Measure-Object -Line).Lines
         Write-Host "`nDone Caching $libcount Library Names!`n"
     }
     Default {
