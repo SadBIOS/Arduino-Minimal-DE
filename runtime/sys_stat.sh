@@ -4,6 +4,7 @@ if [[ $# -eq 0 ]]; then
     exit 0
 fi
 
+
 function print_ok() {
     printf "  [\e[32m OK \e[0m] %s\n" "$1"
 }
@@ -128,6 +129,33 @@ function system_checker() {
         print_fail "No udev rule and user has no dialout access"
     fi
 
+    print_header "Arduino Library Master Catalog"
+    if [[ -n "$LIB_MASTER_CAT" && -f "$LIB_MASTER_CAT" ]]; then
+        print_ok "Library catalog exists ($LIB_MASTER_CAT)"
+        if [[ -r "$LIB_MASTER_CAT" ]]; then
+            SHA256=$(sha256sum "$LIB_MASTER_CAT" 2>/dev/null | awk '{print $1}')
+            if [[ -n "$SHA256" ]]; then
+                print_ok "SHA-256: $SHA256"
+            else
+                print_fail "Unable to calculate SHA-256 hash"
+            fi
+
+            LIB_COUNT=$(wc -l < "$LIB_MASTER_CAT")
+            if [[ "$LIB_COUNT" =~ ^[0-9]+$ ]]; then
+                print_ok "Listed Library count: $LIB_COUNT"
+            else
+                print_fail "Unable to count libraries"
+            fi
+        else
+            print_fail "Library catalog exists but is not readable ($LIB_MASTER_CAT)"
+        fi
+
+    elif [[ -n "$LIB_MASTER_CAT" ]]; then
+        print_fail "Library catalog missing ($LIB_MASTER_CAT)"
+    else
+        print_fail "Library catalog path was not provided"
+    fi
+
     echo ""
 
     if [[ $ERRORS -eq 0 ]]; then
@@ -159,9 +187,13 @@ while [[ $# -gt 0 ]]; do
         --udev-tgt)
             UDEV_TARGET="$2"
             shift 2
+        ;;
+        
+        --lib-catalog)
+            LIB_MASTER_CAT="$2"
+            shift 2
             system_checker
             exit 0
         ;;
-        
     esac
 done
