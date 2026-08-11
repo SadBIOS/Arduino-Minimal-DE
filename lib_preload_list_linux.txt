@@ -1,2 +1,14 @@
 # This File is Called in Supported Linux Systems Only
+# Please Change the Code Following "==" to Something Different for Each Batch
 # Please Refer to README.md for More Information
+>!< PRE-LOAD-CODE == 34021
+Adafruit SSD1306
+Adafruit GFX Library
+ArduinoJson
+PubSubClient
+DHT sensor library
+Adafruit Unified Sensor
+DallasTemperature
+LiquidCrystal I2C
+MFRC522
+IRremote
