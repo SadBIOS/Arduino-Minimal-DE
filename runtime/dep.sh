@@ -56,7 +56,8 @@ function makepkg_cache() {
                 sudo rm -vrf "$SCRIPT_ROOT/ard_cli_download_cache"
                 echo "Offline archive successfully created at: $SCRIPT_ROOT/ard_cli_dependencies.tar.gz"
                 exit 0
-                ;;
+            ;;
+            
         esac
     else
         echo "Machine is offline. Cannot build dependency archive" >&2
