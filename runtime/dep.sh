@@ -43,14 +43,17 @@ function makepkg_cache() {
             [yY][eE][sS]|[yY])
                 sudo apt clean
                 sudo apt update
-                sudo apt-get install --download-only --reinstall -y "${DEPS[@]}"
+                cache_dir="$SCRIPT_ROOT/ard_cli_download_cache/partial"
                 target_dir="$SCRIPT_ROOT/ard_cli_dependencies"
-                mkdir -p "$target_dir"
-                sudo cp -v /var/cache/apt/archives/*.deb "$target_dir/"
+                mkdir -p "$cache_dir" "$target_dir"
+                touch "$SCRIPT_ROOT/ard_cli_download_cache/empty-status"
+                sudo apt-get -o Dir::State::status="$SCRIPT_ROOT/ard_cli_download_cache/empty-status" -o Dir::Cache::archives="$SCRIPT_ROOT/ard_cli_download_cache" --download-only install -y "${DEPS[@]}"
+                sudo cp -v $SCRIPT_ROOT/ard_cli_download_cache/*.deb "$target_dir/"
                 sudo chown -Rv "$USER:$USER" "$target_dir"
                 cd "$SCRIPT_ROOT"
                 tar -czvf ard_cli_dependencies.tar.gz ard_cli_dependencies
-                rm -vrf "$SCRIPT_ROOT/ard_cli_dependencies"
+                sudo rm -vrf "$SCRIPT_ROOT/ard_cli_dependencies"
+                sudo rm -vrf "$SCRIPT_ROOT/ard_cli_download_cache"
                 echo "Offline archive successfully created at: $SCRIPT_ROOT/ard_cli_dependencies.tar.gz"
                 exit 0
                 ;;
