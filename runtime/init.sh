@@ -22,6 +22,10 @@ UDEV_SRC=""
 UDEV_SYS_TGT=""
 LIB_MASTER_CAT=""
 
+function conn_stat() {
+    ping -c 1 -W 2 1.1.1.1 &>/dev/null || ping -c 1 -W 2 8.8.8.8 &>/dev/null
+}
+
 function run_cli() {
     sudo -u "$USER_NAM" -H "$RAW_CLI" --config-file "$CONFIG_FILE" "$@"
 }
@@ -133,6 +137,33 @@ function grp_set() {
 }
 
 function build_lib_cat() {
+    if ! conn_stat; then
+        if [[ -f "$LIB_MASTER_CAT" ]]; then
+            echo "System offline; not modifying $LIB_MASTER_CAT"
+        else
+            echo "System offline and $LIB_MASTER_CAT does not exist."
+            read -r -p "Please create and load $LIB_MASTER_CAT into the work directory, then press Enter to continue: "
+        fi
+        return 0
+    fi
+
+    if [[ -f "$LIB_MASTER_CAT" ]]; then
+        while true; do
+            read -r -p "$LIB_MASTER_CAT already exists. Overwrite it? [y/n] " answer
+            case "$answer" in
+                y|Y)
+                    break
+                ;;
+                
+                n|N)
+                    echo "Not modifying $LIB_MASTER_CAT"
+                    return 0
+                ;;
+
+            esac
+        done
+    fi
+
     run_cli lib search --names | sed -n 's/^Name: "\(.*\)"$/\1/p' | sort -f > "$LIB_MASTER_CAT"
 }
 
