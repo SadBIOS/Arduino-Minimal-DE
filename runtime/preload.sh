@@ -7,7 +7,6 @@ fi
 SCRIPT_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 LIB_STORE="$SCRIPT_ROOT/lib_store"
 TMP_LIB_STORE="$SCRIPT_ROOT/lib_store/tmp"
-
 BINPATH=""
 TOOLCHAIN_ROOT=""
 CONFIG_FILE=""
