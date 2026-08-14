@@ -12,6 +12,8 @@ sudo -v || {
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 SCRIPT_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+LIB_STORE="$SCRIPT_ROOT/lib_store"
+TMP_LIB_STORE="$SCRIPT_ROOT/lib_store/tmp"
 DEPENDENCY_ENGINE="$SCRIPT_ROOT/dep.sh"
 USER_NAM="${SUDO_USER:-$USER}"
 USR_GRP="$(id -gn "$USER_NAM")"
@@ -69,7 +71,8 @@ function dep_check() {
 function system_builder() {
     sudo mkdir -p "$TOOLCHAIN_ROOT"
     sudo chown -R "$USER_NAM:$USR_GRP" "$TOOLCHAIN_ROOT"
-
+    mkdir -p "$LIB_STORE" "$TMP_LIB_STORE" 2>/dev/null
+    sudo chown -R "$USER_NAM:$USR_GRP" "$LIB_STORE" "$TMP_LIB_STORE"
     if [[ ! -f "$CONFIG_FILE" ]]; then
         sudo -u "$USER_NAM" "$RAW_CLI" config init --config-file "$CONFIG_FILE" >/dev/null 2>&1 || true
     fi
@@ -99,7 +102,6 @@ function system_builder() {
     )
 
     INSTALLED_CORES=$(run_cli core list 2>/dev/null | awk '{print $1}' | tail -n +2 || true)
-
     MISSING_ANY=false
     for core in "${CORES[@]}"; do
         if ! echo "$INSTALLED_CORES" | grep -qx "$core"; then
