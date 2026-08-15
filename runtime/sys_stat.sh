@@ -20,9 +20,7 @@ function print_header() {
 function system_checker() {
     USR_NAM="${SUP_USER:-$USER}"
     ERRORS=0
-    
     clear
-    
     echo -e "${BOLD}${CYAN}╔═════════════════════════════════════════════════════════════╗${RESET}"
     echo -e "${BOLD}${CYAN}║              Arduino Environment Status Report              ║${RESET}"
     echo -e "${BOLD}${CYAN}╚═════════════════════════════════════════════════════════════╝${RESET}"
@@ -46,6 +44,7 @@ function system_checker() {
         else
             print_fail "$pkg is missing"
         fi
+        
     done
 
     print_header "Arduino CLI"
@@ -105,7 +104,6 @@ function system_checker() {
     print_header "Drivers & Permissions"
     UDEV_TARGET_EXISTS=false
     DIALOUT_MEMBER=false
-
     if [[ -n "$UDEV_TARGET" && -f "$UDEV_TARGET" ]]; then
         UDEV_TARGET_EXISTS=true
         print_ok "Udev rules deployed ($UDEV_TARGET)"
@@ -156,7 +154,6 @@ function system_checker() {
     fi
 
     echo ""
-
     if [[ $ERRORS -eq 0 ]]; then
         printf "\e[32m\e[1mAll checks passed! The environment is fully configured.\e[0m\n"
         return 0
