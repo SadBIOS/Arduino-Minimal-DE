@@ -84,7 +84,6 @@ function offline() {
     fi
 
     tar -xzvf "$archive" -C "$SCRIPT_ROOT"
-
     dirpath="$SCRIPT_ROOT/ard_cli_dependencies"
     if [[ -f /etc/apt/sources.list || -d /etc/apt/sources.list.d ]]; then
         [[ -f /etc/apt/sources.list ]] && sudo mv -v /etc/apt/sources.list /etc/apt/sources.list.bak
