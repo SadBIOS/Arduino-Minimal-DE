@@ -623,6 +623,7 @@ AlgoIoT
 AlignedJoy
 AliyunIoTSDK
 ALLBOT
+AlloyLogger
 AllSensors DLHR
 AllSensors DLV
 AllThingsTalk LoRaWAN SDK
@@ -1166,6 +1167,7 @@ AutoconnectoSDK
 AutomationTimers
 Automaton
 Automaton-Esp8266
+AutonomniOTA
 AutoOTA
 AutoPID
 AutoPlex7
@@ -1215,6 +1217,7 @@ AY3891x
 AY8912_ESP32
 AyatecSensoraya2.x
 AyresShell
+AyresTimer
 AyresWiFiManager
 AzureIoT
 AzureIoTHubMQTTClient
@@ -1263,6 +1266,7 @@ Battery_18650_Stats
 BatteryMeter
 Battery Sense
 BaudotCode
+BAVA Protocol
 Bayesian Optimization
 bb_captouch
 BBE IoT Class Library
@@ -1868,6 +1872,7 @@ Cloudchip IoT
 Cloudeck
 ClusterDuck Protocol
 CM1106 I2C
+cmArduinoJWT
 cmd
 cmdArduino
 CmdMessenger
@@ -2093,6 +2098,7 @@ DaedalusLink-ESP32
 DailyService
 DailyStruggleButton
 DaisyDuino
+Dali
 DallasTemperature
 DalyBMSInterface
 DAMM
@@ -2563,6 +2569,8 @@ DS3232
 DS3232RTC
 DS323x
 DS323x_Generic
+DS3501
+DS3502
 DS4
 DSC Keybus Interface
 DSFamily
@@ -2897,6 +2905,7 @@ ERM19264_UC1609
 ERM19264_UC1609_TEXT
 ERO
 ER_OLEDM1_CH1115
+ErovoutikaErobot
 ERPC
 ES32D26PLC
 ES32Lab
@@ -2913,6 +2922,7 @@ escposprinter
 ESC Thermal Printer BLE
 ESensors
 ESP2SOTA
+esp32-afsk
 ESP32_AI_Connect
 ESP32AI Voice Command
 ESP32AnalogRead
@@ -2986,6 +2996,7 @@ ESP32_IO_Expander
 ESP32-IoT Framework
 ESP32IRPulseKit
 ESP32_ISR_Servo
+ESP32KeyBridge
 ESP32_Knob
 ESP32_LINE_Messaging_API
 ESP32 Lite Pack Library
@@ -3156,6 +3167,7 @@ EspDDNS
 ESP Discord Client
 ESPDisplay
 esp_dmx
+ESP-DOOM
 ESP_DoubleResetDetector
 EspEasyUtils
 esp-echonet-lite
@@ -3325,6 +3337,7 @@ Excelsior
 Excelsior_Ambassador
 Excelsior_Light
 Executive
+ExecuTorch
 ExodeCore
 Exosite
 Exosite IIoT HTTP Device
@@ -4110,6 +4123,7 @@ HydroinoJobMgr
 HydroNode-Library
 HyperDeck
 Hyperduino Library
+Hyperwisor-IOT
 Hysteresis
 HzMeter_asukiaaa
 I0Servo
@@ -4231,6 +4245,7 @@ INA2227
 INA226
 INA226_asukiaaa
 INA226Lib
+INA226_USI
 INA226_WE
 INA228
 INA229
@@ -4371,6 +4386,7 @@ IskakINO_WifiPortal
 ISL1208-RTC-Library
 Isolated EC Probe Interface
 Isolated ISE Probe Interface
+ISRdelay
 ISRHandler
 iSYNC
 iSYNC_BC95_Arduino
@@ -5004,6 +5020,7 @@ M5Stack_TreeView
 M5Stack WiFi Uploader
 M5StampC3LED
 M5StamPLC
+M5Stamp_UWB
 M5Station
 M5-STHS34PF80
 M5StickC
@@ -5103,6 +5120,7 @@ MakeBlockDrive
 MakeBlock Drive Updated
 makegame
 MakerBoard
+MakerEdu I2C Motor Driver
 MAKERLABVN
 Makerlabvn_I2C_Line_Follower_Sensor
 Makerlabvn_I2C_Motor_Driver
@@ -5448,6 +5466,7 @@ Microfire_SHT3x
 MicroFlow
 MicroGamer
 microgear-nbiot
+microInput
 microLCD
 microLED
 MicroLog
@@ -5473,6 +5492,7 @@ MicroShell
 MicroSlip
 Microsoft_HidForWindows
 MicrostepToLinear
+microStore
 MicroSui
 MicroTaskX
 microTelegramAPI
@@ -5562,6 +5582,7 @@ mldsa
 mLink
 MLLServoConfigurator
 MLLSoundTiny
+MLX90316
 MLX90377_SENT
 MLX90393_raw
 MLX90614
@@ -5999,6 +6020,8 @@ NHBot
 NHCSR04
 NHD_Character_LCD
 NibbleArray
+NIELIT Arduino UNO Practicals
+NIELIT ESP32 Practicals
 nikki.esp32
 nikki.esp8266
 nikki.unoR4
@@ -6024,6 +6047,7 @@ NMH1000_Arduino
 NmraDcc
 NoBlockEEPROM
 NobroRTOS
+NobroRTOSCore
 NocKinematics
 NocLLM
 NocML
@@ -6271,6 +6295,7 @@ OtaHelper
 OtaHub
 OTA_Template
 OTAUpdateManager
+OTAWIFIAsyncBar
 OTAWrapper
 OtD Library
 OttoArduinoLib
@@ -6309,6 +6334,7 @@ PAR27979
 Parallax LCD
 ParallelPrinter
 Parameter
+Pardalote
 Parse Arduino SDK
 ParseCommands
 Parser
@@ -6865,6 +6891,7 @@ QRcode_ST7789
 QTRMuxes
 QTRSensors
 QUAD7SHIFT
+Quadrature_Encoder
 QuadratureEncoder
 QuarkDB
 QuarkifiStreamOTA
@@ -6979,6 +7006,7 @@ RBD_Timer
 RBD_WaterSensor
 RBE1001Lib
 RBL_nRF8001
+RC522_UART
 RCArmDrive
 RCduino
 RC.Easy
@@ -7390,6 +7418,7 @@ sclm-p105_shield
 SCPeriod
 SCPI_Parser
 SCPI Red Pitaya
+ScreenManager
 ScreenUi
 ScrollingText8x8Display
 SCServo
@@ -8062,6 +8091,7 @@ SonarI2C
 Sonic
 Sonos
 Sony9PinRemote
+Soocket
 SoracomArcESP32
 SorbaMqttWifi
 souliss
@@ -8381,6 +8411,7 @@ st7567sfGK 128x64 i2c LCD driver for Generation Klick
 ST7735_LTSM
 ST7789 AVR
 ST7789_LTSM
+ST77916_QSPI
 StableLCD
 Stack
 stackchan-arduino
@@ -8595,6 +8626,7 @@ StringEEPROM
 StringLib
 StringN
 StringSplitter
+stringToSevenSegmentDisplay
 StringUtils
 StripDisplay
 StripePromptPay
@@ -9394,6 +9426,7 @@ VEGA_WiFiNINA
 VEML6040
 VEML6070
 VEML6075
+Vendista
 VernierLib
 Versatile_RotaryEncoder
 VersatileSwitch
