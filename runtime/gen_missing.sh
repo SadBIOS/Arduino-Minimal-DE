@@ -21,3 +21,20 @@ declare -a CATALOG_LINES=()
 declare -a CATALOG_NAMES=()
 declare -a MISSING_LIBRARIES=()
 declare -a QUEUED_LIBRARIES=()
+
+function print_ok() {
+    printf "  [\e[32m OK \e[0m] %s\n" "$1"
+}
+
+function print_fail() {
+    printf "  [\e[31mFAIL\e[0m] %s\n" "$1"
+}
+
+function print_info() {
+    printf "  [\e[36mINFO\e[0m] %s\n" "$1"
+}
+
+function die() {
+    print_fail "$1"
+    exit 1
+}
