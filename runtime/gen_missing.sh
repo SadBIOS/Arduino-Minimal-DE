@@ -460,3 +460,16 @@ function append_queued_libraries() {
 
     done
 }
+
+function validate_arguments() {
+    [[ -n "$BINPATH" ]] || die "--binpath was not supplied"
+    [[ -n "$CONFIG_FILE" ]] || die "--config-file was not supplied"
+    [[ -n "$ROOT_PATH" ]] || die "--root-path was not supplied"
+    [[ -n "$SRC_CODE" ]] || die "--src-code was not supplied"
+    [[ -n "$LIB_CATALOG" ]] || die "--lib-catalog was not supplied"
+    [[ -x "$BINPATH" ]] || die "Arduino CLI is not executable: $BINPATH"
+    [[ -f "$CONFIG_FILE" ]] || die "Config file does not exist: $CONFIG_FILE"
+    [[ -d "$ROOT_PATH" ]] || die "Root path does not exist: $ROOT_PATH"
+    [[ -f "$SRC_CODE" ]] || die "Source code file does not exist: $SRC_CODE"
+    [[ -f "$LIB_CATALOG" ]] || die "Library catalog does not exist: $LIB_CATALOG"
+}
