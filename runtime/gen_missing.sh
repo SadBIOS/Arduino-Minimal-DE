@@ -91,7 +91,7 @@ function extract_source_libraries() {
     SOURCE_LIBRARIES=()
     while IFS= read -r line || [[ -n "$line" ]]; do
         line="${line%$'\r'}"
-        if [[ "$line" =~ ^[[:space:]]*\#[[:space:]]*include[[:space:]]*\<([^>]*)\>[[:space:]]*$ ]]; then
+        if [[ "$line" =~ ^[[:space:]]*\#[[:space:]]*include[[:space:]]*\<([^>]*)\>[[:space:]]*(//.*)?$ ]]; then
             include_name="${BASH_REMATCH[1]}"
             normalized="$(normalize_library_name "$include_name")"
             [[ -z "$normalized" ]] && continue
