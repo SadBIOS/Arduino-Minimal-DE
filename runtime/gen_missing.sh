@@ -377,3 +377,17 @@ function resolve_unknown_library() {
     print_fail "Five invalid attempts were made for '$1'."
     return 1
 }
+
+function catalog_exact_match() {
+    for ((i = 0; i < ${#CATALOG_NAMES[@]}; i++)); do
+        catalog_name="${CATALOG_NAMES[$i]}"
+        [[ -z "${catalog_name//[[:space:]]/}" ]] && continue
+        catalog_name="$(printf '%s\n' "$catalog_name" | awk '{$1=$1; print}')"
+        if [[ "$catalog_name" == "$1" ]]; then
+            printf '%s\n' "$catalog_name"
+            return 0
+        fi
+    done
+
+    return 1
+}
