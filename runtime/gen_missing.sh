@@ -86,3 +86,28 @@ function load_catalog_into_memory() {
 
     [[ "${#CATALOG_NAMES[@]}" -gt 0 ]]
 }
+
+function extract_source_libraries() {
+    SOURCE_LIBRARIES=()
+    while IFS= read -r line || [[ -n "$line" ]]; do
+        line="${line%$'\r'}"
+        if [[ "$line" =~ ^[[:space:]]*\#[[:space:]]*include[[:space:]]*\<([^>]*)\>[[:space:]]*$ ]]; then
+            include_name="${BASH_REMATCH[1]}"
+            normalized="$(normalize_library_name "$include_name")"
+            [[ -z "$normalized" ]] && continue
+            already_seen=0
+            for existing in "${SOURCE_LIBRARIES[@]}"; do
+                if [[ "$existing" == "$normalized" ]]; then
+                    already_seen=1
+                    break
+                fi
+            done
+
+            if [[ "$already_seen" -eq 0 ]]; then
+                SOURCE_LIBRARIES+=("$normalized")
+            fi
+        fi
+    done < "$SRC_CODE"
+
+    [[ "${#SOURCE_LIBRARIES[@]}" -gt 0 ]]
+}
