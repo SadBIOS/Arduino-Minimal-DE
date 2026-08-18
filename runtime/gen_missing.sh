@@ -151,3 +151,62 @@ function library_is_installed() {
 
     return 1
 }
+
+function levenshtein_awk() {
+    awk -v query="$1" '
+        function minimum(a, b, c) {
+            if (a <= b && a <= c) {
+                return a
+            }
+
+            if (b <= a && b <= c) {
+                return b
+            }
+
+            return c
+        }
+
+        function lev(a, b) {
+            lev_a = tolower(a)
+            lev_b = tolower(b)
+            lev_la = length(lev_a)
+            lev_lb = length(lev_b)
+
+            for (lev_j = 0; lev_j <= lev_lb; lev_j++) {
+                lev_prev[lev_j] = lev_j
+            }
+
+            for (lev_i = 1; lev_i <= lev_la; lev_i++) {
+                lev_curr[0] = lev_i
+
+                for (lev_j = 1; lev_j <= lev_lb; lev_j++) {
+                    if (substr(lev_a, lev_i, 1) == substr(lev_b, lev_j, 1)) {
+                        lev_cost = 0
+                    } else {
+                        lev_cost = 1
+                    }
+                    
+                    lev_curr[lev_j] = minimum(lev_curr[lev_j - 1] + 1, lev_prev[lev_j] + 1, lev_prev[lev_j - 1] + lev_cost)
+                }
+
+                for (lev_j = 0; lev_j <= lev_lb; lev_j++) {
+                    lev_prev[lev_j] = lev_curr[lev_j]
+                }
+            }
+
+            return lev_prev[lev_lb]
+        }
+
+        {
+            lev_line = $0
+            sub(/\r$/, "", lev_line)
+
+            if (lev_line == "") {
+                next
+            }
+
+            lev_distance = lev(query, lev_line)
+            printf "%d\t%d\t%s\n", lev_distance, NR, lev_line
+        }
+    ' "$LIB_CATALOG"
+}
