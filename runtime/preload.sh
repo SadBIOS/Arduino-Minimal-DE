@@ -17,9 +17,11 @@ ARDUINO_USER_DIR=""
 LIBRARY_ROOT=""
 ARCHIVE=""
 TEMP_ARCHIVE=""
+FAILED_LIBS_FILE=""
 
 declare -a REQUESTED_LIBRARIES=()
 declare -a INSTALLED_DIRS=()
+declare -a FAILED_LIBRARIES=()
 
 function print_ok() {
     printf "  [\e[32m OK \e[0m] %s\n" "$1"
@@ -110,6 +112,9 @@ function find_installed_library_dir() {
 
 function library_resolver() {
     INSTALLED_DIRS=()
+    FAILED_LIBRARIES=()
+    : > "$FAILED_LIBS_FILE"
+
     for library in "${REQUESTED_LIBRARIES[@]}"; do
         installed_dir="$(find_installed_library_dir "$library" 2>/dev/null || true)"
         if [[ -n "$installed_dir" ]]; then
@@ -120,13 +125,17 @@ function library_resolver() {
 
         if ! "$BINPATH" --config-file "$CONFIG_FILE" lib install "$library" >/dev/null 2>&1; then
             print_fail "$library failed to load"
-            return 1
+            FAILED_LIBRARIES+=("$library")
+            printf '%s\n' "$library" >> "$FAILED_LIBS_FILE"
+            continue
         fi
 
         installed_dir="$(find_installed_library_dir "$library" 2>/dev/null || true)"
         if [[ -z "$installed_dir" ]]; then
             print_fail "$library failed to load"
-            return 1
+            FAILED_LIBRARIES+=("$library")
+            printf '%s\n' "$library" >> "$FAILED_LIBS_FILE"
+            continue
         fi
 
         INSTALLED_DIRS+=("$installed_dir")
@@ -138,19 +147,43 @@ function library_archive_builder() {
     rm -rfv "$TMP_LIB_STORE"/* 2>/dev/null
     for installed_dir in "${INSTALLED_DIRS[@]}"; do
         library_dir_name="$(basename "$installed_dir")"
-        cp -av "$installed_dir" "$TMP_LIB_STORE/$library_dir_name" >/dev/null 2>&1 || return 1
+        if ! cp -av "$installed_dir" "$TMP_LIB_STORE/$library_dir_name" >/dev/null 2>&1; then
+            return 1
+        fi
     done
 
-    cp -av "$PRELOAD_LIST" "$TMP_LIB_STORE/$(basename "$PRELOAD_LIST")" >/dev/null 2>&1 || return 1
+    if ! awk -v failed_file="$FAILED_LIBS_FILE" '
+        BEGIN {
+            while ((getline failed_name < failed_file) > 0) {
+                failed_lib[failed_name] = 1
+            }
+            close(failed_file)
+        }
+
+        {
+            line = $0
+            trimmed = line
+            sub(/^[[:space:]]*/, "", trimmed)
+            sub(/[[:space:]]*$/, "", trimmed)
+            if (trimmed != "" && trimmed !~ /^#/ && failed_lib[trimmed]) {
+                print "#" line
+            } else {
+                print line
+            }
+        }
+    ' "$PRELOAD_LIST" > "$TMP_LIB_STORE/$(basename "$PRELOAD_LIST")"; then
+        return 1
+    fi
+
     ARCHIVE="$LIB_STORE/${PRELOAD_CODE}.tar.gz"
     TEMP_ARCHIVE="$LIB_STORE/.${PRELOAD_CODE}.tar.gz.tmp"
     rm -fv "$TEMP_ARCHIVE" 2>/dev/null
-    if ! tar -C "$TMP_LIB_STORE" -czvf "$TEMP_ARCHIVE" . >/dev/null 2>&1; then
+    if ! tar -C "$TMP_LIB_STORE" -czf "$TEMP_ARCHIVE" . >/dev/null 2>&1; then
         rm -fv "$TEMP_ARCHIVE" 2>/dev/null
         return 1
     fi
 
-    if ! tar -tzvf "$TEMP_ARCHIVE" >/dev/null 2>&1; then
+    if ! tar -tzf "$TEMP_ARCHIVE" >/dev/null 2>&1; then
         rm -fv "$TEMP_ARCHIVE" 2>/dev/null
         return 1
     fi
@@ -176,6 +209,7 @@ function init_preload_seq() {
     printf '%s\n' "==================================================="
     mkdir -p "$LIB_STORE" "$TMP_LIB_STORE" 2>/dev/null
     preload_code_resolver
+    FAILED_LIBS_FILE="$LIB_STORE/${PRELOAD_CODE}_failed_libs.txt"
     preload_library_resolver
     arduino_user_dir_resolver
     library_resolver
