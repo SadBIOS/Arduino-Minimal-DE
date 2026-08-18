@@ -56,3 +56,19 @@ function generate_preload_code() {
 function current_timestamp() {
     date '+%Y%b%-d%-I%-M%S%p' | tr '[:lower:]' '[:upper:]'
 }
+
+function create_preload_list() {
+    PRELOAD_LIST="$ROOT_PATH/lib_preload_list_linux.txt"
+    if [[ -e "$PRELOAD_LIST" ]]; then
+        timestamp="$(current_timestamp)" || return 1
+        if ! mv -v -- "$PRELOAD_LIST" "$ROOT_PATH/backup_${timestamp}_lib_preload_list_linux.txt"; then
+            return 1
+        fi
+        print_info "Existing preload list backed up as backup_${timestamp}_lib_preload_list_linux.txt"
+    fi
+
+    PRELOAD_CODE="$(generate_preload_code)" || return 1
+    printf '%s\n' '# This File is Called in Supported Linux Systems Only' '# Please Change the Code Following "==" to Something Different for Each Batch' '# Please Refer to README.md for More Information' ">!< PRE-LOAD-CODE == $PRELOAD_CODE" > "$PRELOAD_LIST"
+    print_ok "Created $PRELOAD_LIST"
+    print_info "PRE-LOAD-CODE = $PRELOAD_CODE"
+}
