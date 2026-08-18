@@ -72,3 +72,17 @@ function create_preload_list() {
     print_ok "Created $PRELOAD_LIST"
     print_info "PRE-LOAD-CODE = $PRELOAD_CODE"
 }
+
+function load_catalog_into_memory() {
+    line_number=0
+    CATALOG_LINES=()
+    CATALOG_NAMES=()
+    while IFS= read -r line || [[ -n "$line" ]]; do
+        line="${line%$'\r'}"
+        line_number=$((line_number + 1))
+        CATALOG_LINES+=("$line_number")
+        CATALOG_NAMES+=("$line")
+    done < "$LIB_CATALOG"
+
+    [[ "${#CATALOG_NAMES[@]}" -gt 0 ]]
+}
