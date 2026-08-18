@@ -499,3 +499,39 @@ function initiator() {
     cat "$PRELOAD_LIST"
     printf '%s\n' "==========================================================="
 }
+
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        --binpath)
+            BINPATH="$2"
+            shift 2
+        ;;
+
+        --toolchain-root)
+            TOOLCHAIN_ROOT="$2"
+            shift 2
+        ;;
+
+        --config-file)
+            CONFIG_FILE="$2"
+            shift 2
+        ;;
+
+        --root-path)
+            ROOT_PATH="$2"
+            shift 2
+        ;;
+
+        --src-code)
+            SRC_CODE="$2"
+            shift 2
+        ;;
+
+        --lib-catalog)
+            LIB_CATALOG="$2"
+            shift 2
+            initiator
+            exit 0
+        ;;
+    esac
+done
