@@ -166,7 +166,7 @@ function library_archive_builder() {
             sub(/^[[:space:]]*/, "", trimmed)
             sub(/[[:space:]]*$/, "", trimmed)
             if (trimmed != "" && trimmed !~ /^#/ && failed_lib[trimmed]) {
-                print "#" line
+                print "# " line
             } else {
                 print line
             }
