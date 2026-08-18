@@ -111,3 +111,43 @@ function extract_source_libraries() {
 
     [[ "${#SOURCE_LIBRARIES[@]}" -gt 0 ]]
 }
+
+function library_is_installed() {
+    output="$("$BINPATH" --config-file "$CONFIG_FILE" lib list "$1" 2>/dev/null)" || return 1
+    if printf '%s\n' "$output" |
+        awk -v wanted="$1" '
+            function trim(s) {
+                sub(/^[[:space:]]+/, "", s)
+                sub(/[[:space:]]+$/, "", s)
+                return s
+            }
+
+            NR == 1 {
+                next
+            }
+
+            {
+                line = trim($0)
+                if (line == "") {
+                    next
+                }
+
+                gsub(/\033\[[0-9;]*m/, "", line)
+                if (index(line, wanted) == 1) {
+                    rest = substr(line, length(wanted) + 1)
+                    if (rest == "" || rest ~ /^[[:space:]]/) {
+                        found = 1
+                    }
+                }
+            }
+
+            END {
+                exit(found ? 0 : 1)
+            }
+        '
+    then
+        return 0
+    fi
+
+    return 1
+}
