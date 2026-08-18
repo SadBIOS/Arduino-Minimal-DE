@@ -280,3 +280,73 @@ function show_closest_matches() {
     printf '%s\n' "------------------------------------------------------------"
     [[ "${#MATCH_NAMES[@]}" -gt 0 ]]
 }
+
+function show_closest_matches() {
+    start_ns="$(date +%s%N)"
+    mapfile -t candidates < <(levenshtein_awk "$1")
+    end_ns="$(date +%s%N)"
+    elapsed_ns=$((end_ns - start_ns))
+    elapsed_ms=$((elapsed_ns / 1000000))
+    if [[ "${#candidates[@]}" -eq 0 ]]; then
+        MATCH_NAMES=()
+        MATCH_LINES=()
+        return 1
+    fi
+
+    if [[ "$elapsed_ms" -ge 1000 ]]; then
+        elapsed_sec=$((elapsed_ms / 1000))
+        remaining_ms=$((elapsed_ms % 1000))
+    else
+        elapsed_sec=0
+        remaining_ms="$elapsed_ms"
+    fi
+
+    best=()
+
+    for candidate in "${candidates[@]}"; do
+        IFS=$'\t' read -r candidate_distance candidate_line candidate_name <<< "$candidate"
+        inserted=0
+        best_count="${#best[@]}"
+
+        for ((position = 0; position < best_count; position++)); do
+            IFS=$'\t' read -r best_distance best_line best_name <<< "${best[$position]}"
+
+            if (( candidate_distance < best_distance )) || { (( candidate_distance == best_distance )) && (( candidate_line < best_line )); }; then
+                best=("${best[@]:0:position}" "$candidate" "${best[@]:position}")
+                inserted=1
+                break
+            fi
+        done
+
+        if [[ "$inserted" -eq 0 ]]; then
+            best+=("$candidate")
+        fi
+
+        if [[ "${#best[@]}" -gt 5 ]]; then
+            unset 'best[5]'
+            best=("${best[@]}")
+        fi
+    done
+
+    MATCH_NAMES=()
+    MATCH_LINES=()
+    printf '\n'
+    printf '\e[36mTop 5 closest matches to: %s\e[0m\n' "$1"
+    printf '%s\n' "------------------------------------------------------------"
+    if [[ "$elapsed_ms" -ge 1000 ]]; then
+        printf 'Query Time: %s sec %s ms\n' "$elapsed_sec" "$remaining_ms"
+    else
+        printf 'Query Time: %s ms\n' "$elapsed_ms"
+    fi
+
+    printf '%s\n' "------------------------------------------------------------"
+    for ((i = 0; i < ${#best[@]}; i++)); do
+        IFS=$'\t' read -r candidate_distance candidate_line candidate_name <<< "${best[$i]}"
+        printf '%d. %s [Catalog Line: %s] [Distance: %s]\n' "$((i + 1))" "$candidate_name" "$candidate_line" "$candidate_distance"
+        MATCH_NAMES+=("$candidate_name")
+        MATCH_LINES+=("$candidate_line")
+    done
+
+    printf '%s\n' "------------------------------------------------------------"
+    [[ "${#MATCH_NAMES[@]}" -gt 0 ]]
+}
