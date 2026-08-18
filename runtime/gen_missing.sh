@@ -38,3 +38,21 @@ function die() {
     print_fail "$1"
     exit 1
 }
+
+function normalize_library_name() {
+    value="$1"
+    value="${value%$'\r'}"
+    value="${value%.h}"
+    value="${value//_/ }"
+    value="$(printf '%s\n' "$value" | awk '{$1=$1; print}')"
+    printf '%s\n' "$value"
+}
+
+function generate_preload_code() {
+    n="$(shuf -i 6-8 -n 1)" || return 1
+    shuf -i "$((10**(n-1)))-$((10**n-1))" -n 1
+}
+
+function current_timestamp() {
+    date '+%Y%b%-d%-I%-M%S%p' | tr '[:lower:]' '[:upper:]'
+}
