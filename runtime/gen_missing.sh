@@ -15,3 +15,9 @@ SRC_CODE=""
 LIB_CATALOG=""
 PRELOAD_LIST=""
 PRELOAD_CODE=""
+
+declare -a SOURCE_LIBRARIES=()
+declare -a CATALOG_LINES=()
+declare -a CATALOG_NAMES=()
+declare -a MISSING_LIBRARIES=()
+declare -a QUEUED_LIBRARIES=()
