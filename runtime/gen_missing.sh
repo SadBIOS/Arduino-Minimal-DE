@@ -473,3 +473,29 @@ function validate_arguments() {
     [[ -f "$SRC_CODE" ]] || die "Source code file does not exist: $SRC_CODE"
     [[ -f "$LIB_CATALOG" ]] || die "Library catalog does not exist: $LIB_CATALOG"
 }
+
+function initiator() {
+    validate_arguments
+    print_info "Root path: $ROOT_PATH"
+    print_info "Source:    $SRC_CODE"
+    print_info "Catalog:   $LIB_CATALOG"
+    load_catalog_into_memory || die "Could not load library catalog"
+    print_ok "Loaded ${#CATALOG_NAMES[@]} catalog entries into memory"
+    create_preload_list || die "Could not create lib_preload_list_linux.txt"
+    extract_source_libraries || die "No #include <...> libraries were found in $SRC_CODE"
+    printf '\n'
+    printf '%s\n' "Libraries extracted from source:"
+    for library in "${SOURCE_LIBRARIES[@]}"; do
+        printf '  - %s\n' "$library"
+    done
+
+    process_libraries
+    append_queued_libraries
+    printf '\n'
+    printf '%s\n' "==========================================================="
+    printf '\e[32mGenerated preload list:\e[0m'
+    printf '%s\n' "$PRELOAD_LIST"
+    printf '%s\n' "==========================================================="
+    cat "$PRELOAD_LIST"
+    printf '%s\n' "==========================================================="
+}
