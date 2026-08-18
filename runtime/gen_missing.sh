@@ -350,3 +350,30 @@ function show_closest_matches() {
     printf '%s\n' "------------------------------------------------------------"
     [[ "${#MATCH_NAMES[@]}" -gt 0 ]]
 }
+
+function resolve_unknown_library() {
+    match_count="${#MATCH_NAMES[@]}"
+    if [[ "$match_count" -eq 0 ]]; then
+        print_fail "No catalog candidates are available for '$1'."
+        return 1
+    fi
+
+    for ((attempt = 1; attempt <= 5; attempt++)); do
+        printf '\n'
+        read -r -p "Select a library [1-${match_count}] (Attempt ${attempt}/5): " choice
+        if [[ "$choice" =~ ^[1-9][0-9]*$ ]] && (( choice >= 1 && choice <= match_count )); then
+            selected="${MATCH_NAMES[$((choice - 1))]}"
+            printf "Selected: \e[36m%s\e[0m\n" "$selected"
+            QUEUED_LIBRARIES+=("$selected")
+            return 0
+        fi
+
+        if [[ "$attempt" -lt 5 ]]; then
+            print_fail "Invalid selection. Please choose one of the displayed numbers."
+        fi
+
+    done
+
+    print_fail "Five invalid attempts were made for '$1'."
+    return 1
+}
