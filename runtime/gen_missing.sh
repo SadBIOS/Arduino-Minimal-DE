@@ -440,3 +440,23 @@ function process_libraries() {
     printf 'Missing libraries:   %d\n' "$missing_count"
     printf 'Queued libraries:    %d\n' "${#QUEUED_LIBRARIES[@]}"
 }
+
+function append_queued_libraries() {
+    for library in "${QUEUED_LIBRARIES[@]}"; do
+        already_queued=0
+        while IFS= read -r existing || [[ -n "$existing" ]]; do
+            existing="${existing%$'\r'}"
+            if [[ "$existing" == "$library" ]]; then
+                already_queued=1
+                break
+            fi
+
+        done < "$PRELOAD_LIST"
+
+        if [[ "$already_queued" -eq 0 ]]; then
+            printf '%s\n' "$library" >> "$PRELOAD_LIST"
+            print_ok "Added '$library' to lib_preload_list_linux.txt"
+        fi
+
+    done
+}
