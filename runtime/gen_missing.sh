@@ -391,3 +391,52 @@ function catalog_exact_match() {
 
     return 1
 }
+
+function process_libraries() {
+    installed_count=0
+    missing_count=0
+    QUEUED_LIBRARIES=()
+    MISSING_LIBRARIES=()
+    printf '\n'
+    printf '%s\n' "==========================================================="
+    printf '%s\n' "Checking source libraries"
+    printf '%s\n' "==========================================================="
+    for library in "${SOURCE_LIBRARIES[@]}"; do
+        printf '\n'
+        printf 'Checking: \e[36m%s\e[0m\n' "$library"
+        if library_is_installed "$library"; then
+            print_ok "$library already exists - skipping"
+            installed_count=$((installed_count + 1))
+            continue
+        fi
+
+        print_info "$library is not installed"
+        MISSING_LIBRARIES+=("$library")
+        missing_count=$((missing_count + 1))
+        exact_match="$(catalog_exact_match "$library" 2>/dev/null || true)"
+        if [[ -n "$exact_match" ]]; then
+            print_ok "Exact catalog match: $exact_match"
+            QUEUED_LIBRARIES+=("$exact_match")
+            continue
+        fi
+
+        print_info "No exact catalog match found for '$library'"
+        if ! show_closest_matches "$library"; then
+            print_fail "Unable to find any catalog candidates for '$library'"
+            continue
+        fi
+
+        if ! resolve_unknown_library "$library"; then
+            print_fail "Skipping '$library'"
+        fi
+
+    done
+
+    printf '\n'
+    printf '%s\n' "==========================================================="
+    printf '%s\n' "Resolution Summary"
+    printf '%s\n' "==========================================================="
+    printf 'Installed libraries: %d\n' "$installed_count"
+    printf 'Missing libraries:   %d\n' "$missing_count"
+    printf 'Queued libraries:    %d\n' "${#QUEUED_LIBRARIES[@]}"
+}
