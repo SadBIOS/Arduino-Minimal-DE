@@ -13,10 +13,7 @@ switch ($trigger) {
         Start-Sleep -Milliseconds 5000
         
         $commands = @(
-            "config init --overwrite",
-            "config set directories.data C:\arduino15",
-            "config set directories.downloads C:\arduino15\staging",
-            "config set directories.user C:\arduino15\user",
+            "config init",
             "core update-index",
             "lib update-index",
             "core install arduino:avr",
