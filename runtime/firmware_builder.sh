@@ -163,58 +163,75 @@ function map_config_key() {
     case "$1" in
         FQBN)
             printf '%s' "FQBN"
-            ;;
+        ;;
+
         CPU_FREQ)
             printf '%s' "CPUFreq"
-            ;;
+        ;;
+
         CDC_OPTN)
             printf '%s' "CDCOnBoot"
-            ;;
+        ;;
+
         USB_MODE)
             printf '%s' "USBMode"
-            ;;
+        ;;
+
         UPLOAD_MODE)
             printf '%s' "UploadMode"
-            ;;
+        ;;
+
         FLASH_MODE)
             printf '%s' "FlashMode"
-            ;;
+        ;;
+
         FLASH_FREQ)
             printf '%s' "FlashFreq"
-            ;;
+        ;;
+
         FLASH_SIZE)
             printf '%s' "FlashSize"
-            ;;
+        ;;
+
         PSRAM)
             printf '%s' "PSRAM"
-            ;;
+        ;;
+
         PARTITION_SCHEME)
             printf '%s' "PartitionScheme"
-            ;;
+        ;;
+
         ERASE_FLASH)
             printf '%s' "EraseFlash"
-            ;;
+        ;;
+
         MSC_ON_BOOT)
             printf '%s' "MSCOnBoot"
-            ;;
+        ;;
+
         DFU_ON_BOOT)
             printf '%s' "DFUOnBoot"
-            ;;
+        ;;
+
         UPLOAD_SPEED)
             printf '%s' "UploadSpeed"
-            ;;
+        ;;
+
         DEBUG_LEVEL)
             printf '%s' "DebugLevel"
-            ;;
+        ;;
+
         JTAG_ADAPTER)
             printf '%s' "JTAGAdapter"
-            ;;
+        ;;
+
         LOOP_CORE)
             printf '%s' "LoopCore"
-            ;;
+        ;;
+
         EVENTS_CORE)
             printf '%s' "EventsCore"
-            ;;
+        ;;
     esac
 }
 
