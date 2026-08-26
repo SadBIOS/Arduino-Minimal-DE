@@ -215,9 +215,6 @@ function map_config_key() {
         EVENTS_CORE)
             printf '%s' "EventsCore"
             ;;
-        *)
-            return 1
-            ;;
     esac
 }
 
