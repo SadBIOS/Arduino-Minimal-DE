@@ -141,6 +141,5 @@ while [[ $# -gt 0 ]]; do
             board_lister
             exit 0
         ;;
-
     esac
 done
