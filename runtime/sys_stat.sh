@@ -191,6 +191,5 @@ while [[ $# -gt 0 ]]; do
             system_checker
             exit 0
         ;;
-        
     esac
 done
