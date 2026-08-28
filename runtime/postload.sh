@@ -352,6 +352,5 @@ while [[ $# -gt 0 ]]; do
             cleanup
             exit 0
         ;;
-
     esac
 done
