@@ -239,6 +239,5 @@ while [[ $# -gt 0 ]]; do
             init_preload_seq
             exit 0
         ;;
-
     esac
 done
