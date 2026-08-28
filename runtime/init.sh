@@ -210,6 +210,5 @@ while [[ $# -gt 0 ]]; do
             init_build
             exit 0
         ;;
-
     esac
 done
