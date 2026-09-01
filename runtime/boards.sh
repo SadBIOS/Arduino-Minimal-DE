@@ -7,6 +7,20 @@ fi
 TOOLCHAIN_ROOT=""
 CONFIG_FILE=""
 BINPATH=""
+BOLD=""
+DIM=""
+CYAN=""
+GREEN=""
+YELLOW=""
+RESET=""
+TMPFILE=""
+CURRENT_FAMILY=""
+KEY=""
+COUNT=""
+BOARDS=""
+FAMILY=""
+SERIES=""
+BOARD=""
 
 function board_lister() {
     BOLD="\033[1m"
@@ -16,8 +30,6 @@ function board_lister() {
     YELLOW="\033[33m"
     RESET="\033[0m"
 
-    clear
-
     echo
     echo -e "${BOLD}${CYAN}╔════════════════════════════════════════════════════╗${RESET}"
     echo -e "${BOLD}${CYAN}║              Installed Arduino Boards              ║${RESET}"
@@ -26,9 +38,8 @@ function board_lister() {
 
     TMPFILE=$(mktemp)
 
-    trap 'rm -f "$TMPFILE"' EXIT
-    "$BINPATH" --config-file "$CONFIG_FILE" board listall 2>/dev/null | \
-    awk '
+    trap 'rm -fv "$TMPFILE"' EXIT
+    "$BINPATH" --config-file "$CONFIG_FILE" board listall 2>/dev/null | awk '
     NR==1 { next }{
         fqbn=$NF
 
@@ -47,8 +58,10 @@ function board_lister() {
             family="ESP32 Family"
         else if(package=="esp8266")
             family="ESP8266 Family"
-        else if(package=="arduino" && arch=="avr")
+        else if((package=="arduino" || package=="MiniCore") && arch=="avr")
             family="Arduino AVR Family"
+        else if(package=="Seeeduino")
+            family="SeeedStudio Family"
         else
             next
 
@@ -63,6 +76,21 @@ function board_lister() {
                 series="S Series"
             else if(str ~ /esp32-?h2/ || str ~ /h2[^a-z0-9]/ || str ~ /h2$/)
                 series="H Series"
+            else
+                series="Basic"
+        }
+        else if(family=="Arduino AVR Family") {
+            if(package=="MiniCore")
+                series="MiniCore Series"
+            else
+                series="Basic"
+        }
+        else if(family=="SeeedStudio Family") {
+            str = tolower(name " " fqbn)
+            if(str ~ /xiao/)
+                series="XIAO Series"
+            else if(str ~ /wio/)
+                series="Wio Series"
             else
                 series="Basic"
         }
@@ -87,8 +115,12 @@ function board_lister() {
         order[5]="ESP32 Family|P Series"
         order[6]="ESP8266 Family|Basic"
         order[7]="Arduino AVR Family|Basic"
+        order[8]="Arduino AVR Family|MiniCore Series"
+        order[9]="SeeedStudio Family|Basic"
+        order[10]="SeeedStudio Family|XIAO Series"
+        order[11]="SeeedStudio Family|Wio Series"
 
-        for(i=1;i<=7;i++) {
+        for(i=1;i<=11;i++) {
             key=order[i]
             if(count[key])
                 print key "\t" count[key] "\t" boards[key]
@@ -108,9 +140,7 @@ function board_lister() {
         echo
         echo -e "  ${CYAN}▸ $SERIES${RESET} ${DIM}($COUNT boards)${RESET}"
         echo
-        echo "$BOARDS" |
-        tr '#' '\n' |
-        while IFS= read -r BOARD; do
+        echo "$BOARDS" | tr '#' '\n' | while IFS= read -r BOARD; do
             [[ -z "$BOARD" ]] && continue
             printf "      ${YELLOW}•${RESET} %s\n" "$BOARD"
         done
