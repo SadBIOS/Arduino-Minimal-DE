@@ -21,6 +21,7 @@ DEPS=(
   python3-pip
   python3-serial
   libusb-1.0-0
+  screen
 )
 
 function conn_stat() {
