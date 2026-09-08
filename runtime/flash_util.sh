@@ -40,3 +40,10 @@ line=""
 function fqbn_symstrip() {
     printf '%s\n' "${1//[^[:alnum:]]/}"
 }
+
+function load_config() {
+    FQBN_VAL=$(grep "FQBN ==" "$LINUX_BUILD_CONF" | awk -F ' == ' '{print $2}')
+    ADDITIONAL_OPTIONS_VAL=$(grep "ADDITIONAL_OPTIONS ==" "$LINUX_BUILD_CONF" | awk -F ' == ' '{print $2}')
+    SYM_FQBN=$(fqbn_symstrip "$FQBN_VAL")
+    BOARD_NAME=$("$BINPATH" --config-file "$CONFIG_FILE" board listall | awk -F '  +' -v fq="$FQBN_VAL" '$2 == fq {print $1}')
+}
