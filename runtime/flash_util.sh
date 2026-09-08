@@ -135,3 +135,57 @@ function update_makefile_and_flash() {
         exit 1
     fi
 }
+
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        --binpath) 
+            BINPATH="$2"
+            shift 2 
+        ;;
+
+        --toolchain-root) 
+            TOOLCHAIN_ROOT="$2"
+            shift 2 
+        ;;
+
+        --config-file) 
+            CONFIG_FILE="$2"
+            shift 2 
+        ;;
+
+        --linux-build-conf) 
+            LINUX_BUILD_CONF="$2"
+            shift 2 
+        ;;
+
+        --root-path) 
+            ROOT_PATH="$2"
+            shift 2 
+        ;;
+
+        --src-code) 
+            SRC_CODE="$2"
+            shift 2 
+        ;;
+
+        --approved-hwid-list) 
+            APPROVED_HWID_LIST="$2"
+            shift 2 
+        ;;
+
+        --port) 
+            PORT="$2"
+            shift 2 
+        ;;
+
+        --auto-discovery) 
+            AUTO_DISCOVERY="$2"
+            shift 2 
+        ;;
+
+        --verify-devices) 
+            VERIFY_DEVICES="$2"
+            shift 2 
+        ;;
+    esac
+done
