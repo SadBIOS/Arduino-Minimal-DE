@@ -36,3 +36,7 @@ VAL=""
 tty_node=""
 i=0
 line=""
+
+function fqbn_symstrip() {
+    printf '%s\n' "${1//[^[:alnum:]]/}"
+}
