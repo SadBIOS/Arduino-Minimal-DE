@@ -47,3 +47,19 @@ function load_config() {
     SYM_FQBN=$(fqbn_symstrip "$FQBN_VAL")
     BOARD_NAME=$("$BINPATH" --config-file "$CONFIG_FILE" board listall | awk -F '  +' -v fq="$FQBN_VAL" '$2 == fq {print $1}')
 }
+
+function scan_devices() {
+    DEVICE_COUNT=0
+    for tty_node in /dev/ttyUSB* /dev/ttyACM*; do
+        [[ -e "$tty_node" ]] || continue
+        EVAL_PROPS=$(udevadm info --query=property --export --name="$tty_node" 2>/dev/null || true)
+        eval "$EVAL_PROPS"
+        DEV_VID_PID="${ID_VENDOR_ID}:${ID_MODEL_ID}"
+        if grep -q -i "$DEV_VID_PID" "$APPROVED_HWID_LIST"; then
+            DEVICE_COUNT=$((DEVICE_COUNT + 1))
+            eval "DEV_${DEVICE_COUNT}_PORT=$tty_node"
+            eval "DEV_${DEVICE_COUNT}_VID_PID=$DEV_VID_PID"
+            eval "DEV_${DEVICE_COUNT}_ISERIAL=${ID_USB_SERIAL_SHORT:-Unknown}"
+        fi
+    done
+}
