@@ -119,7 +119,6 @@ function verify_hwdb() {
     fi
 }
 
-
 function update_makefile_and_flash() {
     if [[ -n "$SELECTED_PORT" ]]; then
         sed -i "s|^port :=.*|port := $SELECTED_PORT|" "${ROOT_PATH%/}/Makefile"
@@ -190,12 +189,12 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 
-load_config
-
 if [[ "$AUTO_DISCOVERY" == "off" && "$VERIFY_DEVICES" == "on" ]]; then
     printf "Invalid configuration: --auto-discovery off and --verify-devices on is not a valid combination.\n"
     exit 1
 fi
+
+load_config
 
 if [[ "$AUTO_DISCOVERY" == "off" && "$VERIFY_DEVICES" == "off" ]]; then
     if [[ -z "$PORT" ]]; then
