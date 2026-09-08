@@ -205,3 +205,14 @@ if [[ "$AUTO_DISCOVERY" == "off" && "$VERIFY_DEVICES" == "off" ]]; then
     update_makefile_and_flash
     exit 0
 fi
+
+if [[ "$AUTO_DISCOVERY" == "on" && "$VERIFY_DEVICES" == "off" ]]; then
+    scan_devices
+    if [[ $DEVICE_COUNT -eq 0 ]]; then
+        printf "No approved devices found.\n"
+        exit 1
+    fi
+    display_and_select
+    update_makefile_and_flash
+    exit 0
+fi
