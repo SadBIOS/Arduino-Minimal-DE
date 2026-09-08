@@ -196,3 +196,12 @@ if [[ "$AUTO_DISCOVERY" == "off" && "$VERIFY_DEVICES" == "on" ]]; then
     printf "Invalid configuration: --auto-discovery off and --verify-devices on is not a valid combination.\n"
     exit 1
 fi
+
+if [[ "$AUTO_DISCOVERY" == "off" && "$VERIFY_DEVICES" == "off" ]]; then
+    if [[ -z "$PORT" ]]; then
+        printf "Port is blank but auto-discovery is off. Cannot proceed.\n"
+        exit 1
+    fi
+    update_makefile_and_flash
+    exit 0
+fi
