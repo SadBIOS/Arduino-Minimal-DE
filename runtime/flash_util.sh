@@ -63,3 +63,33 @@ function scan_devices() {
         fi
     done
 }
+
+function display_and_select() {
+    for ((i=1; i<=DEVICE_COUNT; i++)); do
+        eval "DPORT=\$DEV_${i}_PORT"
+        eval "DVP=\$DEV_${i}_VID_PID"
+        eval "DSER=\$DEV_${i}_ISERIAL"
+        printf "Device %d\n" "$i"
+        printf "%s\n" "-------------------------------------------------------------"
+        printf "Board Name  : %s\n" "$BOARD_NAME"
+        printf "FQBN        : %s\n" "$FQBN_VAL"
+        printf "HWID        : %s\n" "$DVP"
+        printf "Serial ID   : %s\n" "$DSER"
+        printf "Device Port : %s\n\n" "$DPORT"
+    done
+    ATTEMPTS=0
+    while [[ $ATTEMPTS -lt 5 ]]; do
+        read -r -p "Select device number [1]: " USER_SELECTION
+        USER_SELECTION=${USER_SELECTION:-1}
+        if [[ "$USER_SELECTION" -ge 1 && "$USER_SELECTION" -le "$DEVICE_COUNT" ]]; then
+            eval "SELECTED_PORT=\$DEV_${USER_SELECTION}_PORT"
+            eval "VID_PID=\$DEV_${USER_SELECTION}_VID_PID"
+            return 0
+        else
+            printf "Invalid selection. Please try again.\n"
+            ATTEMPTS=$((ATTEMPTS + 1))
+        fi
+    done
+    printf "Too many erroneous attempts. Exiting.\n"
+    exit 1
+}
