@@ -61,7 +61,9 @@ function scan_devices() {
             eval "DEV_${DEVICE_COUNT}_VID_PID=$DEV_VID_PID"
             eval "DEV_${DEVICE_COUNT}_ISERIAL=${ID_USB_SERIAL_SHORT:-Unknown}"
         fi
+
     done
+
 }
 
 function display_and_select() {
@@ -76,7 +78,9 @@ function display_and_select() {
         printf "HWID        : %s\n" "$DVP"
         printf "Serial ID   : %s\n" "$DSER"
         printf "Device Port : %s\n\n" "$DPORT"
+
     done
+
     ATTEMPTS=0
     while [[ $ATTEMPTS -lt 5 ]]; do
         read -r -p "Select device number [1]: " USER_SELECTION
@@ -89,7 +93,9 @@ function display_and_select() {
             printf "Invalid selection. Please try again.\n"
             ATTEMPTS=$((ATTEMPTS + 1))
         fi
+
     done
+
     printf "Too many erroneous attempts. Exiting.\n"
     exit 1
 }
@@ -103,6 +109,7 @@ function verify_hwdb() {
             VAL=$(echo "$line" | awk '{$1=""; sub(/^[[:space:]]+/, ""); print $0}')
             echo "$VAL" > "$DIR_PATH/$KEY.txt"
         done
+
         echo "$BOARD_NAME" > "$DIR_PATH/descriptor.txt"
     else
         lsusb -vd "$VID_PID" 2>/dev/null | grep -E "idVendor|idProduct|iSerial|iManufacturer|iProduct|bcdDevice|bcdUSB|bDeviceClass|bDeviceSubClass|bDeviceProtocol|bMaxPacketSize0|bNumConfigurations" | while read -r line; do
@@ -115,8 +122,11 @@ function verify_hwdb() {
             else
                 echo "$VAL" > "$DIR_PATH/$KEY.txt"
             fi
+
         done
+
     fi
+
 }
 
 function update_makefile_and_flash() {
@@ -124,15 +134,18 @@ function update_makefile_and_flash() {
         sed -i "s|^port :=.*|port := $SELECTED_PORT|" "${ROOT_PATH%/}/Makefile"
         PORT="$SELECTED_PORT"
     fi
+
     FINAL_FQBN="$FQBN_VAL"
     if [[ -n "$ADDITIONAL_OPTIONS_VAL" ]]; then
         FINAL_FQBN="${FQBN_VAL}:${ADDITIONAL_OPTIONS_VAL}"
     fi
+
     "$BINPATH" --config-file "$CONFIG_FILE" upload --fqbn "$FINAL_FQBN" --port "$PORT" --verbose --input-dir "${ROOT_PATH%/}/firmware"
     if [[ $? -ne 0 ]]; then
         printf "Error occurred during flashing sequence.\n"
         exit 1
     fi
+
 }
 
 while [[ $# -gt 0 ]]; do
@@ -201,6 +214,7 @@ if [[ "$AUTO_DISCOVERY" == "off" && "$VERIFY_DEVICES" == "off" ]]; then
         printf "Port is blank but auto-discovery is off. Cannot proceed.\n"
         exit 1
     fi
+
     update_makefile_and_flash
     exit 0
 fi
@@ -211,6 +225,7 @@ if [[ "$AUTO_DISCOVERY" == "on" && "$VERIFY_DEVICES" == "off" ]]; then
         printf "No approved devices found.\n"
         exit 1
     fi
+
     display_and_select
     update_makefile_and_flash
     exit 0
@@ -236,7 +251,9 @@ if [[ "$AUTO_DISCOVERY" == "on" && "$VERIFY_DEVICES" == "on" ]]; then
                 eval "VID_PID=\$DEV_${i}_VID_PID"
                 break
             fi
+
         done
+        
     fi
     
     if [[ -z "$PORT" || $MATCH_FOUND -eq 0 || ! -d "$DIR_PATH" || $DEVICE_COUNT -gt 1 ]]; then
