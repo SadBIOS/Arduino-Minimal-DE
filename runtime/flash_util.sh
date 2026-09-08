@@ -189,3 +189,8 @@ while [[ $# -gt 0 ]]; do
         ;;
     esac
 done
+
+if [[ "$AUTO_DISCOVERY" == "off" && "$VERIFY_DEVICES" == "on" ]]; then
+    printf "Invalid configuration: --auto-discovery off and --verify-devices on is not a valid combination.\n"
+    exit 1
+fi
