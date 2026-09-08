@@ -93,3 +93,28 @@ function display_and_select() {
     printf "Too many erroneous attempts. Exiting.\n"
     exit 1
 }
+
+function verify_hwdb() {
+    DIR_PATH="$HWDB/$SYM_FQBN"
+    if [[ ! -d "$DIR_PATH" ]]; then
+        mkdir -pv "$DIR_PATH"
+        lsusb -vd "$VID_PID" 2>/dev/null | grep -E "idVendor|idProduct|iSerial|iManufacturer|iProduct|bcdDevice|bcdUSB|bDeviceClass|bDeviceSubClass|bDeviceProtocol|bMaxPacketSize0|bNumConfigurations" | while read -r line; do
+            KEY=$(echo "$line" | awk '{print $1}')
+            VAL=$(echo "$line" | awk '{$1=""; sub(/^[[:space:]]+/, ""); print $0}')
+            echo "$VAL" > "$DIR_PATH/$KEY.txt"
+        done
+        echo "$BOARD_NAME" > "$DIR_PATH/descriptor.txt"
+    else
+        lsusb -vd "$VID_PID" 2>/dev/null | grep -E "idVendor|idProduct|iSerial|iManufacturer|iProduct|bcdDevice|bcdUSB|bDeviceClass|bDeviceSubClass|bDeviceProtocol|bMaxPacketSize0|bNumConfigurations" | while read -r line; do
+            KEY=$(echo "$line" | awk '{print $1}')
+            VAL=$(echo "$line" | awk '{$1=""; sub(/^[[:space:]]+/, ""); print $0}')
+            if [[ -f "$DIR_PATH/$KEY.txt" ]]; then
+                if ! grep -F -q -x "$VAL" "$DIR_PATH/$KEY.txt"; then
+                    echo "$VAL" >> "$DIR_PATH/$KEY.txt"
+                fi
+            else
+                echo "$VAL" > "$DIR_PATH/$KEY.txt"
+            fi
+        done
+    fi
+}
