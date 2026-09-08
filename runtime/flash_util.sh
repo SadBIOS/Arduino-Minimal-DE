@@ -216,3 +216,42 @@ if [[ "$AUTO_DISCOVERY" == "on" && "$VERIFY_DEVICES" == "off" ]]; then
     update_makefile_and_flash
     exit 0
 fi
+
+if [[ "$AUTO_DISCOVERY" == "on" && "$VERIFY_DEVICES" == "on" ]]; then
+    scan_devices
+    if [[ $DEVICE_COUNT -eq 0 ]]; then
+        printf "No approved devices found.\n"
+        exit 1
+    fi
+    
+    DIR_PATH="$HWDB/$SYM_FQBN"
+    MATCH_FOUND=0
+    NEEDS_PROMPT=0
+    
+    if [[ -n "$PORT" ]]; then
+        for ((i=1; i<=DEVICE_COUNT; i++)); do
+            eval "DPORT=\$DEV_${i}_PORT"
+            if [[ "$DPORT" == "$PORT" ]]; then
+                MATCH_FOUND=1
+                eval "SELECTED_PORT=\$DEV_${i}_PORT"
+                eval "VID_PID=\$DEV_${i}_VID_PID"
+                break
+            fi
+        done
+    fi
+    
+    if [[ -z "$PORT" || $MATCH_FOUND -eq 0 || ! -d "$DIR_PATH" || $DEVICE_COUNT -gt 1 ]]; then
+        NEEDS_PROMPT=1
+    else
+        eval "SELECTED_PORT=\$DEV_1_PORT"
+        eval "VID_PID=\$DEV_1_VID_PID"
+    fi
+    
+    if [[ $NEEDS_PROMPT -eq 1 ]]; then
+        display_and_select
+    fi
+    
+    verify_hwdb
+    update_makefile_and_flash
+    exit 0
+fi
