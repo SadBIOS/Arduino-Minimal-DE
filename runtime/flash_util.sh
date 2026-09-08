@@ -118,3 +118,20 @@ function verify_hwdb() {
         done
     fi
 }
+
+
+function update_makefile_and_flash() {
+    if [[ -n "$SELECTED_PORT" ]]; then
+        sed -i "s|^port :=.*|port := $SELECTED_PORT|" "${ROOT_PATH%/}/Makefile"
+        PORT="$SELECTED_PORT"
+    fi
+    FINAL_FQBN="$FQBN_VAL"
+    if [[ -n "$ADDITIONAL_OPTIONS_VAL" ]]; then
+        FINAL_FQBN="${FQBN_VAL}:${ADDITIONAL_OPTIONS_VAL}"
+    fi
+    "$BINPATH" --config-file "$CONFIG_FILE" upload --fqbn "$FINAL_FQBN" --port "$PORT" --verbose --input-dir "${ROOT_PATH%/}/firmware"
+    if [[ $? -ne 0 ]]; then
+        printf "Error occurred during flashing sequence.\n"
+        exit 1
+    fi
+}
