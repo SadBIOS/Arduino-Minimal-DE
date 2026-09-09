@@ -103,3 +103,100 @@ function monitor_usb() {
         exit 1
     fi
 }
+function process_device() {
+    printf "\nThe following device has been discovered:\n"
+    printf "Board Name          : %s\n" "$BOARD_NAME"
+    printf "FQBN                : %s\n" "$FQBN_INPUT"
+    printf "HWID                : %s\n" "$FOUND_VID_PID"
+    printf "Device Vendor Name  : %s\n" "$FOUND_VENDOR"
+    printf "Device Model        : %s\n\n" "$FOUND_MODEL"
+    printf "Choices:\n"
+    printf "1. Append to Database and continue to next device\n"
+    printf "2. Append and exit\n"
+    printf "3. Discard and restart\n"
+    printf "4. Discard and exit\n"
+    read -r -p "Select option: " DB_OPTION
+    DIR_PATH="$HWDB/$SYM_FQBN"
+    if [[ "$DB_OPTION" == "1" || "$DB_OPTION" == "2" ]]; then
+        if [[ ! -d "$DIR_PATH" ]]; then
+            mkdir -pv "$DIR_PATH"
+            lsusb -vd "$FOUND_VID_PID" 2>/dev/null | grep -E "idVendor|idProduct|iSerial|iManufacturer|iProduct|bcdDevice|bcdUSB|bDeviceClass|bDeviceSubClass|bDeviceProtocol|bMaxPacketSize0|bNumConfigurations" | while read -r line; do
+                KEY=$(echo "$line" | awk '{print $1}')
+                VAL=$(echo "$line" | awk '{$1=""; sub(/^[[:space:]]+/, ""); print $0}')
+                echo "$VAL" > "$DIR_PATH/$KEY.txt"
+            done
+
+            echo "$BOARD_NAME" > "$DIR_PATH/descriptor.txt"
+        else
+            lsusb -vd "$FOUND_VID_PID" 2>/dev/null | grep -E "idVendor|idProduct|iSerial|iManufacturer|iProduct|bcdDevice|bcdUSB|bDeviceClass|bDeviceSubClass|bDeviceProtocol|bMaxPacketSize0|bNumConfigurations" | while read -r line; do
+                KEY=$(echo "$line" | awk '{print $1}')
+                VAL=$(echo "$line" | awk '{$1=""; sub(/^[[:space:]]+/, ""); print $0}')
+                if [[ -f "$DIR_PATH/$KEY.txt" ]]; then
+                    if ! grep -F -q -x "$VAL" "$DIR_PATH/$KEY.txt"; then
+                        echo "$VAL" >> "$DIR_PATH/$KEY.txt"
+                    fi
+                else
+                    echo "$VAL" > "$DIR_PATH/$KEY.txt"
+                fi
+
+            done
+
+        fi
+        
+        if [[ "$DB_OPTION" == "2" ]]; then
+            exit 0
+        fi
+        
+        printf "Device signature added to known hardware database. Waiting for device unplug...\n"
+        timeout 60s udevadm monitor --udev --property --subsystem-match=usb | while read -r line; do
+            if echo "$line" | grep -q "ACTION=remove"; then
+                if ! lsusb -d "$FOUND_VID_PID" >/dev/null 2>&1; then
+                    pkill -f "udevadm monitor"
+                    break
+                fi
+            fi
+
+        done
+
+        printf "Successfully disconnected from host.\n"
+        printf "1. Keep the existing FQBN\n"
+        printf "2. Start with new FQBN\n"
+        
+        ATTEMPTS_SUB=0
+        while [[ $ATTEMPTS_SUB -lt 5 ]]; do
+            read -r -p "Select option: " DB_SUB_OPTION
+            if [[ "$DB_SUB_OPTION" == "1" ]]; then
+                FOUND_VID_PID=""
+                monitor_usb
+                process_device
+                return 0
+            elif [[ "$DB_SUB_OPTION" == "2" ]]; then
+                FOUND_VID_PID=""
+                prompt_fqbn
+                monitor_usb
+                process_device
+                return 0
+            else
+                printf "Invalid selection.\n"
+                ATTEMPTS_SUB=$((ATTEMPTS_SUB + 1))
+            fi
+
+        done
+
+        printf "Too many incorrect attempts.\n"
+        exit 1
+    elif [[ "$DB_OPTION" == "3" ]]; then
+        printf "Discarding variables and restarting...\n"
+        FOUND_VID_PID=""
+        prompt_fqbn
+        monitor_usb
+        process_device
+    elif [[ "$DB_OPTION" == "4" ]]; then
+        printf "Discarding variables and exiting...\n"
+        exit 0
+    else
+        printf "Invalid choice.\n"
+        exit 1
+    fi
+
+}
