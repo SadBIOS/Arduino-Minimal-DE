@@ -241,7 +241,6 @@ if [[ "$AUTO_DISCOVERY" == "on" && "$VERIFY_DEVICES" == "on" ]]; then
     DIR_PATH="$HWDB/$SYM_FQBN"
     MATCH_FOUND=0
     NEEDS_PROMPT=0
-    
     if [[ -n "$PORT" ]]; then
         for ((i=1; i<=DEVICE_COUNT; i++)); do
             eval "DPORT=\$DEV_${i}_PORT"
