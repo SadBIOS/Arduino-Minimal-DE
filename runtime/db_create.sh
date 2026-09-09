@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 SCRIPT_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
@@ -27,9 +26,11 @@ KEY=""
 VAL=""
 ATTEMPTS_SUB=0
 DB_SUB_OPTION=""
+
 function fqbn_symstrip() {
     printf '%s\n' "${1//[^[:alnum:]]/}"
 }
+
 function initialize_db() {
     if [[ ! -d "$HWDB" ]]; then
         mkdir -pv "$HWDB"
@@ -43,6 +44,7 @@ function initialize_db() {
     fi
 
 }
+
 function prompt_fqbn() {
     ATTEMPTS=0
     while [[ $ATTEMPTS -lt 5 ]]; do
@@ -61,6 +63,7 @@ function prompt_fqbn() {
     printf "Error: Too many attempts with invalid FQBN. Exiting.\n"
     exit 1
 }
+
 function monitor_usb() {
     printf "Searching for devices...\n"
     for tty_node in /dev/ttyUSB* /dev/ttyACM*; do
@@ -103,6 +106,7 @@ function monitor_usb() {
         exit 1
     fi
 }
+
 function process_device() {
     printf "\nThe following device has been discovered:\n"
     printf "Board Name          : %s\n" "$BOARD_NAME"
@@ -200,6 +204,7 @@ function process_device() {
     fi
 
 }
+
 while [[ $# -gt 0 ]]; do
     case "$1" in
         --binpath) 
