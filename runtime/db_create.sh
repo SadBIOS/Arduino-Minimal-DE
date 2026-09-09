@@ -61,3 +61,45 @@ function prompt_fqbn() {
     printf "Error: Too many attempts with invalid FQBN. Exiting.\n"
     exit 1
 }
+function monitor_usb() {
+    printf "Searching for devices...\n"
+    for tty_node in /dev/ttyUSB* /dev/ttyACM*; do
+        [[ -e "$tty_node" ]] || continue
+        EVAL_PROPS=$(udevadm info --query=property --export --name="$tty_node" 2>/dev/null || true)
+        eval "$EVAL_PROPS"
+        DEV_VID_PID="${ID_VENDOR_ID}:${ID_MODEL_ID}"
+        if grep -q -i "$DEV_VID_PID" "$APPROVED_HWID_LIST"; then
+            FOUND_VID_PID="$DEV_VID_PID"
+            FOUND_VENDOR="${ID_VENDOR:-Unknown}"
+            FOUND_MODEL="${ID_MODEL:-Unknown}"
+            FOUND_TTY="$tty_node"
+            return 0
+        fi
+
+    done
+
+    printf "No known device connected to host. Waiting for device to be plugged in...\n"
+    while read -r line; do
+        if echo "$line" | grep -q "ACTION=add"; then
+            for tty_node in /dev/ttyUSB* /dev/ttyACM*; do
+                [[ -e "$tty_node" ]] || continue
+                EVAL_PROPS=$(udevadm info --query=property --export --name="$tty_node" 2>/dev/null || true)
+                eval "$EVAL_PROPS"
+                DEV_VID_PID="${ID_VENDOR_ID}:${ID_MODEL_ID}"
+                if grep -q -i "$DEV_VID_PID" "$APPROVED_HWID_LIST"; then
+                    FOUND_VID_PID="$DEV_VID_PID"
+                    FOUND_VENDOR="${ID_VENDOR:-Unknown}"
+                    FOUND_MODEL="${ID_MODEL:-Unknown}"
+                    FOUND_TTY="$tty_node"
+                    pkill -f "udevadm monitor"
+                    break 2
+                fi
+            done
+        fi
+    done < <(timeout 60s udevadm monitor --udev --property --subsystem-match=usb)
+
+    if [[ -z "$FOUND_VID_PID" ]]; then
+        printf "\nTimeout reached. No device detected.\n"
+        exit 1
+    fi
+}
