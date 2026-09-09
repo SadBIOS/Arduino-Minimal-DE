@@ -27,3 +27,6 @@ KEY=""
 VAL=""
 ATTEMPTS_SUB=0
 DB_SUB_OPTION=""
+function fqbn_symstrip() {
+    printf '%s\n' "${1//[^[:alnum:]]/}"
+}
