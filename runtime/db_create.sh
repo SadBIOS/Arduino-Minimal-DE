@@ -43,3 +43,21 @@ function initialize_db() {
     fi
 
 }
+function prompt_fqbn() {
+    ATTEMPTS=0
+    while [[ $ATTEMPTS -lt 5 ]]; do
+        read -r -p "Enter FQBN: " FQBN_INPUT
+        BOARD_NAME=$("$BINPATH" --config-file "$CONFIG_FILE" board listall | awk -F '  +' -v fqbn="$FQBN_INPUT" '$2 == fqbn {print $1}')
+        if [[ -n "$BOARD_NAME" ]]; then
+            SYM_FQBN=$(fqbn_symstrip "$FQBN_INPUT")
+            return 0
+        else
+            printf "Error: FQBN not found in board list. Try again.\n"
+            ATTEMPTS=$((ATTEMPTS + 1))
+        fi
+
+    done
+
+    printf "Error: Too many attempts with invalid FQBN. Exiting.\n"
+    exit 1
+}
