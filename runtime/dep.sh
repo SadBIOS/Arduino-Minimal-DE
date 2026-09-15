@@ -15,18 +15,19 @@ PKGLIST="$SCRIPT_ROOT/pkglist.txt"
 PKG_ARCH="$SCRIPT_ROOT/ard_cli_dependencies.tar.gz"
 
 DEPS=(
-  build-essential
-  curl
-  tar
-  unzip
-  ca-certificates
-  python3
-  python3-pip
-  python3-serial
-  libusb-1.0-0
-  screen
-  util-linux
+    build-essential
+    curl
+    tar
+    unzip
+    ca-certificates
+    python3
+    python3-pip
+    python3-serial
+    libusb-1.0-0
+    screen
+    util-linux
 )
+
 
 function conn_stat() {
     ping -c 1 -W 2 1.1.1.1 &>/dev/null || ping -c 1 -W 2 8.8.8.8 &>/dev/null
