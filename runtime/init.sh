@@ -43,6 +43,8 @@ function dep_check() {
         python3-pip
         python3-serial
         libusb-1.0-0
+        screen
+        util-linux
     )
 
     missing=()
