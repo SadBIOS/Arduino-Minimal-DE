@@ -26,6 +26,7 @@ DEPS=(
     libusb-1.0-0
     screen
     util-linux
+    rsync
 )
 
 
