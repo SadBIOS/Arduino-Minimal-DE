@@ -10,14 +10,14 @@ UDEV_FILE=""
 UDEV_HASH=""
 
 function export_data() {
-    TMP_DIR="$ROOT_PATH/TMP"
+    TMP_DIR="${ROOT_PATH%/}/TMP"
     mkdir -pv "$TMP_DIR"
     cp -rv "$SOURCE_PATH"/. "$TMP_DIR/"
-    tar -cvf "$ROOT_PATH/datStor.tar" -C "$TMP_DIR" .
-    STAGING_DIR="$ROOT_PATH/staging"
+    tar -cvf "${ROOT_PATH%/}/datStor.tar" -C "$TMP_DIR" .
+    STAGING_DIR="${ROOT_PATH%/}/staging"
     mkdir -pv "$STAGING_DIR"
     cp -v "$UDEV_SRC" "$STAGING_DIR/"
-    mv -v "$ROOT_PATH/datStor.tar" "$STAGING_DIR/"
+    mv -v "${ROOT_PATH%/}/datStor.tar" "$STAGING_DIR/"
     rm -rvf "$TMP_DIR"
     UDEV_FILE=$(basename "$UDEV_SRC")
     cd "$STAGING_DIR" || exit 1
@@ -25,8 +25,8 @@ function export_data() {
     UDEV_HASH=$(sha512sum "$UDEV_FILE" | awk '{print $1}')
     echo "datStor.tar,$TAR_HASH" > datasig.txt
     echo "$UDEV_FILE,$UDEV_HASH" >> datasig.txt
-    cd "$ROOT_PATH" || exit 1
-    tar -cvf "$ROOT_PATH/ardCORE.tar" staging
+    cd "${ROOT_PATH%/}" || exit 1
+    tar -cvf "${ROOT_PATH%/}/ardCORE.tar" staging
     rm -rvf "$STAGING_DIR"
 }
 
@@ -36,7 +36,7 @@ while [[ $# -gt 0 ]]; do
             ROOT_PATH="$2"
             shift 2
         ;;
-        
+
         --source-path)
             SOURCE_PATH="$2"
             shift 2
