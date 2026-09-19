@@ -36,10 +36,12 @@ while [[ $# -gt 0 ]]; do
             ROOT_PATH="$2"
             shift 2
         ;;
+        
         --source-path)
             SOURCE_PATH="$2"
             shift 2
         ;;
+        
         --udev-src)
             UDEV_SRC="$2"
             shift 2
