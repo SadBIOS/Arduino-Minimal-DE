@@ -45,6 +45,7 @@ function dep_check() {
         libusb-1.0-0
         screen
         util-linux
+        rsync
     )
 
     missing=()
