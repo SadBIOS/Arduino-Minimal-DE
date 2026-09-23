@@ -22,3 +22,12 @@ default:
 	powershell -command ".\runtime\cleanup.ps1 $(cuf)"
 	powershell -command "Remove-Item -Path \"$$env:LOCALAPPDATA\\arduino\\\" -Recurse -Force -Verbose"
 	arduino-cli board list
+
+clean:
+	powershell -command ".\runtime\cleanup.ps1 nuke"
+
+resolve:
+	powershell -command ".\runtime\resolver.ps1"
+
+flash:
+	arduino-cli upload -p $(port) --verbose --fqbn $(brd) --input-file .\firmware\$(firmware)
