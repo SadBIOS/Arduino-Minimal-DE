@@ -34,3 +34,34 @@ flash:
 
 burn:	# follow the instructions from README.md for this target
 	arduino-cli upload -p $(port) --verbose --fqbn $(dev) --input-file .\firmware\$(code).with_bootloader.hex
+
+boot:	# usbasp required (must compile a blank sketch for that board first)
+	avrdude -c $(pgmr) -P usb -p $(mcu) -e -vvv -B $(btclk) -b $(brt)
+	avrdude -c $(pgmr) -p $(mcu) -P usb -U $(lfuse) -U $(hfuse) $(efuse) -B $(btclk) -b $(brt) -vvv
+	avrdude -c $(pgmr) -p $(mcu) -P usb -U flash:w:./firmware/$(code).with_bootloader.hex:i -vvv -B $(btclk) -b $(brt)
+	avrdude -c $(pgmr) -p $(mcu) -P usb -U $(lckbyt) -B $(btclk) -b $(brt) -vvv
+
+check:	# usbasp required
+	avrdude -c $(pgmr) -p $(mcu) -P usb -B $(btclk) -b $(brt) -U hfuse:r:-:h -U lfuse:r:-:h -U efuse:r:-:h -U lock:r:-:h
+
+erase:	# usbasp required
+	avrdude -c $(pgmr) -P usb -p $(mcu) -e -vvv -B $(btclk) -b $(brt)
+
+env:
+	powershell -command ".\runtime\init.ps1 setup"
+	powershell -command ".\runtime\init.ps1 lib_build"
+
+core:
+	powershell -command ".\runtime\init.ps1 corestat"
+
+lib:
+	powershell -command ".\runtime\init.ps1 libstat"
+
+avail:
+	arduino-cli board list
+
+eval:
+	avrdude -c $(pgmr) -p $(mcu) -vvv
+
+details:
+	arduino-cli board details --fqbn $(brd)
