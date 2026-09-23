@@ -15,3 +15,10 @@ lckbyt 	= lock:w:0xCF:m
 pgmr 	= usbasp
 btclk 	= 93.75							# bit clock (8kHz = 93.75)
 brt 	= 115200						# baud rate
+
+default:
+	powershell -command ".\runtime\cleanup.ps1 nuke"
+	arduino-cli compile --verbose --fqbn $(brd) $(code) --output-dir .
+	powershell -command ".\runtime\cleanup.ps1 $(cuf)"
+	powershell -command "Remove-Item -Path \"$$env:LOCALAPPDATA\\arduino\\\" -Recurse -Force -Verbose"
+	arduino-cli board list
