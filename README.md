@@ -140,7 +140,9 @@ Replace the line after the ```burn:``` target with the following (choose the app
 ><details>
 ><summary>Library Transfer</summary>
 >
-> *
+> * Generate Missing Library Request
+> * Preload Libraries from Missing Library Request File (applicable for custom [request file]())
+> * Deploy Library Package
 ></details>
 
 </details>
