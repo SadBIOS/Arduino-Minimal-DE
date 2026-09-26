@@ -1,88 +1,167 @@
-# Minimal Arduino IDE Dev Environment
-
----
+# Minimal Arduino<sup>®</sup> Cross Platform Dev Env for Air-Gapped Systems
 
 ### Overview
-This is useful to people who dislike the internet, themselves, and most importantly, ease of use. It is a lightweight, efficient tool that allows for swift development, optimized for the Microsoft Windows OS, designed for the **Windows Hater of Tomorrow.**
+This tool is designed to deploy [arduino-cli](https://docs.arduino.cc/arduino-cli/) into air-gapped machines (Please refer to the **Warning** in this section regarding information about Microsoft Windows<sup>®</sup> and GNU/Linux<sup>®</sup>). Optimized for development of sensitive applications in controlled environments.
 
----
+<div align="center">
 
-### Requirements
-- [arduino-cli](https://github.com/arduino/arduino-cli/releases)
-- [CH340 Driver](https://www.wch-ic.com/download/CH341SER_EXE.html)
-- [CP210X Driver](https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers)
-- [FTDI VCP Driver (CDM213464-FT232RL)](https://ftdichip.com/drivers/vcp-drivers/)
-- [avrdude](https://github.com/avrdudes/avrdude)
-- [VSCodium](https://github.com/VSCodium/vscodium)
-- [Arduino Community Extension](https://marketplace.visualstudio.com/items?itemName=vscode-arduino.vscode-arduino-community)
-- [Serial Monitor Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-serial-monitor)
-- [MinGW-w64](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/8.1.0/threads-posix/seh/) (download the x86_64-posix-seh .7z archive)
+***Get a partner who looks at you the way Windows<sup>®</sup> looks at your RAM***
 
----
+</div>
 
-### Hardware Requirements 📟
-- [USBasp](https://www.electronics.com.bd/usbasp-avr-programmer-parts-ic-module-sensor-arduino-transistor-resistor-capacitor-robotics-project-electronics-bangladesh?route=product/product&search=usbasp&category_id=0)
----
-### Setup
-To set up the environment, run the following command in PowerShell:
+> [!WARNING]  
+> * The Build-Toolkit transfer method is still bound to the ```%USERNAME%``` Environment Variable for Microsoft Windows<sup>®</sup> (Patch Coming **Soon™**)
+> * Developed for native support Debian<sup>®</sup>
 
-```> PS C:> make env```
+### Dependencies
 
----
+<details>
+<summary><b>Winows</b><sup>®</sup></summary>
 
-### Example
+> [!NOTE]
+> This section is subject to change as I add more boards to this project.
 
-**Change the Makefile** ⬇️
+* [Arduino<sup>®</sup> CLI](https://github.com/arduino/arduino-cli/releases) (Select the latest ```arduino-cli_X.Y.Z_Windows_64bit.zip``` archive from the releases page)
+* [CH340 Driver](https://www.wch-ic.com/download/CH341SER_EXE.html)
+* [CP210X Driver](https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers)
+* [FTDI VCP Driver](https://ftdichip.com/drivers/vcp-drivers/) ```CDM213464-FT232RL```
+* [AVRDUDE](https://github.com/avrdudes/avrdude) (Download the latest ```avrdude-vX.Y-windows-x64.zip```)
+* [VSCodium](https://github.com/VSCodium/vscodium)
+* [Arduino<sup>®</sup> Community Extension](https://marketplace.visualstudio.com/items?itemName=vscode-arduino.vscode-arduino-community)
+* [Serial Monitor Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-serial-monitor)
+* [MinGW-w64](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/8.1.0/threads-posix/seh/) (Download the ```x86_64-posix-seh``` **7z** archive)
 
-_brd_ = board name *(FQBN fully qualified board name).* A few options are given below as I work on these boards.
-- ESP32 = ```esp32:esp32:esp32```
-- ESP32-S3 = ```esp32:esp32:esp32s3```
-- Seeed Studio Xiao (Microchip SAMD21) = ```Seeeduino:samd:seeed_XIAO_m0```
-- ESP8266 (LoLin Nodemcu V3) = ```esp8266:esp8266:nodemcuv2```
-- Arduino (ATmega328PB) = ```MiniCore:avr:328```
-- Arduino (AVR Core) = ```arduiono:avr:X```
+</details>
 
-Here, **X** is the placeholder for board/chip name uno,nano,mega _(refer ```PS C:> make core``` for all FQBN)_
+<details>
+<summary><b>GNU/Linux<sup>®</sup></b></summary>
+
+> [!NOTE]
+> AVRDUDE flashing has still not been implemented but it along with and GCC Compilers for AVR<sup>®</sup> from Microchip is still listed. However this is not a requirement
+> > * [AVRDUDE](https://github.com/avrdudes/avrdude/releases/) (Download the latest ***avrdude_vX.Y_Linux_64bit.tar.gz***)
+> > * [Microchip AVR-GCC](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio/gcc-compilers) (Select the ***AVR 8-Bit Toolchain (Linux)*** from this page)
+
+The following is the core dependency for this project require to operate in GNU/Linux<sup>®</sup> environments. 
+
+***GNU/Linux<sup>®</sup> refers to Debian<sup>®</sup> in this case***
+
+* [Arduino<sup>®</sup> CLI](https://github.com/arduino/arduino-cli/releases) (Select the latest ```arduino-cli_X.Y.Z_Linux_64bit.tar.gz``` archive from the releases page)
+
+</details>
 
 
-- _port_ = Use the ```PS C:> make avail``` to see the ports of connected devices *(if any)*
-- _cuf_ = ***kbin*** for binary and ***khx*** to keep intel hex firmware *(except avr boards most all boards use the binary file format)*
+### Special Instructions
 
-In the AVR section just change the mcu variable to 328p or 328pb *(if you change to the PB variant change the brd FQBN to MiniCore:avr:328)*
-- _dev_ = keep as is [ ```$(brd):$(cdc)``` for esp32-s3 as it has some communication device class boogaloo]
+<details>
+<summary><i><b>burn:</b></i> Target options in Microsoft Windows<sup>®</sup> <i><b>Makefile</b></i></summary>
 
-💡ProTip: *It is not recommended to change the fuse bits if you don't know what you're doing and I don't know what I was doing when I discovered this information.*
+Replace the line after the ```burn:``` target with the following (choose the appropriate version from <i><b>AVR<sup>®</sup> Programming Variable</i></b> section below)
 
----
+* Standard Flashing procecdure for <i><b>Microchip picoPower<sup>®</sup> ATmega328PB</b></i>
+    * Since this uses <b>arduino-cli</b> it is assumed that a functioning bootloader already exists or else it will fail.
+      ```makefile
+      arduino-cli upload -p $(port) --verbose --fqbn $(brd) --input-file .\firmware\$(code).eep
+      ```
 
-### Post Setup Run the Following Commands
-```> PS C:> make```
+* Bootloader Re-Flash (the default option assumes the bootloader already exists)
+    * Adding ```.with_bootloader``` replaces the existing bootloader. This assumes the bootloader on the chip might be corrupted/non-existent or the user wishes to replace it by force.
+      ```makefile
+      avrdude -c $(pgmr) -p$(mcu) -P usb -U flash:w:./firmware/$(code).with_bootloader.hex:i -vvv -B $(btclk) -b$(brt)
+      ```
 
-```> PS C:> make flash```
+<br>    
 
----
+<details>
+<summary><i><b>AVR<sup>®</sup> Programming Variables</i></b></summary>
 
-### Makefile options (mentions which ones require an usbasp)
-- _resolve_ = library dependency resolver
-- _clean_ = wipe all binary
-- _erase_ = wipe the chip *(AVR only)*
-- _burn_ = flash option for AVR only *(see the burn function comments)*
-- _boot_ = burn bootloader AVR only *(depends on the chip but m328, m328p and m328pb are the same)*
-- _check_ = read lock bits
-- _core_ = check available cores
-- _lib_ = check installed libraries
-- _avail_ = check connected boards
-- _eval_ = show AVR chip details
-- _details_ = read board details
+><details>
+><summary>Atmel<sup>®</sup> ATmega328P enhanced <i><b>AVR<sup>®</sup> RISC</b></i> (<i><b><a href="https://github.com/Optiboot">Optiboot</a></b></i> Currently maintained by <i><b><a href="https://github.com/westfw">Bill Westfield</a></b></i>)</summary>
+>
+> * MCU/Part Name ```m328p```
+>```makefile
+> lfuse   = lfuse:w:0xFF:m
+> hfuse   = hfuse:w:0xDE:m
+> efuse   = efuse:w:0xFD:m
+> unlock  = unlock:w:0x3F:m
+> lock    = lock:w:0x0F:m
+>```
+></details>
 
-Arduino Mega (ATmega2560 or _m2560_) and Arduino Micro (ATmega32U4 or _m32u4_) fuse settings will be uploaded (I don't have any other ones so I didn't bother)
+><details>
+><summary>Atmel<sup>®</sup> ATmega328P enhanced <i><b>AVR<sup>®</sup> RISC</b></i> (Old <i><b>Arduino<sup>®</sup></b></i> Bootloader)</summary>
+>
+> * MCU/Part Name ```m328p```
+>```makefile
+> lfuse   = lfuse:w:0xFF:m
+> hfuse   = hfuse:w:0xDA:m
+> efuse   = efuse:w:0xFD:m
+> unlock  = unlock:w:0x3F:m
+> lock    = lock:w:0x0F:m
+>```
+></details>
 
----
+><details>
+><summary><i><b>Microchip </b></i>ATmega32U4 enhanced <i><b>AVR<sup>®</sup> RISC</b></i> (<i><b>Arduino<sup>®</sup> MICRO</i></b> with it's Standard Bootloader)</summary>
+>
+> * MCU/Part Name ```m32u4```
+>```makefile
+> lfuse   = lfuse:w:0xFF:m
+> hfuse   = hfuse:w:0xD8:m
+> efuse   = efuse:w:0xCB:m
+> unlock  = unlock:w:0x3F:m
+> lock    = lock:w:0x2F:m
+>```
+></details>
 
-### General Usage
-Write code in the Arduino.ino (file location **!!CANNOT!!** be changed), put libraries in a separate folder (same directory as the .ino file)
+><details>
+><summary><i><b>Microchip picoPower<sup>®</sup> ATmega328PB</b></i> enhanced <i><b>AVR<sup>®</sup> RISC</b></i> (Standard  Bootloader)</summary>
+>
+> * MCU/Part Name ```m328pb```
+>```makefile
+> lfuse   = lfuse:w:0xFF:m
+> hfuse   = hfuse:w:0xDA:m
+> efuse   = efuse:w:0xFD:m
+> unlock  = unlock:w:0x3F:m
+> lock    = lock:w:0xCF:m
+>```
+></details>
+</details>
+</details>
 
----
+<details>
+<summary><b>Deployment/Migration</b> in or between Air-Gapped <b>Debian<sup>®</sup></b> Environments</summary>
 
-### Warnings ⛑️
-*This tool might be useful and fun but if you plan to use this for anything remotely important be prepared to loose your job, family and sanity. Ciao* 🙃
+Hidden content goes here.
+
+You can use **Markdown** inside the section too.
+
+- Item 1
+- Item 2
+
+</details>
+
+<details>
+<summary><code>~/runtime/config.txt</code> Options for different MCUs</summary>
+
+> [!NOTE]
+> This section is subject to change as I add more boards to this project.
+
+- Item 1
+- Item 2
+
+</details>
+
+
+> [!IMPORTANT]  
+> Tested and built on the following OS builds
+> * Debian<sup>®</sup> 13.5 *"Trixie"*, Kernel **6.12.94+deb13-amd64**
+> * Debian<sup>®</sup> 13.5 *"Trixie"*, Kernel **6.12.95+deb13-amd64**
+> * Debian<sup>®</sup> 13.6 *"Trixie"*, Kernel **6.12.96+deb13-amd64**
+> * LMDE 7 *"Gigi"*, Kernel **6.12.100+deb13-amd64** (based on Debian 13.0)
+> * Windows<sup>®</sup> 10, version ***21H2, KB5025221*** (OS Build ***19044.2846***)
+> * Windows<sup>®</sup> 11, version ***24H2, KB5079473*** (OS Build ***26100.8037***)
+> * Windows<sup>®</sup> 11, version ***25H2, KB5068861*** (OS Build ***26100.7171***)
+> * Windows<sup>®</sup> 11, version ***26H1, KB5124012*** (OS Build ***28000.2954***)
+>
+> ---
+> I plan to upgrade the Microsoft Windows<sup>®</sup> scripts to match the capabilities of the GNU/Linux build along side AVRDUDE capabilities to flash Microchip Atmel<sup>®</sup> AVR<sup>®</sup> chips **Soon™**
