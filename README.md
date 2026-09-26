@@ -143,7 +143,7 @@ You can use **Markdown** inside the section too.
 <details>
 <summary><code>~/runtime/config.txt</code> Options for different MCUs</summary>
 
-> [!NOTE]
+> **Note**
 > This section is subject to change as I add more boards to this project.
 
 - Item 1
