@@ -21,6 +21,7 @@ This tool is designed to deploy a [arduino-cli](https://docs.arduino.cc/arduino-
 > **NOTE**
 > This section is subject to change as I add more boards to this project.
 
+
 * [Arduino<sup>®</sup> CLI](https://github.com/arduino/arduino-cli/releases) (Select the latest ```arduino-cli_X.Y.Z_Windows_64bit.zip``` archive from the releases page)
 * [CH340 Driver](https://www.wch-ic.com/download/CH341SER_EXE.html)
 * [CP210X Driver](https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers)
