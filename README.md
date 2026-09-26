@@ -170,4 +170,4 @@ Replace the line after the ```burn:``` target with the following (choose the app
 > * Windows<sup>®</sup> 11, version ***26H1, KB5124012*** (OS Build ***28000.2954***)
 >
 > ---
-> I plan to upgrade the Microsoft Windows<sup>®</sup> scripts to match the capabilities of the GNU/Linux build along side AVRDUDE capabilities to flash Microchip Atmel<sup>®</sup> AVR<sup>®</sup> chips **Soon™**
+> I plan to upgrade the Microsoft Windows<sup>®</sup> scripts to match the capabilities of the GNU/Linux<sup>®</sup> build along side AVRDUDE capabilities to flash Microchip Atmel<sup>®</sup> AVR<sup>®</sup> chips **Soon™**
