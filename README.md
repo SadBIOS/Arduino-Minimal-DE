@@ -18,7 +18,7 @@ This tool is designed to deploy [arduino-cli](https://docs.arduino.cc/arduino-cl
 <details>
 <summary><b>Winows</b><sup>®</sup></summary>
 
-> [!NOTE]  
+> [!NOTE]
 > This section is subject to change as I add more boards to this project.
 
 * [Arduino<sup>®</sup> CLI](https://github.com/arduino/arduino-cli/releases) (Select the latest ```arduino-cli_X.Y.Z_Windows_64bit.zip``` archive from the releases page)
