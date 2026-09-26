@@ -131,12 +131,17 @@ Replace the line after the ```burn:``` target with the following (choose the app
 <details>
 <summary><b>Deployment/Migration</b> in or between Air-Gapped <b>Debian<sup>®</sup></b> Environments</summary>
 
-Hidden content goes here.
+><details>
+><summary>Core/Full System Transfer</summary>
+>
+> * This is valid for both
+></details>
 
-You can use **Markdown** inside the section too.
-
-- Item 1
-- Item 2
+><details>
+><summary>Library Transfer</summary>
+>
+> *
+></details>
 
 </details>
 
