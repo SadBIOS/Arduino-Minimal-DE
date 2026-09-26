@@ -37,7 +37,7 @@ This tool is designed to deploy a [arduino-cli](https://docs.arduino.cc/arduino-
 <details>
 <summary><b>GNU/Linux<sup>®</sup></b></summary>
 
-> [!NOTE]
+> **NOTE**
 > AVRDUDE flashing has still not been implemented but it along with and GCC Compilers for AVR<sup>®</sup> from Microchip is still listed. However this is not a requirement
 > > * [AVRDUDE](https://github.com/avrdudes/avrdude/releases/) (Download the latest ***avrdude_vX.Y_Linux_64bit.tar.gz***)
 > > * [Microchip AVR-GCC](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio/gcc-compilers) (Select the ***AVR 8-Bit Toolchain (Linux)*** from this page)
