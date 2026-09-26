@@ -151,6 +151,7 @@ You can use **Markdown** inside the section too.
 
 </details>
 
+---
 
 > [!IMPORTANT]  
 > Tested and built on the following OS builds
