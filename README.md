@@ -1,6 +1,6 @@
-# Minimal Arduino<sup>®</sup> Cross Platform Dev Env for Air-Gapped Systems
+# Minimal Arduino<sup>®</sup> Cross Platform Dev Env
 
-This tool is designed to deploy a [arduino-cli](https://docs.arduino.cc/arduino-cli/) based development environment into air-gapped machines (Please refer to the **Warning** in this section regarding information about Microsoft Windows<sup>®</sup> and GNU/Linux<sup>®</sup>). Optimized for development of sensitive applications in controlled environments.
+This tool is designed to deploy a [arduino-cli](https://docs.arduino.cc/arduino-cli/) based development environment into air-gapped machines/systems (Please refer to the **Warning** in this section regarding information about Microsoft Windows<sup>®</sup> and GNU/Linux<sup>®</sup>). Optimized for development of sensitive applications in controlled environments.
 
 <div align="center">
 
