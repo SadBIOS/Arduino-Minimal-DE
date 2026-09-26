@@ -32,7 +32,7 @@ resolve:
 flash:
 	arduino-cli upload -p $(port) --verbose --fqbn $(brd) --input-file .\firmware\$(firmware)
 
-burn:	# follow the instructions from README.md for this target
+burn:	# follow the Special Instructions from README.md for this target
 	arduino-cli upload -p $(port) --verbose --fqbn $(dev) --input-file .\firmware\$(code).with_bootloader.hex
 
 boot:	# usbasp required (must compile a blank sketch for that board first)
