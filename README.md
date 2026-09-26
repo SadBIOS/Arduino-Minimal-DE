@@ -1,6 +1,5 @@
 # Minimal Arduino<sup>®</sup> Cross Platform Dev Env for Air-Gapped Systems
 
-### Overview
 This tool is designed to deploy a [arduino-cli](https://docs.arduino.cc/arduino-cli/) based development environment into air-gapped machines (Please refer to the **Warning** in this section regarding information about Microsoft Windows<sup>®</sup> and GNU/Linux<sup>®</sup>). Optimized for development of sensitive applications in controlled environments.
 
 <div align="center">
@@ -13,7 +12,7 @@ This tool is designed to deploy a [arduino-cli](https://docs.arduino.cc/arduino-
 > * The Build-Toolkit transfer method is still bound to the ```%USERNAME%``` Environment Variable for Microsoft Windows<sup>®</sup> (Patch Coming **Soon™**)
 > * Developed for native support Debian<sup>®</sup>
 
-### Dependencies
+## Dependencies
 
 <details>
 <summary><b>Winows</b><sup>®</sup></summary>
@@ -51,7 +50,7 @@ The following is the core dependency for this project require to operate in GNU/
 </details>
 
 
-### Special Instructions
+## Special Instructions
 
 <details>
 <summary><i><b>burn:</b></i> Target options in Microsoft Windows<sup>®</sup> <i><b>Makefile</b></i></summary>
