@@ -149,7 +149,7 @@ Replace the line after the ```burn:``` target with the following (choose the app
 ><details>
 ><summary>Library Transfer</summary>
 >
-> > #### Generate Missing Libraries (`make gen_missing_libs`), **Execution Environment:** Online or Offline Machine<br>
+> > **Generate Missing Libraries:** `make gen_missing_libs`, **Execution Environment:** Online or Offline Machine<br>
 > >  1. **Header Extraction:** Scans the target source file (`.ino`) for `#include <...>` directives.<br>
 > >  2. **Local Check:** Querying `arduino-cli lib list` to determine which included libraries are already installed locally.<br>
 > >  3. **Catalog Matching:** Cross-references uninstalled libraries with `master_library_catalog.txt`. If an exact match is missing, it runs a Levenshtein distance calculation to offer the top 5 closest candidates for interactive user selection.<br>
