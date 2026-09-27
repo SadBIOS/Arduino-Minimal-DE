@@ -140,9 +140,9 @@ Replace the line after the ```burn:``` target with the following (choose the app
 ><details>
 ><summary>Library Transfer</summary>
 >
-> * Generate Missing Libraries (`make gen_missing_libs`)
->   **Execution Environment:** Online or Offline Machine
->
+> > * Generate Missing Libraries (`make gen_missing_libs`)<br>
+> >   **Execution Environment:** Online or Offline Machine<br>
+
 > * Preload Libraries from Missing Library Request File (applicable for custom [request file](https://github.com/SadBIOS/Arduino-Minimal-DE/blob/main/lib_preload_list_linux.txt))
 > * Deploy Library Package
 ></details>
