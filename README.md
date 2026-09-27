@@ -140,9 +140,15 @@ Replace the line after the ```burn:``` target with the following (choose the app
 ><details>
 ><summary>Library Transfer</summary>
 >
-> > * Generate Missing Libraries (`make gen_missing_libs`)<br>
-> >   **Execution Environment:** Online or Offline Machine<br>
-
+> > #### Generate Missing Libraries (`make gen_missing_libs`)<br>
+> >  1. **Execution Environment:** Online or Offline Machine<br>
+> >  2. **Header Extraction:** Scans the target source file (`.ino`) for `#include <...>` directives.<br>
+> >  3. **Local Check:** Querying `arduino-cli lib list` to determine which included libraries are already installed locally.<br>
+> >  4. **Catalog Matching:** Cross-references uninstalled libraries with `master_library_catalog.txt`. If an exact match is missing, it runs a Levenshtein distance calculation to offer the top 5 closest candidates for interactive user selection.<br>
+> >  5. **Manifest Creation:** Generates or updates `lib_preload_list_linux.txt` at the root directory. This file contains a unique session key (`>!< PRE-LOAD-CODE == <number>`) and the list of required library names.<br>
+> > > ```bash
+> > > make gen_missing_libs
+> > > ```
 > * Preload Libraries from Missing Library Request File (applicable for custom [request file](https://github.com/SadBIOS/Arduino-Minimal-DE/blob/main/lib_preload_list_linux.txt))
 > * Deploy Library Package
 ></details>
