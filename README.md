@@ -166,7 +166,17 @@ Replace the line after the ```burn:``` target with the following (choose the app
 > > ```bash
 > > make preload_libs
 > > ```
-> Deploy Library Package
+> > <br>
+> >
+> > **STEP 3 - Deploy Library Package** (`make load_offl_libs`), **Execution Environment:** Airgapped / Offline Machine
+> > 1. **Prerequisite Transfer:** Transfer the generated `<PRELOAD_CODE>.tar.gz` archive to the target machine and place it inside `runtime/lib_store/`. Ensure the Makefile variable `lib_preload_archive_linux` points to this archive path
+> > 1. **Archive Validation:** Unpacks the archive to a temporary directory and checks that the numeric archive filename matches the `PRE-LOAD-CODE` declared inside `lib_preload_list_linux.txt`.
+> > 1. **Library Verification:** Confirms that each unpacked library directory contains a valid `library.properties` file.
+> > 1. **User Directory Resolution:** Reads `arduino-cli.yaml` to identify the user's `libraries` directory (e.g., `~/Arduino/libraries`).
+> > 1. **Installation:** Prompts the user for confirmation, replaces any pre-existing older versions of the libraries, and cleans up temporary working directories upon completion.
+> > ```bash
+> > make load_offl_libs
+> > ```
 ></details>
 
 </details>
