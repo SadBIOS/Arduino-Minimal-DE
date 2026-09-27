@@ -149,7 +149,7 @@ Replace the line after the ```burn:``` target with the following (choose the app
 ><details>
 ><summary>Library Transfer</summary>
 >
-> > **Generate Missing Libraries:** `make gen_missing_libs`, **Execution Environment:** Online or Offline Machine<br>
+> > **STEP 1 - Generate Missing Libraries:** `make gen_missing_libs`, **Execution Environment:** Online or Offline Machine<br>
 > >  1. **Header Extraction:** Scans the target source file (`.ino`) for `#include <...>` directives.<br>
 > >  2. **Local Check:** Querying `arduino-cli lib list` to determine which included libraries are already installed locally.<br>
 > >  3. **Catalog Matching:** Cross-references uninstalled libraries with `master_library_catalog.txt`. If an exact match is missing, it runs a Levenshtein distance calculation to offer the top 5 closest candidates for interactive user selection.<br>
@@ -157,7 +157,15 @@ Replace the line after the ```burn:``` target with the following (choose the app
 > > > ```bash
 > > > make gen_missing_libs
 > > > ```
-> * Preload Libraries from Missing Library Request File (applicable for custom [request file](https://github.com/SadBIOS/Arduino-Minimal-DE/blob/main/lib_preload_list_linux.txt))
+> > <br>
+> >
+> > **STEP 2 - Preload Libraries:** `make preload_libs`, **Execution Environment:** Internet-Connected Machine (applicable for custom [request file](https://github.com/SadBIOS/Arduino-Minimal-DE/blob/main/lib_preload_list_linux.txt))
+> > 1. **Connectivity Check:** Verifies active internet connectivity via ICMP ping tests to public DNS resolvers (`1.1.1.1` / `8.8.8.8`).
+> > 2. **Package Download:** Parses `lib_preload_list_linux.txt` to extract the `PRE-LOAD-CODE` and the library list. Missing libraries are downloaded via `arduino-cli lib install`.
+> > 3. **Archive Packaging:** Copies the retrieved library directories into a temporary staging folder (`runtime/lib_store/tmp`) along with the manifest. It compresses these contents into a tarball named `<PRELOAD_CODE>.tar.gz` located inside `runtime/lib_store/`.
+> > ```bash
+> > make preload_libs
+> > ```
 > * Deploy Library Package
 ></details>
 
