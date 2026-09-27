@@ -49,6 +49,15 @@ The following is the core dependency for this project require to operate in GNU/
 
 </details>
 
+## Setup
+
+<details>
+<summary><b>Winows</b><sup>®</sup></summary>
+</details>
+<details>
+<summary><b>GNU/Linux<sup>®</sup></b></summary>
+</details>
+
 
 ## Special Instructions
 
