@@ -56,6 +56,9 @@ The following is the core dependency for this project require to operate in GNU/
 > * Write code in the Arduino-Minimal-DE.ino (file location **!!CANNOT!!** be changed)
 > * For Microsoft Winows<sup>®</sup> put libraries in a separate folder (same directory as the .ino file)
 
+> [!NOTE]
+> As I mostly work on MCUs from the **[Espressif ESP32](https://www.espressif.com/ja-jp/home)** platform. Thus most of the instructions are written with that fact in mind.
+
 <details>
 <summary><b>Microsoft Winows</b><sup>®</sup></summary>
 
