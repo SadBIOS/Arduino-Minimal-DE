@@ -15,7 +15,7 @@ This tool is designed to deploy a [arduino-cli](https://docs.arduino.cc/arduino-
 ## Dependencies
 
 <details>
-<summary><b>Winows</b><sup>®</sup></summary>
+<summary><b>Microsoft Winows</b><sup>®</sup></summary>
 
 > **NOTE**
 > This section is subject to change as I add more boards to this project.
@@ -56,7 +56,7 @@ The following is the core dependency for this project require to operate in GNU/
 > * For Microsoft Winows<sup>®</sup> put libraries in a separate folder (same directory as the .ino file)
 
 <details>
-<summary><b>Winows</b><sup>®</sup></summary>
+<summary><b>Microsoft Winows</b><sup>®</sup></summary>
 </details>
 <details>
 <summary><b>GNU/Linux<sup>®</sup></b></summary>
