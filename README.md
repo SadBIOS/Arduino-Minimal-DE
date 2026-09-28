@@ -51,6 +51,10 @@ The following is the core dependency for this project require to operate in GNU/
 
 ## Setup and Operation
 
+> [!WARNING]
+> * Write code in the Arduino-Minimal-DE.ino (file location **!!CANNOT!!** be changed)
+> * For Microsoft Winows<sup>®</sup> put libraries in a separate folder (same directory as the .ino file)
+
 <details>
 <summary><b>Winows</b><sup>®</sup></summary>
 </details>
@@ -186,10 +190,8 @@ Replace the line after the ```burn:``` target with the following (choose the app
 
 > **Note**
 > This section is subject to change as I add more boards to this project.
-
-- Item 1
-- Item 2
-
+> >
+> > 
 </details>
 
 ---
