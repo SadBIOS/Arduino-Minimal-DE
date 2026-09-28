@@ -57,11 +57,18 @@ The following is the core dependency for this project require to operate in GNU/
 
 <details>
 <summary><b>Microsoft Winows</b><sup>®</sup></summary>
+
+> <details>
+> <summary><b>Environment Setup</b></summary>
+> </details>
 </details>
 <details>
 <summary><b>GNU/Linux<sup>®</sup></b></summary>
-</details>
 
+> <details>
+> <summary><b>Environment Setup</b></summary>
+> </details>
+</details>
 
 ## Special Instructions
 
