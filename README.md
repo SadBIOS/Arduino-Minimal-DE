@@ -58,25 +58,91 @@ The following is the core dependency for this project require to operate in GNU/
 
 > [!NOTE]
 > As I mostly work on MCUs from the **[Espressif ESP32](https://www.espressif.com/ja-jp/home)** platform. Thus most of the instructions are written with that fact in mind.
-
 <details>
 <summary><b>Microsoft Winows</b><sup>®</sup></summary>
 
 > <details>
 > <summary><b>Environment Setup</b></summary>
 >
-> * Setup (after changing the `ExecutionPolicy` to allow external scripts). **PLEASE AUDIT SCRIPTS BEFORE ALLOWING ANYTHING FROM THE INTERNET.**
+> * Setup (after changing the `ExecutionPolicy` to allow external scripts). **PLEASE READ SCRIPT BEFORE ALLOWING ANYTHING FROM THE INTERNET.**
 > > ```bash
 > > make env
 > > ```
 > **Once everything done please run <code>make core</code> to confirm.**
 > </details>
+
+> <details>
+> <summary><b>Compilation</b></summary>
+>
+> * Modify `brd`, `cuf` and `firmware` variables based on the instructions in the **Windows_NT** section. Then just run;
+>
+> > ```bash
+> > make 
+> > ```
+> </details>
+
+> <details>
+> <summary><b>Flashing</b></summary>
+>
+> Based on the values set in the previous section just run the following;
+>
+> > ```bash
+> > make flash
+> > ```
+> </details>
 </details>
+</details>
+
+
 <details>
 <summary><b>GNU/Linux<sup>®</sup></b></summary>
 
+> **NOTE**<br>
+> The default script path is assumed to be in `$HOME`
+
 > <details>
 > <summary><b>Environment Setup</b></summary>
+>
+> First navigate to `~/Arduino-Minimal-DE/runtime` and run;
+>
+> > ```bash
+> > chmod +x *.sh
+> > ```
+>
+>  **This command is for online machines only**
+>
+> > ```bash
+> > ./dep.sh --resolve-online
+> > ```
+>
+> > ```bash
+> > make sys_init
+> > ```
+> Once `sys_init` target has been completed successfully run the following to confirm whether the system has been properly set up;
+>
+> > ```bash
+> > make sys_stat
+> > ```
+> </details>
+
+> <details>
+> <summary><b>Compilation</b></summary>
+>
+> * While inside `~/Arduino-Minimal-DE/runtime` edit `config.txt`. Set the appropriate board name in `FQBN == ` and any other `arduino-cli` compatible compilation flags in `ADDITIONAL_OPTIONS ==`
+> * Kindly Refer to the **Configuration Option** subsection in **Special Instructions**
+>
+> > ```bash
+> > make 
+> > ```
+> </details>
+
+> <details>
+> <summary><b>Flashing</b></summary>
+> Based on the values set in the previous section just run the following;
+>
+> > ```bash
+> > make flash
+> > ```
 > </details>
 </details>
 
