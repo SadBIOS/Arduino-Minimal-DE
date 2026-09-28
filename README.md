@@ -204,7 +204,7 @@ Replace the line after the ```burn:``` target with the following (choose the app
 </details>
 
 <details>
-<summary><code>~/runtime/config.txt</code> Options for different MCUs</summary>
+<summary><b>Configuration Options</b> for different MCUs</summary>
 
 > **NOTE**<br>
 > This section is subject to change as I add more boards to this project.
