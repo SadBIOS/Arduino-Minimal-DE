@@ -68,7 +68,7 @@ Replace the line after the ```burn:``` target with the following (choose the app
 
 * Standard Flashing procecdure for <i><b>Microchip picoPower<sup>®</sup> ATmega328PB</b></i>
     * Since this uses <b>arduino-cli</b> it is assumed that a functioning bootloader already exists or else it will fail.
-      ```makefile
+      ```bash
       arduino-cli upload -p $(port) --verbose --fqbn $(brd) --input-file .\firmware\$(code).eep
       ```
 
