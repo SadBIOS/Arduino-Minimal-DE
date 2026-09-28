@@ -63,7 +63,7 @@ The following is the core dependency for this project require to operate in GNU/
 > <summary><b>Environment Setup</b></summary>
 >
 > * Setup (after changing the `ExecutionPolicy` to allow external scripts). **PLEASE READ SCRIPT BEFORE ALLOWING ANYTHING FROM THE INTERNET.**
-> > ```makefile
+> > ```bash
 > > make env
 > > ```
 > **Once everything done please run <code>make core</code> to confirm.**
@@ -106,7 +106,7 @@ Replace the line after the ```burn:``` target with the following (choose the app
 ><summary>Atmel<sup>®</sup> ATmega328P enhanced <i><b>AVR<sup>®</sup> RISC</b></i> (<i><b><a href="https://github.com/Optiboot">Optiboot</a></b></i> Currently maintained by <i><b><a href="https://github.com/westfw">Bill Westfield</a></b></i>)</summary>
 >
 > * MCU/Part Name ```m328p```
->```makefile
+>```cpp
 > lfuse   = lfuse:w:0xFF:m
 > hfuse   = hfuse:w:0xDE:m
 > efuse   = efuse:w:0xFD:m
@@ -119,7 +119,7 @@ Replace the line after the ```burn:``` target with the following (choose the app
 ><summary>Atmel<sup>®</sup> ATmega328P enhanced <i><b>AVR<sup>®</sup> RISC</b></i> (Old <i><b>Arduino<sup>®</sup></b></i> Bootloader)</summary>
 >
 > * MCU/Part Name ```m328p```
->```makefile
+>```cpp
 > lfuse   = lfuse:w:0xFF:m
 > hfuse   = hfuse:w:0xDA:m
 > efuse   = efuse:w:0xFD:m
@@ -132,7 +132,7 @@ Replace the line after the ```burn:``` target with the following (choose the app
 ><summary><i><b>Microchip </b></i>ATmega32U4 enhanced <i><b>AVR<sup>®</sup> RISC</b></i> (<i><b>Arduino<sup>®</sup> MICRO</i></b> with it's Standard Bootloader)</summary>
 >
 > * MCU/Part Name ```m32u4```
->```makefile
+>```cpp
 > lfuse   = lfuse:w:0xFF:m
 > hfuse   = hfuse:w:0xD8:m
 > efuse   = efuse:w:0xCB:m
@@ -145,7 +145,7 @@ Replace the line after the ```burn:``` target with the following (choose the app
 ><summary><i><b>Microchip picoPower<sup>®</sup> ATmega328PB</b></i> enhanced <i><b>AVR<sup>®</sup> RISC</b></i> (Standard  Bootloader)</summary>
 >
 > * MCU/Part Name ```m328pb```
->```makefile
+>```cpp
 > lfuse   = lfuse:w:0xFF:m
 > hfuse   = hfuse:w:0xDA:m
 > efuse   = efuse:w:0xFD:m
