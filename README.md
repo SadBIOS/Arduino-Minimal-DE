@@ -49,14 +49,12 @@ The following is the core dependency for this project require to operate in GNU/
 
 </details>
 
+
 ## Setup and Operation
 
 > [!WARNING]
 > * Write code in the Arduino-Minimal-DE.ino (file location **!!CANNOT!!** be changed)
 > * For Microsoft Winows<sup>®</sup> put libraries in a separate folder (same directory as the .ino file)
-
-<details>
-<summary><b>Microsoft Winows</b><sup>®</sup></summary>
 
 <details>
 <summary><b>Microsoft Winows</b><sup>®</sup></summary>
@@ -78,6 +76,7 @@ The following is the core dependency for this project require to operate in GNU/
 > <summary><b>Environment Setup</b></summary>
 > </details>
 </details>
+
 
 ## Special Instructions
 
