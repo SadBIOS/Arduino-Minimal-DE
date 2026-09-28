@@ -17,7 +17,7 @@ This tool is designed to deploy a [arduino-cli](https://docs.arduino.cc/arduino-
 <details>
 <summary><b>Microsoft Winows</b><sup>®</sup></summary>
 
-> **NOTE**
+> **NOTE**<br>
 > This section is subject to change as I add more boards to this project.
 
 
@@ -36,7 +36,7 @@ This tool is designed to deploy a [arduino-cli](https://docs.arduino.cc/arduino-
 <details>
 <summary><b>GNU/Linux<sup>®</sup></b></summary>
 
-> **NOTE**
+> **NOTE**<br>
 > AVRDUDE flashing has still not been implemented but it along with and GCC Compilers for AVR<sup>®</sup> from Microchip is still listed. However this is not a requirement
 > > * [AVRDUDE](https://github.com/avrdudes/avrdude/releases/) (Download the latest ***avrdude_vX.Y_Linux_64bit.tar.gz***)
 > > * [Microchip AVR-GCC](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio/gcc-compilers) (Select the ***AVR 8-Bit Toolchain (Linux)*** from this page)
@@ -165,7 +165,7 @@ Replace the line after the ```burn:``` target with the following (choose the app
 ><details>
 ><summary>Core/Full System Transfer</summary>
 >
-> * This is valid for both
+> * FILL SOMETHING IN
 ></details>
 
 ><details>
@@ -206,8 +206,10 @@ Replace the line after the ```burn:``` target with the following (choose the app
 <details>
 <summary><code>~/runtime/config.txt</code> Options for different MCUs</summary>
 
-> **Note**
+> **NOTE**<br>
 > This section is subject to change as I add more boards to this project.
+> The config file lives in `~/runtime/config.txt` (assuming the toolkit is placed in `$HOME`)
+> >
 > >
 > > 
 </details>
