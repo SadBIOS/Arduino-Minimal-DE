@@ -49,7 +49,7 @@ The following is the core dependency for this project require to operate in GNU/
 
 </details>
 
-## Setup
+## Setup and Operation
 
 <details>
 <summary><b>Winows</b><sup>®</sup></summary>
