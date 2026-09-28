@@ -65,7 +65,7 @@ The following is the core dependency for this project require to operate in GNU/
 > <details>
 > <summary><b>Environment Setup</b></summary>
 >
-> * Setup (after changing the `ExecutionPolicy` to allow external scripts). **PLEASE READ SCRIPT BEFORE ALLOWING ANYTHING FROM THE INTERNET.**
+> * Setup (after changing the `ExecutionPolicy` to allow external scripts). **PLEASE AUDIT SCRIPTS BEFORE ALLOWING ANYTHING FROM THE INTERNET.**
 > > ```bash
 > > make env
 > > ```
