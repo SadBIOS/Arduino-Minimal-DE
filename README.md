@@ -58,8 +58,17 @@ The following is the core dependency for this project require to operate in GNU/
 <details>
 <summary><b>Microsoft Winows</b><sup>®</sup></summary>
 
+<details>
+<summary><b>Microsoft Winows</b><sup>®</sup></summary>
+
 > <details>
 > <summary><b>Environment Setup</b></summary>
+>
+> * Setup (after changing the `ExecutionPolicy` to allow external scripts). **PLEASE READ SCRIPT BEFORE ALLOWING ANYTHING FROM THE INTERNET.**
+> > ```makefile
+> > make env
+> > ```
+> **Once everything done please run <code>make core</code> to confirm.**
 > </details>
 </details>
 <details>
