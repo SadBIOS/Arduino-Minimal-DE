@@ -118,6 +118,9 @@ import_datstore:
 lib_list:
 	@$(ard_cli_binpath) --config-file $(config_file) lib list
 
+esp_id:
+	@$(toolchain_root)/packages/esp32/tools/esptool_py/*/esptool --port $(port) flash-id
+
 board_details: # Uncomment to desired
 # 	@$(ard_cli_binpath) --config-file $(config_file) board details -b arduino:avr:uno
 # 	@$(ard_cli_binpath) --config-file $(config_file) board details -b arduino:avr:nano
