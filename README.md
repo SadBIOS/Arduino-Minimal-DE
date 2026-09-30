@@ -274,7 +274,7 @@ Replace the line after the ```burn:``` target with the following (choose the app
 
 > **NOTE**<br>
 > This section is subject to change as I add more boards to this project.
-> The config file lives in `~/runtime/config.txt` (assuming the toolkit is placed in `$HOME`)
+> The config file lives in `~/Arduino-Minimal-DE/runtime/config.txt` (assuming the toolkit is placed in `$HOME`)
 > The upload speeds are low because I am unfortunately working with a poor quality USB cable.
 > > 
 > > ```rust
