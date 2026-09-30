@@ -275,9 +275,45 @@ Replace the line after the ```burn:``` target with the following (choose the app
 > **NOTE**<br>
 > This section is subject to change as I add more boards to this project.
 > The config file lives in `~/runtime/config.txt` (assuming the toolkit is placed in `$HOME`)
-> >
-> >
+> The upload speeds are low because I am unfortunately working with a poor quality USB cable.
 > > 
+> > ```rust
+> > FQBN == arduino:avr:nano
+> > ADDITIONAL_OPTIONS == 
+> > ```
+> > ```rust
+> > FQBN == MiniCore:avr:328
+> > ADDITIONAL_OPTIONS == 
+> > ```
+> > ```rust
+> > FQBN == esp8266:esp8266:nodemcuv2
+> > ADDITIONAL_OPTIONS == 
+> > ```
+> > ```rust
+> > FQBN == esp32:esp32:esp32
+> > ADDITIONAL_OPTIONS == UploadSpeed=115200,EraseFlash=all
+> > ```
+> > ```rust
+> > FQBN == esp32:esp32:esp32s3
+> > ADDITIONAL_OPTIONS == USBMode=hwcdc,CDCOnBoot=cdc,UploadMode=cdc,UploadSpeed=115200,EraseFlash=all,FlashSize=16M,PSRAM=opi
+> > ```
+> > ```rust
+> > FQBN == esp32:esp32:esp32p4
+> > ADDITIONAL_OPTIONS == USBMode=hwcdc,CDCOnBoot=cdc,UploadMode=cdc,FlashSize=16M,PartitionScheme=app3M_fat9M_16MB,PSRAM=enabled,UploadSpeed=115200,EraseFlash=all
+> > ```
+> > ---
+> > The ESP32C5 board works with this config but for some reason it does not auto start after a soft reset. A full power cycle is required.
+> > ```rust
+> > FQBN == esp32:esp32:esp32c5
+> > ADDITIONAL_OPTIONS == UploadSpeed=115200,CDCOnBoot=cdc,EraseFlash=all
+> > ```
+> > ---
+> > This board is broken at the moment. I will attempt a fix with a [ST-Link V2](https://www.st.com/en/development-tools/st-link-v2.html) via [OpenOCD](https://openocd.org/)
+> > 
+> > ```rust
+> > FQBN == Seeeduino:samd:seeed_XIAO_m0
+> > ADDITIONAL_OPTIONS == 
+> > ```
 </details>
 
 ---
