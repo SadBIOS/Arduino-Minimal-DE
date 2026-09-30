@@ -84,7 +84,7 @@ The following is the core dependency for this project require to operate in GNU/
 > <details>
 > <summary><b>Flashing</b></summary>
 >
-> Based on the values set in the previous section just run the following;
+> * Based on the values set in the previous section just run the following;
 >
 > > ```bash
 > > make flash
@@ -103,13 +103,13 @@ The following is the core dependency for this project require to operate in GNU/
 > <details>
 > <summary><b>Environment Setup</b></summary>
 >
-> First navigate to `~/Arduino-Minimal-DE/runtime` and run;
+> * First navigate to `~/Arduino-Minimal-DE/runtime` and run;
 >
 > > ```bash
 > > chmod +x *.sh
 > > ```
 >
->  **This command is for online machines only**
+>  * **This command is for online machines only**
 >
 > > ```bash
 > > ./dep.sh --resolve-online
@@ -118,7 +118,7 @@ The following is the core dependency for this project require to operate in GNU/
 > > ```bash
 > > make sys_init
 > > ```
-> Once `sys_init` target has been completed successfully run the following to confirm whether the system has been properly set up;
+> * Once `sys_init` target has been completed successfully run the following to confirm whether the system has been properly set up;
 >
 > > ```bash
 > > make sys_stat
@@ -138,7 +138,8 @@ The following is the core dependency for this project require to operate in GNU/
 
 > <details>
 > <summary><b>Flashing</b></summary>
-> Based on the values set in the previous section just run the following;
+>
+> * Based on the values set in the previous section just run the following;
 >
 > > ```bash
 > > make flash
@@ -231,7 +232,37 @@ Replace the line after the ```burn:``` target with the following (choose the app
 ><details>
 ><summary>Core/Full System Transfer</summary>
 >
-> * FILL SOMETHING IN
+> * Run the following commands on the internet connected machine (assuming the shell is already inside the `runtime` directory of the toolchain root);
+> > ```bash
+> > ./dep.sh --build-offline
+> > ```
+> > > This part is for resolving dependencies onn the local machine to as **GNU make** is required for exporting full toolchain;
+> > > ```bash
+> > > ./dep.sh --resolve-online
+> > > ```
+> > > Navigate to the toolchain root and run;
+> > > ```bash
+> > > make sys_init
+> > > ```
+> > 
+> > Export full toolchain (compilers and all);
+> > ```bash
+> > make export_datstore
+> > ```
+> 
+> ---
+> Copy the entire script root to the offline machine, this will be a file around **`10GB`**
+> 
+> ---
+> * Run the following commands on the offline machine (assuming the shell is already inside the `runtime` directory of the toolchain root)
+> > ```bash
+> > ./dep.sh --resolve-online
+> > ```
+> > 
+> > Import full toolchain (compilers and all);
+> > ```bash
+> > make import_datstore
+> > ```
 ></details>
 
 ><details>
