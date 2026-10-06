@@ -360,7 +360,7 @@ Replace the line after the ```burn:``` target with the following (choose the app
 > * Windows<sup>®</sup> 11, version ***24H2, KB5079473*** (OS Build ***26100.8037***)
 > * Windows<sup>®</sup> 11, version ***25H2, KB5068861*** (OS Build ***26100.7171***)
 > * Windows<sup>®</sup> 11, version ***26H1, KB5124012*** (OS Build ***28000.2954***)
-> * Windows<sup>®</sup> 11, version ***26H1, KB5124006*** (OS Build ***28000.3086***) [Preview Build]
+> * Windows<sup>®</sup> 11, version ***26H1, KB5124006*** (OS Build ***28000.3086***) - Preview Build
 >
 > ---
 > I plan to upgrade the Microsoft Windows<sup>®</sup> scripts to match the capabilities of the GNU/Linux<sup>®</sup> build along side AVRDUDE capabilities to flash Microchip Atmel<sup>®</sup> AVR<sup>®</sup> chips **Soon™**
