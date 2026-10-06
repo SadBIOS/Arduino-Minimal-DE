@@ -354,6 +354,7 @@ Replace the line after the ```burn:``` target with the following (choose the app
 > * Debian<sup>®</sup> 13.5 *"Trixie"*, Kernel **6.12.94+deb13-amd64**
 > * Debian<sup>®</sup> 13.5 *"Trixie"*, Kernel **6.12.95+deb13-amd64**
 > * Debian<sup>®</sup> 13.6 *"Trixie"*, Kernel **6.12.96+deb13-amd64**
+> * Debian<sup>®</sup> 13.7 *"Trixie"*, Kernel **6.12.111+deb13-amd64**
 > * LMDE 7 *"Gigi"*, Kernel **6.12.100+deb13-amd64** (based on Debian 13.0)
 > * Windows<sup>®</sup> 10, version ***21H2, KB5025221*** (OS Build ***19044.2846***)
 > * Windows<sup>®</sup> 11, version ***24H2, KB5079473*** (OS Build ***26100.8037***)
