@@ -69,7 +69,7 @@ details:
 else
 SHELL := /bin/bash
 root := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
-ard_cli_binpath := /home/%USERNAME%/Arduino-Minimal-DE/arduino-cli/arduino-cli
+ard_cli_binpath := # PLEASE ADD THE realpath OF ARDUINO-CLI BINARY HERE
 toolchain_root := /opt/Arduino15
 udev_source := $(root)runtime/rules.txt
 udev_target := /etc/udev/rules.d/99-arduino-portable.rules
