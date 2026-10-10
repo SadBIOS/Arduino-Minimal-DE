@@ -15,7 +15,7 @@ This tool is designed to deploy a [arduino-cli](https://docs.arduino.cc/arduino-
 ## Dependencies
 
 <details>
-<summary><b>Microsoft Winows</b><sup>®</sup></summary>
+<summary><b>Microsoft Windows</b><sup>®</sup></summary>
 
 > **NOTE**<br>
 > This section is subject to change as I add more boards to this project.
