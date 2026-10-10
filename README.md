@@ -106,7 +106,7 @@ The following is the core dependency for this project require to operate in GNU/
 > * First navigate to `~/Arduino-Minimal-DE/runtime` and run;
 >
 > > ```bash
-> > chmod +x *.sh
+> > chmod +x -v *.sh
 > > ```
 >
 >  * **This command is for online machines only**
