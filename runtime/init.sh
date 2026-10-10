@@ -164,7 +164,6 @@ function build_lib_cat() {
                     echo "Not modifying $LIB_MASTER_CAT"
                     return 0
                 ;;
-
             esac
         done
     fi
